@@ -55,7 +55,7 @@ body, p {
 }
 
 .p-large {
-	font: 400 1.125rem/1.75rem "Arial";
+	font: 4000 1.125rem/1.75rem "Arial";
     color: white;
 }
 
@@ -1789,13 +1789,32 @@ a:hover.back-to-top {
 /*****************************/
 /*     19. Media Queries     */
 /*****************************/	
+
+/* Min-width width 768px */
+@media (min-width: 68px) {
+    
+
+
+	    h0 {
+	color: white;
+	font: 900 4.2rem/3.25rem "Arial";
+	letter-spacing: -0.2px;
+}
+
+
+
+
+
 /* Min-width width 768px */
 @media (min-width: 768px) {
     
 
-	
-    
-	
+
+	    h0 {
+	color: white;
+	font: 900 4.8rem/4.25rem "Arial";
+	letter-spacing: -0.2px;
+}
     
     
     
@@ -1907,6 +1926,12 @@ a:hover.back-to-top {
 
 /* Min-width width 992px */
 @media (min-width: 992px) {
+    
+    	    h0 {
+	color: white;
+	font: 900 4.8rem/4.25rem "Arial";
+	letter-spacing: -0.2px;
+}
     
     .portfolio-1 .card {
         max-width: 46%;
@@ -2198,6 +2223,15 @@ a:hover.back-to-top {
 
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
+    
+    	    h0 {
+	color: white;
+	font: 900 4.8rem/4.25rem "Arial";
+	letter-spacing: -0.2px;
+}
+    
+    	
+
     
 
     
