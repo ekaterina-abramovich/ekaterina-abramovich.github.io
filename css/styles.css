@@ -10,8 +10,18 @@ html {
   overflow: hidden;
 }
 
+    .p-large2 {
+    color: black;
+        padding-top: 5rem;
+    }
+
+hr.solid {
+  border-top: 3px solid black;
+}
+
+
 hr.dotted {
-  border-top: 3px dotted #bbb;
+  border-top: 2px dotted #bbb;
 }
 
 
@@ -45,14 +55,23 @@ h02 {
 
 h1-1 {
 	color: black;
-	font: 700 2.5rem/11.125rem "Arial";
+	font: 700 3.3rem/4.25rem "Arial";
 	letter-spacing: -0.2px;
 }
 
 
 h1 {
 	color: #333;
-	font: 700 2.5rem/3.125rem "Arial";
+	font: 700 3.3rem/4.25rem "Arial";
+	letter-spacing: -0.2px;
+    
+    
+}
+
+
+h2 {
+	color: #333;
+	font: 400 2rem/3.125rem "Arial";
 	letter-spacing: -0.2px;
 }
 
@@ -788,6 +807,8 @@ a:hover.back-to-top {
 
 /* Min-width width 68px */
 @media (min-width: 68px) {
+    
+    
     .portfolio-1 .container {
         text-align: center;
     }
