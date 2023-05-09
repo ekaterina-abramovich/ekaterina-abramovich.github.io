@@ -10,10 +10,28 @@ html {
   overflow: hidden;
 }
 
+
+.wave {
+    
+    z-index: 2;
+    position: absolute;
+    
+    margin-top: -2rem;
+
+    background-image: url('images/wave.svg'); 
+    background-repeat: no-repeat;
+}
+
+
     .p-large2 {
     color: black;
         padding-top: 5rem;
     }
+
+
+.games-description {
+            padding-top: 2rem;
+}
 
 hr.solid {
   border-top: 3px solid #7864F6;
@@ -34,18 +52,31 @@ p {
 	color: black;
      margin-top: 50px;
 
-
 }
 
-h0 {
+.header .h0 {
 	color: white;
-	font: 900 4.8rem/4.25rem "Arial";
+	font: 100 4.8rem/4.25rem "Arial Black";
 	letter-spacing: -0.2px;
+            position: relative;
+        z-index: 2;
+}
+
+.header .p-large-ux {
+    color: white;
+	font: 100 4.8rem/4.25rem "Arial Black";
+	letter-spacing: -0.2px;
+    
+    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6); 
+    background-size: 26.6rem;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
 h02 {
-	font: 900 4.8rem/4.25rem "Arial";
+	font: 900 4.8rem/4.25rem "Arial Black";
     background-image: -webkit-linear-gradient(right, #FFC700, #7864F6);
     background-size: 19rem;
     background-position: left;
@@ -55,8 +86,27 @@ h02 {
 
 h1-1 {
 	color: black;
-	font: 700 3.3rem/4.25rem "Arial";
-	letter-spacing: -0.2px;
+	font: 700 3.3rem/4.25rem "Arial Black";
+	letter-spacing: -4px;
+}
+
+
+project-name {
+    
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    z-index: 2;
+    padding-left: 16px;
+    
+    padding-top: 17rem;
+
+    
+    
+    color: black;
+	font: 900 3.3rem/4.25rem "Arial Black";
+	letter-spacing: -4px;
+    line-height: 50px;
 }
 
 
@@ -83,7 +133,7 @@ h4 {
 }
 
 h6 {
-	color: #333;
+	color: #545454;
 	font: 700 1rem/1.375rem "Arial";
 	letter-spacing: -0.1px;
 }
@@ -113,6 +163,99 @@ h7 {
 .btn-solid-green:hover {
 	background-color: transparent;
 	color: #319244;
+	text-decoration: none;
+}
+
+/* games page buttons */
+
+.btn-foxy-adventures {
+    display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #0074FF;
+	border-radius: 2rem;
+	background-color: #0074FF;
+	color: #fff;
+	font: 700 0.875rem/0 "Arial";
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-foxy-adventures:hover {
+	background-color: transparent;
+	color: #0074FF;
+	text-decoration: none;
+}
+
+.btn-become {
+    display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #FF9100;
+	border-radius: 2rem;
+	background-color: #FF9100;
+	color: #fff;
+	font: 700 0.875rem/0 "Arial";
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-become:hover {
+	background-color: transparent;
+	color: #FF9100;
+	text-decoration: none;
+}
+
+
+.btn-feed-your-gran {
+    display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #FF0000;
+	border-radius: 2rem;
+	background-color: #FF0000;
+	color: #fff;
+	font: 700 0.875rem/0 "Arial";
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-feed-your-gran:hover {
+	background-color: transparent;
+	color: #FF0000;
+	text-decoration: none;
+}
+
+.btn-upside-down {
+    display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #8200FF;
+	border-radius: 2rem;
+	background-color: #8200FF;
+	color: #fff;
+	font: 700 0.875rem/0 "Arial";
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-upside-down:hover {
+	background-color: transparent;
+	color: #8200FF;
+	text-decoration: none;
+}
+
+.btn-dark-planet {
+    display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #512B2B;
+	border-radius: 2rem;
+	background-color: #512B2B;
+	color: #fff;
+	font: 700 0.875rem/0 "Arial";
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-dark-planet:hover {
+	background-color: transparent;
+	color: #512B2B;
 	text-decoration: none;
 }
 
@@ -157,6 +300,199 @@ h7 {
 	text-decoration: none;
 }
 
+
+.btn-gd {
+    text-decoration: none !important;
+    border: none !important;
+    background-image: url('images/gd_bw.png'); 
+    background-size: cover; 
+    background-position: bottom; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    padding-left: 2rem;
+    text-align: left;    
+    width: 100%;
+    height: 100%;
+	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
+    /* background: url("images/card-back.jpg") no-repeat center left; */
+    background-color: #F8F8F8;
+	font: 900 0.875rem/0 "Arial";
+	transition: all 0.2s; 
+}
+
+.btn-gd:hover {
+    text-decoration: none !important;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    background-image: url('images/gd_colored.png'); 
+    background-size: cover; 
+    background-position: bottom; 
+	background-color: #D91A15;
+	color: #01CE87;
+}
+
+
+.btn-games {
+    border: none !important;
+
+    background-image: url('images/games_bw.png'); 
+  background-size: cover; 
+  background-position: center; 
+    
+    
+            z-index: 1;
+    position:relative;
+    
+    display: grid;
+    
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    
+    padding-left: 2rem;
+
+    
+    text-align: left;    
+    width: 100%;
+    height: 100%;
+
+	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
+
+    /* background: url("images/card-back.jpg") no-repeat center left; */
+    background-color: #E7E7E7;
+
+	color: black;
+	font: 900 0.875rem/0 "Arial";
+	text-decoration: none;
+	transition: all 0.2s;
+    
+}
+
+.btn-games:hover {
+      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+    
+    
+            background-image: url('images/games_colored.png'); 
+  background-size: cover; 
+  background-position: center; 
+    
+    
+	background-color: #87baf9;
+	color: #01CE87;
+	text-decoration: none;
+    
+}
+
+
+.btn-ux {
+    border: none !important;
+
+    
+            background-image: url('images/ux_bw.png'); 
+  background-size: cover; 
+  background-position: center; 
+    
+    
+            z-index: 1;
+    position:relative;
+    
+    display: grid;
+    
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    
+    padding-left: 2rem;
+
+    
+    text-align: left;    
+    width: 100%;
+    height: 100%;
+
+	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
+
+    /* background: url("images/card-back.jpg") no-repeat center left; */
+    background-color: #bebebe;
+
+	color: black;
+	font: 900 0.875rem/0 "Arial";
+	text-decoration: none;
+	transition: all 0.2s;
+    
+}
+
+.btn-ux:hover {
+      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+    
+    
+            background-image: url('images/ux_colored.png'); 
+  background-size: cover; 
+  background-position: center; 
+    
+    
+	background-color: #67d08d;
+	color: #01CE87;
+	text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+
+
+.img-gd {
+    
+    padding-top: 10rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    z-index: 0;
+    width: 250%;
+    height: auto;
+}
+
+
+.img-games {
+    
+    padding-top: 18rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    z-index: 0;
+    width: 250%;
+    height: auto;
+}
+
+
+.img-ux {
+
+
+    padding-top: 14rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    z-index: 0;
+    width: 250%;
+    height: auto;
+}
+
+
+
+
+
 .btn-collapsible-y {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
@@ -174,6 +510,28 @@ h7 {
 	color: #D91A15;
 	text-decoration: none;
 }
+
+
+
+.btn-collapsible-chemistry {
+	display: inline-block;
+	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+	border: 0.125rem solid #3C73DC;
+	border-radius: 2rem;
+	background-color: #3C73DC;
+	color: #fff;
+	font: 700 0.875rem/0 "Arial";
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-collapsible-chemistry:hover {
+	background-color: transparent;
+	color: #3C73DC;
+	text-decoration: none;
+}
+
+
 
 .btn-collapsible-inclinico {
 	display: inline-block;
@@ -254,6 +612,28 @@ h7 {
 }
 
 .btn-livesite-inclinico {
+    text-align: center;
+}
+
+
+.btn-livesite-chemistry {
+	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+	border: 0.125rem solid #3C73DC;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #3C73DC;
+	font: 700 0.875rem/0 "Arial";
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-livesite-chemistry:hover {
+	background-color: #3C73DC;
+	color: white;
+	text-decoration: none;
+}
+
+.btn-livesite-chemistry {
     text-align: center;
 }
 
@@ -359,8 +739,9 @@ h7 {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 4.4375rem;
-	height: 1.75rem;
+    fill: aqua;
+    width: 100px;
+	height: auto;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -494,6 +875,8 @@ background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 6
 
 .header .text-container {
 	margin-bottom: 3rem;
+    
+    
 }
 
 .portfolio-1 .ux-container {
@@ -512,26 +895,87 @@ background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 6
     max-width: 100%;
     margin-right: 1rem;
     margin-left: 4rem;
-
     vertical-align: top;
 }
 
-.portfolio-1 .screens {
+
+
+
+
+
+.projects {
+    border: none !important;
+
+    background-color: black;
+    z-index: 0; /*allows overlapping with wave*/
+    margin-bottom: -5rem;
+
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 55rem;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+.projects-container {
+    display: inline-block;
+    padding: 1px;
+    margin: none;
+    background-color: none;
+    text-align: left;
+    width: 33.1%;
+    height: 100%;
+    vertical-align: middle;
+
+}
+
+
+
+
+
+
+
+/*
+.ux-game-container {
+    background-color: gray;
+    padding-right: 0;
     text-align: left;
     display: inline-block;
-    max-width: 100%;
-    margin-top: 5rem;
-        margin-bottom: 5rem;
-
-    margin-right: 4rem;
-    margin-left: 4rem;
+    width: 49.8%;
+    height: 45rem;
     vertical-align: top;
 }
 
-.portfolio-1 .screen-title {
-    text-align: center;
-    margin-bottom: 1rem;
+.game-container {
+    background-color: aqua;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    vertical-align: top;
 }
+
+.ux-container {
+    background-color: gray;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    vertical-align: top;
+} */
+
+
+
+
+
+
+
+
 
 
 
@@ -543,10 +987,11 @@ background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 6
 }
 
 .header .p-large {
-    font: 100 3.3rem/4.25rem "Arial";
-    font-weight: 600;
+    font: 100 3.3rem/4.25rem "Arial Black";
 	margin-bottom: 2rem;
     margin-top: 2rem;
+    	letter-spacing: -4px;
+
 }
 
 
@@ -561,9 +1006,23 @@ background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 6
 }
 
 .header-frame {
-	margin-top: -1px; /* To remove white margin in FF */
+    
+    
+    
+    z-index: 2;
+    position: absolute;
+
+	margin-top: -3px; /* To remove white margin in FF */
+
+
+
+    
+
+    
 	width: 100%;
 	height: 6.25rem;
+    
+
 }
 
 
@@ -577,8 +1036,19 @@ h10 {
 }
 
 
+/*     About section */
+
 .cards-1 {
-    background-color: #FFC700;
+      
+    /* 
+border-left: 7px solid black;
+    border-right: 7px solid black;
+    */
+    
+    position: relative;
+    z-index: 998;
+    /* background-color: #FFC700; */
+     background-color: #FFC700;
 	padding-top: 5rem;
 	padding-bottom: 15rem;
 	text-align: center;
@@ -644,11 +1114,33 @@ h10 {
         box-shadow: 1px 1px 50px #B7B7B7;
 	}
 
+
+.portfolio-1 .screens {
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    vertical-align: top;
+}
+
+.portfolio-1 .screen-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+
 .portfolio-1 .img-screen {
     text-align: center;
-        max-width: 100%;
-
-    box-shadow: 1px 1px 50px #ECECEC;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 1px 1px 25px #ECECEC;
 }
 
 
@@ -681,10 +1173,15 @@ h10 {
 /**************************/
 /*     Social Media     */
 /**************************/
+
+/*     Footer (one part)    */
 .form {
     background-color: black;
 	padding-top: 5rem;
 	padding-bottom: 2rem;
+            z-index: 998;
+    position:relative;
+    
 }
 
 .form .text-container {
@@ -721,11 +1218,11 @@ h10 {
 }
 
 .form .fa-stack:hover .fa-stack-1x {
-	color: #7864F6;
+	color: black;
 }
 
 .form .fa-stack:hover .fa-stack-2x {
-    color: #f3f7fd;
+    color: #FFC700;
 }
 
 
@@ -739,6 +1236,9 @@ h10 {
 }
 
 .footer-frame {
+        z-index: 998;
+    position:relative;
+    
 	width: 100%;
 	height: 1.5rem;
 }
@@ -760,7 +1260,13 @@ h10 {
 /*************************/
 /*     15. Copyright     */
 /*************************/
+
+/*     Footer (part 2)     */
+
 .copyright {
+    z-index: 998;
+    position:relative;
+    
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	background-color: #000000;
@@ -790,13 +1296,14 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #4f3cda url("../images/up-arrow.png") no-repeat center 47%;
+	background: #7864F6 url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-	background-color: #4332c5; 
+    	background: #FFC700 url("../images/up-arrow-black.png") no-repeat center 47%;
+
 }
 
 
@@ -807,6 +1314,69 @@ a:hover.back-to-top {
 
 /* Min-width width 68px */
 @media (min-width: 68px) {
+    
+            .portfolio-1 .screens {
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    vertical-align: top;
+}
+    
+    
+    
+    
+    .wave {
+    
+    z-index: 2;
+    position: absolute;
+    
+    margin-top: -1rem;
+
+    background-image: url('images/wave.svg'); 
+    background-repeat: no-repeat;
+}
+    
+    
+    	/* Footer */
+	.footer-frame {
+		height: 3rem;
+        margin-top: 6rem;
+	}
+    
+    
+ .projects-container {
+    display: inline-block;
+    padding: 1px;
+    margin: none;
+    background-color: none;
+    text-align: left;
+    width: 100%;
+    height: 35%;
+    vertical-align: middle;
+}
+    
+    
+    
+  .projects {
+    border: none !important;
+
+    background-color: black;
+    z-index: 0; /*allows overlapping with wave*/
+    margin-bottom: -5rem;
+
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 100rem;
+    vertical-align: middle;
+    }
+                
     
     
     .portfolio-1 .container {
@@ -856,6 +1426,71 @@ a:hover.back-to-top {
 
 /* Min-width width 768px */
 @media (min-width: 768px) {
+    
+        .portfolio-1 .screens {
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    
+    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    vertical-align: top;
+}
+    
+    
+    
+        	/* Footer */
+	.footer-frame {
+		height: 3rem;
+        margin-top: 0;
+	}
+    
+    
+    
+    .wave {
+    
+    z-index: 2;
+    position: absolute;
+    
+    margin-top: -2rem;
+
+    background-image: url('images/wave.svg'); 
+    background-repeat: no-repeat;
+}
+    
+    
+    
+    
+    .projects-container {
+    display: inline-block;
+    padding: 1px;
+    margin: none;
+    background-color: none;
+    text-align: left;
+    width: 32.8%;
+    height: 100%;
+    vertical-align: middle;
+}
+    
+    
+    
+        .projects {
+    border: none !important;
+
+    background-color: black;
+    z-index: 0; /*allows overlapping with wave*/
+    margin-bottom: -5rem;
+
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 45rem;
+    vertical-align: middle;
+}
+    
     
     .portfolio-1 .ux-container {
     text-align: center;
@@ -943,8 +1578,79 @@ a:hover.back-to-top {
 /* end of min-width width 768px */
 
 
+
+
+
 /* Min-width width 992px */
 @media (min-width: 992px) {
+    
+    .header .p-large-ux {
+    color: white;
+	font: 100 4.8rem/4.25rem "Arial Black";
+	letter-spacing: -0.2px;
+    
+    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6); 
+    background-size: 28rem;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+    
+    
+    .portfolio-1 .screens {
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    
+    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    vertical-align: top;
+}
+    
+    
+    
+    .wave {
+    
+    z-index: 2;
+    position: absolute;
+    
+    margin-top: -2rem;
+
+    background-image: url('images/wave.svg'); 
+    background-repeat: no-repeat;
+}
+    
+    
+    .projects-container {
+    display: inline-block;
+    padding: 1px;
+    margin: none;
+    background-color: none;
+    text-align: left;
+    width: 33%;
+    height: 100%;
+    vertical-align: middle;
+
+}
+    
+    .projects {
+    border: none !important;
+
+    background-color: black;
+    z-index: 0; /*allows overlapping with wave*/
+    margin-bottom: -5rem;
+
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 50rem;
+    vertical-align: middle;
+}
+    
     
         .portfolio-1 .container {
         text-align: left;
@@ -1089,9 +1795,9 @@ a:hover.back-to-top {
 	}
 	
 	.header .image-container .img-wrapper {
-		position: relative;
 		display: block;
 		width: 450px;
+        
         
 	}
 
@@ -1129,8 +1835,8 @@ a:hover.back-to-top {
 	/* Newsletter */
 	.form .text-container {
 		width: 55rem;
-		margin-right: auto;
-		margin-left: auto;
+		margin-right: 0;
+		margin-left: 0;
 		padding-top: 5rem;
 		padding-bottom: 4.5rem;
 	}
@@ -1154,6 +1860,75 @@ a:hover.back-to-top {
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
     
+    .header .p-large-ux {
+    color: white;
+	font: 100 4.8rem/4.25rem "Arial Black";
+	letter-spacing: -0.2px;
+    
+    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6); 
+    background-size: 26.6rem;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+    
+    
+    .portfolio-1 .screens {
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    vertical-align: top;
+}
+    
+    
+    
+    .wave {
+    
+    z-index: 2;
+    position: absolute;
+    
+    margin-top: -2rem;
+
+    background-image: url('images/wave.svg'); 
+    background-repeat: no-repeat;
+}
+    
+    
+    
+    .projects-container {
+    display: inline-block;
+    padding: 1px;
+    margin: none;
+    background-color: none;
+    text-align: left;
+    width: 33.1%;
+    height: 100%;
+    vertical-align: middle;
+
+}
+    
+    .projects {
+    border: none !important;
+
+    background-color: black;
+    z-index: 0; /*allows overlapping with wave*/
+    margin-bottom: -5rem;
+
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 55rem;
+    vertical-align: middle;
+}
+    
+    
         .portfolio-1 .container {
         text-align: left;
     }
@@ -1176,16 +1951,6 @@ a:hover.back-to-top {
     margin-left: 4rem;
     margin-top: 0rem;
 
-    vertical-align: top;
-}
-
-.portfolio-1 .screens {
-    text-align: left;
-    display: inline-block;
-    max-width: 100%;
-    margin-top: 5rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
     vertical-align: top;
 }
 
@@ -1240,8 +2005,11 @@ a:hover.back-to-top {
 		margin-left: 1.5rem;
 	}
 
+    	/* image of me */
 	.header .image-container .img-wrapper {
 		width: 560px;
+  
+        
 	}
 
 	.header-frame {
@@ -1301,5 +2069,7 @@ a:hover.back-to-top {
 		margin-left: 1.5rem;
 	}
 	/* end of footer */
+}
+    
 }
 /* end of min-width width 1200px */
