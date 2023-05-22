@@ -358,7 +358,7 @@ h7 {
 .btn-games {
     border: none !important;
 
-    background-image: url('images/games_bw.png'); 
+    background-image: url('../images/games_bw.jpg'); 
   background-size: cover; 
   background-position: center; 
     
@@ -383,7 +383,6 @@ h7 {
 	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
 
     /* background: url("images/card-back.jpg") no-repeat center left; */
-    background-color: #E7E7E7;
 
 	color: black;
 	   font: 0.875rem/0 "indivisible", sans-serif;
@@ -400,13 +399,11 @@ h7 {
   -webkit-text-stroke-color: white;
     
     
-            background-image: url('images/games_colored.png'); 
+            background-image: url('../images/games_colored.jpg'); 
   background-size: cover; 
   background-position: center; 
     
     
-	background-color: #87baf9;
-	color: #01CE87;
 	text-decoration: none;
     
 }
@@ -416,7 +413,7 @@ h7 {
     border: none !important;
 
     
-            background-image: url('images/ux_bw.png'); 
+            background-image: url('../images/ux_bw.jpg'); 
   background-size: cover; 
   background-position: center; 
     
@@ -441,7 +438,6 @@ h7 {
 	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
 
     /* background: url("images/card-back.jpg") no-repeat center left; */
-    background-color: #bebebe;
 
 	color: black;
 	   font: 0.875rem/0 "indivisible", sans-serif;
@@ -458,13 +454,12 @@ h7 {
   -webkit-text-stroke-color: black;
     
     
-            background-image: url('images/ux_colored.png'); 
+            background-image: url('../images/ux_colored.jpg'); 
   background-size: cover; 
   background-position: center; 
     
     
-	background-color: #67d08d;
-	color: #01CE87;
+
 	text-decoration: none;
     
 }
