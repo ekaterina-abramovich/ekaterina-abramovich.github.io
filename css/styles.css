@@ -325,7 +325,7 @@ h7 {
 .btn-gd {
     text-decoration: none !important;
     border: none !important;
-    background-image: url('images/gd_bw.png'); 
+    background-image: url('../images/gd_bw.jpg'); 
     background-size: cover; 
     background-position: bottom; 
     display: grid;
@@ -338,7 +338,6 @@ h7 {
     height: 100%;
 	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
     /* background: url("images/card-back.jpg") no-repeat center left; */
-    background-color: #F8F8F8;
 	   font: 0.875rem/0 "indivisible", sans-serif;
         font-weight: 900;
         font-style: normal;
@@ -350,11 +349,9 @@ h7 {
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    background-image: url('images/gd_colored.png'); 
+    background-image: url('../images/gd_colored.jpg'); 
     background-size: cover; 
     background-position: bottom; 
-	background-color: #D91A15;
-	color: #01CE87;
 }
 
 
