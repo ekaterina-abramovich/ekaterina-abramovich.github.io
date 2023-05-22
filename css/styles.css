@@ -60,8 +60,12 @@ p {
 }
 
 .header .h0 {
-	color: white;
-	font: 5.5rem/4.25rem "indivisible";
+    color: rgba(255, 255, 255, 0.1);
+    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    
+	font: 9.6rem/7.5rem "indivisible";
     font-weight: 900;
     font-style: normal;
     
@@ -70,27 +74,10 @@ p {
     z-index: 2;
 }
 
-.header .p-large-ux {
-    color: white;
-	font: 100 4.8rem/4.25rem "Arial Black";
-	letter-spacing: -0.2px;
-    
-    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6); 
-    background-size: 26.6rem;
-    background-position: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 
-h02 {
-	font: 900 4.8rem/4.25rem "Arial Black";
-    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6);
-    background-size: 19rem;
-    background-position: left;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
+
+
 
 h1-1 {
 	color: black;
@@ -118,44 +105,47 @@ project-name {
     
     
     color: black;
-	font: 900 3.3rem/4.25rem "Arial Black";
-	letter-spacing: -4px;
-    line-height: 50px;
-}
-
-
-h1 {
-	color: #333;
-	font: 700 3.3rem/4.25rem "Arial";
-	letter-spacing: -0.2px;
-    
-    
+    font: 3.3rem/3rem "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0px;
 }
 
 
 h2 {
 	color: #333;
-	font: 400 2rem/3.125rem "Arial";
-	letter-spacing: -0.2px;
+	font: 3.3rem/3rem "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0px;
 }
 
 h4 {
     text-align: center;
 	color: #333;
-	font: 700 1.375rem/1.75rem "Arial";
+
+    
+    
+	font: 1.375rem/1.75rem "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 	letter-spacing: -0.1px;
 }
 
 h6 {
 	color: #545454;
-	font: 700 1rem/1.375rem "Arial";
-	letter-spacing: -0.1px;
+	font: 1rem/1.375rem "indivisible", sans-serif;
+        font-weight: 900;
+    font-style: normal;
 }
 
 h7 {
 	color: white;
-	font: 00 1rem/1.375rem "Arial";
-	letter-spacing: -0.1px;
+	font: 1rem/1.375rem "indivisible", sans-serif;
+            font-weight: 400;
+        font-style: normal;
+
+
 }
 
 
@@ -167,7 +157,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #FF2727;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    
 	text-decoration: none;
 	transition: all 0.2s;
 }
@@ -189,8 +182,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #0074FF;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -207,8 +202,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #FF9100;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -226,8 +223,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #FF0000;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -244,8 +243,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #8200FF;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -262,8 +263,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #512B2B;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -283,8 +286,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #319244;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -303,8 +308,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #01CE87;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -332,8 +339,10 @@ h7 {
 	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
     /* background: url("images/card-back.jpg") no-repeat center left; */
     background-color: #F8F8F8;
-	font: 900 0.875rem/0 "Arial";
-	transition: all 0.2s; 
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    transition: all 0.2s; 
 }
 
 .btn-gd:hover {
@@ -380,8 +389,10 @@ h7 {
     background-color: #E7E7E7;
 
 	color: black;
-	font: 900 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
     
 }
@@ -436,8 +447,10 @@ h7 {
     background-color: #bebebe;
 
 	color: black;
-	font: 900 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
     
 }
@@ -514,8 +527,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #D91A15;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -534,8 +549,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #3C73DC;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -554,8 +571,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: #5E35AE;
 	color: #fff;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -571,8 +590,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: transparent;
 	color: #01CE87;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -592,8 +613,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: transparent;
 	color: #D91A15;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -614,8 +637,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: transparent;
 	color: #5E35AE;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -636,8 +661,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: transparent;
 	color: #3C73DC;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -661,8 +688,10 @@ h7 {
 	border-radius: 2rem;
 	background-color: transparent;
 	color: #7864F6;
-	font: 700 0.875rem/0 "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -744,8 +773,10 @@ h7 {
     border-bottom-style: solid;
     border-bottom-color: white;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-	font: 700 0.875rem/0.875rem "Arial";
-	transition: all 0.2s;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    transition: all 0.2s;
 }
 
 .navbar-custom .container {
@@ -759,8 +790,10 @@ h7 {
 }
 
 .navbar-custom .navbar-brand.logo-text {
-	font: 700 2rem/1.5rem "Arial";
-	color: #fff;;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    color: #fff;;
 	text-decoration: none;
 }
 
@@ -813,8 +846,10 @@ h7 {
 .navbar-custom .dropdown-item {
 	color: #f7f5f5;
 	opacity: 0.8;
-	font: 700 0.875rem/0.875rem "Arial";
-	text-decoration: none;
+	   font: 0.875rem/0 "indivisible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    text-decoration: none;
 }
 
 .navbar-custom .dropdown-item:hover {
@@ -881,16 +916,17 @@ background: rgb(120,100,246);
 background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);}
 
 
+/*    HEADER BLOCK     */
 .header .header-content {
-	padding-top: 8rem;
-	padding-bottom: 15rem;
+    padding-top: 13rem;
+    padding-bottom: 18rem;
 	text-align: center;
 }
 
+/*    EKATERINA ABRAMOVICH     */
 .header .text-container {
-	margin-bottom: 3rem;
-    
-    
+    margin-top: 16.5rem;
+    margin-bottom: 0rem;
 }
 
 .portfolio-1 .ux-container {
@@ -1047,11 +1083,7 @@ background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 6
 /***************************/
 /*     06. Description     */
 /***************************/
-h10 {
-  color: white;
-	font: 900 4.5rem/3.125rem "Arial";
-	letter-spacing: -0.2px;
-}
+
 
 
 /*     About section */
@@ -1333,6 +1365,43 @@ a:hover.back-to-top {
 /* Min-width width 68px */
 @media (min-width: 68px) {
     
+        /*    EKATERINA ABRAMOVICH FONT  */
+.header .h0 {
+	font: 4rem/3.2rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+
+    }
+    
+
+/*    !!!! HEADER BLOCK     */
+.header .header-content {
+    padding-top: 11rem;
+    padding-bottom: 8rem;
+	text-align: center;
+    
+}
+
+/*    EKATERINA ABRAMOVICH     */
+.header .text-container {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    position: relative;
+    text-align: center;
+
+}
+    
+    /*    IMAGE OF ME     */
+	
+	.header .image-container .img-wrapper {
+		display: inline-block;
+		width: 400px; 
+	}
+    
+    
+    
+    
             .portfolio-1 .screens {
     text-align: left;
     display: inline-block;
@@ -1434,27 +1503,51 @@ a:hover.back-to-top {
     .p-large2 {
     color: black;
     }
+
     
-    h0 {
-	color: white;
-	font: 900 4.2rem/3.25rem "Arial";
-	letter-spacing: -0.2px;
-    }
-    
-    h02 {
-    font: 900 4.2rem/3.25rem "Arial";
-	letter-spacing: -0.2px;
-        
-    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6);
-    background-size: 16rem;
-    background-position: left;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
+
 
 
 /* Min-width width 768px */
 @media (min-width: 768px) {
+    
+    
+    /*    EKATERINA ABRAMOVICH FONT  */
+.header .h0 {
+	font: 6rem/4.7rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+
+    }
+    
+
+/*    !!!! HEADER BLOCK     */
+.header .header-content {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+	text-align: center;
+    
+}
+
+/*    EKATERINA ABRAMOVICH     */
+.header .text-container {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    position: relative;
+    text-align: center;
+
+}
+    
+    /*    IMAGE OF ME     */
+	
+	.header .image-container .img-wrapper {
+		display: inline-block;
+		width: 600px; 
+	}
+    
+    
+    
     
         .portfolio-1 .screens {
     text-align: left;
@@ -1545,28 +1638,11 @@ a:hover.back-to-top {
        
     }
     
-    h0 {
-	color: white;
-	font: 900 4.8rem/4.25rem "Arial";
-	letter-spacing: -0.2px;
-    }
-    
-        h02 {
-	font: 900 4.8rem/4.25rem "Arial";
-	letter-spacing: -0.2px;
-        
-    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6);
-    background-size: 18rem;
-    background-position: left;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
 
 
-	/* Header */
-	.header .text-container {
-		margin-bottom: 4rem;
-	}
+
+
+
 
 	.header h1 {
 		font-size: 3.5rem;
@@ -1614,7 +1690,7 @@ a:hover.back-to-top {
 
 /* Min-width width 992px */
 @media (min-width: 992px) {
-    
+   /* 
     .header .p-large-ux {
     color: white;
 	font: 100 4.8rem/4.25rem "Arial Black";
@@ -1625,7 +1701,7 @@ a:hover.back-to-top {
     background-position: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
     
     
     
@@ -1719,16 +1795,8 @@ a:hover.back-to-top {
     letter-spacing: 0px;
     }
     
-    	    h0 {
-	color: white;
-	font: 900 4.8rem/4.25rem "Arial";
-	letter-spacing: -0.2px;
-}
-    
-        	    h02 {
-	font: 900 4.8rem/4.25rem "Arial";
-	letter-spacing: -0.2px;
-}
+
+ 
     
     .portfolio-1 .card {
         max-width: 46%;
@@ -1808,17 +1876,32 @@ a:hover.back-to-top {
 	/* end of navigation */
 
 
+    
+/*    EKATERINA ABRAMOVICH FONT  */
+.header .h0 {
+	font: 8rem/6.3rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+    }
+    
 
-	/* Header */
-	.header .header-content {
-		text-align: left;
+/*    !!!! HEADER BLOCK     */
+.header .header-content {
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+	text-align: center;
+}
 
-	}
+/*    EKATERINA ABRAMOVICH     */
+.header .text-container {
+            position: relative;
 
-	.header .text-container {
-		margin-top: 4rem;
-		margin-bottom: 0em;
-	}
+    
+    margin-top: 15rem;
+    margin-bottom: 0rem;
+}
+    
+    
 
 	.header .image-container {
 		position: absolute;
@@ -1828,9 +1911,7 @@ a:hover.back-to-top {
 	
 	.header .image-container .img-wrapper {
 		display: block;
-		width: 450px;
-        
-        
+		width: 450px;    
 	}
 
 	.header-frame {
@@ -1892,17 +1973,24 @@ a:hover.back-to-top {
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
     
-    .header .p-large-ux {
-    color: white;
-	font: 100 4.8rem/4.25rem "Arial Black";
-	letter-spacing: -0.2px;
-    
-    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6); 
-    background-size: 26.6rem;
-    background-position: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /*    HEADER BLOCK     */
+.header .header-content {
+    padding-top: 13rem;
+    padding-bottom: 18rem;
+	text-align: center;
 }
+
+/*    EKATERINA ABRAMOVICH     */
+.header .text-container {
+        position: relative;
+
+    margin-top: 16.5rem;
+    margin-bottom: 0rem;
+}
+    
+    
+    
+
     
     
     
@@ -2007,11 +2095,7 @@ a:hover.back-to-top {
     color: black;
     }
     
-    	    h0 {
-	color: white;
-	font: 900 4.8rem/4.25rem "Arial";
-	letter-spacing: -0.2px;
-}
+
     
     	
 
@@ -2024,14 +2108,20 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 11rem;
-		padding-bottom: 20rem;
+	
 	}
 
 	.header .text-container {
-		margin-top: 5.5rem;
-		margin-right: 0.5rem;
+	
+        
+        
 	}
+    
+    .header .h0 {
+	font: 9.6rem/7.5rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+    }
 
 	.header .image-container {
 		margin-top: 1rem;
