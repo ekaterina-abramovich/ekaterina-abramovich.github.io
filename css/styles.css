@@ -11,6 +11,8 @@ html {
 }
 
 
+
+
 .wave {
     
     z-index: 2;
@@ -35,7 +37,7 @@ html {
 
 
 .games-description {
-            padding-top: 2rem;
+    padding-top: 2rem;
 }
 
 hr.solid {
@@ -173,6 +175,9 @@ h7 {
 	text-decoration: none;
 }
 
+
+
+
 /* games page buttons */
 
 .btn-foxy-adventures {
@@ -195,6 +200,30 @@ h7 {
 	text-decoration: none;
 }
 
+/* link to GitHub button */
+
+.btn-code-foxy-adv {
+    border: 0.125rem solid #0074FF;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: #0074FF url("../images/code.svg") no-repeat center 50%;
+    background-size: 1.5rem;
+}
+
+.btn-code-foxy-adv:hover {
+    border: 0.125rem solid #0074FF;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: transparent url("../images/code_foxy_adv.svg") no-repeat center 50%;
+    background-size: 1.5rem;
+}
+
+
+
+
+
 .btn-become {
     display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
@@ -214,6 +243,27 @@ h7 {
 	color: #FF9100;
 	text-decoration: none;
 }
+
+/* link to GitHub button */
+
+.btn-code-become {
+    border: 0.125rem solid #FF9100;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: #FF9100 url("../images/code.svg") no-repeat center 50%;
+    background-size: 1.5rem;
+}
+
+.btn-code-become:hover {
+    border: 0.125rem solid #FF9100;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: transparent url("../images/code_become.svg") no-repeat center 50%;
+    background-size: 1.5rem;
+}
+
 
 
 .btn-feed-your-gran {
@@ -236,6 +286,30 @@ h7 {
 	text-decoration: none;
 }
 
+/* link to GitHub button */
+
+.btn-code-gran {
+    border: 0.125rem solid #FF0000;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: #FF0000 url("../images/code.svg") no-repeat center 50%;
+    background-size: 1.5rem;
+}
+
+.btn-code-gran:hover {
+    border: 0.125rem solid #FF0000;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: transparent url("../images/code_gran.svg") no-repeat center 50%;
+    background-size: 1.5rem;
+}
+
+
+
+
+
 .btn-upside-down {
     display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
@@ -243,9 +317,9 @@ h7 {
 	border-radius: 2rem;
 	background-color: #8200FF;
 	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     text-decoration: none;
 	transition: all 0.2s;
 }
@@ -256,24 +330,25 @@ h7 {
 	text-decoration: none;
 }
 
-.btn-dark-planet {
-    display: inline-block;
-	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #512B2B;
-	border-radius: 2rem;
-	background-color: #512B2B;
-	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
+
+/* link to GitHub button */
+
+.btn-code-upside {
+    border: 0.125rem solid #8200FF;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: #8200FF url("../images/code.svg") no-repeat center 50%;
+    background-size: 1.5rem;
 }
 
-.btn-dark-planet:hover {
-	background-color: transparent;
-	color: #512B2B;
-	text-decoration: none;
+.btn-code-upside:hover {
+    border: 0.125rem solid #8200FF;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: transparent url("../images/code_upside.svg") no-repeat center 50%;
+    background-size: 1.5rem;
 }
 
 
