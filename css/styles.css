@@ -1,0 +1,1528 @@
+body,
+
+html {
+    background: white;
+    width: 100%;
+	height: 100%;
+}
+
+
+
+
+/* about section alignment settings */
+.about {
+    position: relative;
+    z-index: 998;
+	text-align: center;
+    background-color: white;
+    transition: all 0.2s;
+    padding-bottom: 8%;
+	padding-top: 8%;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+}
+
+/* body text in ABOUT section and others */
+.body-text {
+    color: black;
+    font: 1rem/1.5rem "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* body text in CONTACT section */
+.body-text-footer {
+    color: white;
+    font: 1rem/1.5rem "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+/* title page header */
+.name {
+    width: 4rem;
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+	font: 9.6rem/7.5rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+	letter-spacing: -4px;
+    position: relative;
+    z-index: 2;
+}
+
+.name:hover {
+    color: white;
+}
+
+/* name title EKATERINA ABRAMOVICH alignment settings */
+.header .text-container {
+    width: 70rem;
+    height: 21rem;
+    margin-top: 14rem;
+    margin-bottom: 0rem;
+    position: relative;
+    text-align: left;
+}
+
+
+/* title of footer section */
+h1-footer {
+	color: white;
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0px; 
+}
+
+/* title of project card */
+h2 {
+    text-align: center;
+	color: #333;
+	font: 1.375rem/1.75rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	letter-spacing: -0.1px;
+}
+
+/* VIEW PORTFOLIO button */
+.btn-view-portfolio {
+	display: inline-block;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 3rem;
+	border: 0.125rem solid white;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #fff;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-view-portfolio:hover {
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+
+/* image of me alignment */
+.header .image-container {
+    z-index: 1;
+    margin-top: 1rem;
+    position: absolute;
+    margin-left: 1.5rem;
+}
+
+/* about top wave */
+.about-top-wave {
+    background-color: black;
+    height: 5rem;
+    width: 100%;
+}
+
+/* about bottom wave */
+.about-bottom-wave {
+    stroke: black;
+    stroke-dasharray: 2070,10000,20,200;
+    stroke-width: 0.7rem;
+    background-color: transparent;
+    height: 11rem;
+    width: 100%;
+}
+
+.cls-1 {
+    fill: white;
+    transition: all 0.2s;
+}
+
+.cls-3 {
+    fill: white;
+    transition: all 0.2s;
+}
+
+/*******************************/
+/*       skills buttons        */
+/*******************************/
+
+
+
+/* general styles for all buttons */
+.btn-skills {
+	display: inline-block;
+	padding: 0.6rem 0rem 0.6rem 2rem;
+    margin-top: 1rem;
+    margin-right: 0.7rem;
+	border-radius: 200rem;
+    background: rgba(0,0,0,0.05);
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-skills:hover {
+    background: rgba(0,0,0,0.1);
+	text-decoration: none;
+}
+
+/* UX design */
+.btn-skills .ux-design {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/ux-design.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .ux-design:disabled {
+    color: black;
+}
+
+
+
+
+/* graphic design */
+.btn-skills .ui-design {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/ui-design.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .ui-design:disabled {
+    color: black;
+}
+
+/* user research */
+.btn-skills .research {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/research.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .research:disabled {
+    color: black;
+}
+
+/* game design */
+.btn-skills .game {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/game-design.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .game:disabled {
+    color: black;
+}
+
+/* animation */
+.btn-skills .animation {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/animation.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .animation:disabled {
+    color: black;
+}
+
+/* 3d modeling */
+.btn-skills .modeling {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/3d.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .modeling:disabled {
+    color: black;
+}
+
+
+
+/* web design */
+.btn-skills .web {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/web.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .web:disabled {
+    color: black;
+}
+
+
+
+/* CHANGE link to GitHub button */
+.btn-code-foxy-adv {
+    border: 0.125rem solid #0074FF;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: #0074FF url("../images/code.svg") no-repeat center 50%;
+    background-size: 1.5rem;
+}
+
+.btn-code-foxy-adv:hover {
+    border: 0.125rem solid #0074FF;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-left: 8px;
+    background: transparent url("../images/code_foxy_adv.svg") no-repeat center 50%;
+    background-size: 1.5rem;
+}
+
+/* bordered button in the header RESUME */
+.btn-outline {
+	display: inline-block;
+	padding: 0.875rem 1.5rem 0.875rem 1.5rem;
+	border: 0.125rem solid white;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: white;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+	transition: all 0.2s;
+}
+
+.btn-outline:hover {
+	background-color: white;
+    border: 0.125rem solid white;
+	color: black;
+	text-decoration: none;
+}
+
+/*******************************/
+/* 3 purple dots while loading */
+/*******************************/
+
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #7864F6;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0); }
+	40% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+/**************************/
+/*       header menu      */
+/**************************/
+.navbar-custom {
+    z-index: 999;
+	background-color: transparent;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.2s;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-custom .container {
+	max-width: 100%;
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+    fill: aqua;
+    width: 100px;
+	height: auto;
+}
+
+.navbar-custom .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+/* sections + dropdown menu humburger */
+.navbar-custom .nav-item .nav-link {
+	padding: 1.125rem 1.5rem 1.125rem 0rem;
+    text-align: center;
+    width: auto;
+    color: #f7f5f5;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.navbar-custom .nav-item .nav-link:hover {
+  	color: #7565EE;
+}
+
+,
+.navbar-custom .nav-item .nav-link:active {
+	color: white;
+}
+
+.navbar-custom .dropdown:hover > .dropdown-menu {
+	display: block; /* this makes the dropdown menu stay open while hovering it */
+	min-width: auto;
+	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-custom .dropdown-toggle:focus { /* removes dropdown outline on focus */
+	outline: 0;
+}
+
+.navbar-custom .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #7864F6;
+}
+
+.navbar-custom .dropdown-item {
+	color: #f7f5f5;
+	opacity: 0.8;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.navbar-custom .dropdown-item:hover {
+	background-color: #7864F6;
+	color: #fff;
+	opacity: 1;
+}
+
+.navbar-custom .dropdown-items-divide-hr {
+	width: 100%;
+	height: 1px;
+	margin: 0.75rem auto 0.725rem auto;
+	border: none;
+	background-color: #c4d8dc;
+	opacity: 0.2;
+}
+
+.navbar-custom .nav-item .btn-outline-sm {
+	margin-top: 0.25rem;
+	margin-bottom: 1.375rem;
+	margin-left: 0.5rem;
+	border: 0.125rem solid #fff;
+	color: #fff;
+}
+
+.navbar-custom .nav-item .btn-outline-sm:hover {
+	background-color: #FFC700;
+	color: black;
+	border: 0.125rem solid black;
+}
+
+.navbar-custom .navbar-toggler {
+	padding: 0;
+	border: none;
+	color: white;
+	font-size: 2rem;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+	display: inline-block;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+	display: inline-block;
+	margin-right: 0.125rem;
+}
+/* end of menu */
+
+
+/*********************/
+/*       header      */
+/*********************/
+
+/* whole header background settings */
+.header {
+    background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);
+}
+    
+    /*
+    background-size: 160% 160%; 
+    animation: gradient 7s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 100% 100%;
+	}
+	50% {
+		background-position: 0% 48%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 100% 100%;
+	}
+	50% {
+		background-position: 0% 48%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+} */
+
+
+
+
+    
+
+
+
+/* portfolio graphic design section */
+.portfolio-upper {
+	transition: all 0.2s;
+    background: #cbcbcb;
+    background-image: url('images/gd_bw.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    width: 100%;
+    height: 33rem;
+    margin-top: -10rem;
+    padding-top: 14rem;
+    padding-bottom: 10rem;
+}
+
+
+.portfolio-upper:hover {
+    background: #f8c582;
+    background-image: url('images/gd_colored.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+}
+
+
+
+/* portfolio middle section */
+.portfolio-middle {
+    text-align: left;
+    position: relative;
+	transition: all 0.2s;
+    background: #dbdbdb;
+    background-image: url('images/ux_bw.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    width: 100%;
+    height: 30rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+
+.portfolio-middle:hover {
+    background: #b8a0e2;
+    background-image: url('images/ux_colored.png'); 
+    background-repeat: no-repeat;
+/* background-size: 45rem auto; */
+    background-position: 75% 50%;
+}
+
+
+/* portfolio bottom section */
+.portfolio-bottom {
+    text-align: left;
+	transition: all 0.2s;
+    background: #e7e7e7;
+    background-image: url('images/games_bw.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    width: 100%;
+    height: 33rem;
+    
+    margin-bottom: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 14rem;    
+}
+
+
+.portfolio-bottom:hover {
+    background: #87baf9;
+    background-image: url('images/games_colored.png'); 
+    background-repeat: no-repeat;
+/* background-size: 45rem auto; */
+    background-position: 75% 50%;
+}
+
+
+
+/* VIEW PROJECTS button */
+.btn-line-view-projects {
+	display: inline-block;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 2rem;
+	border: 0.125rem solid black;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: black;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	transition: all 0.2s;
+}
+
+.btn-line-view-projects:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+/* footer section alignment settings */
+.footer {
+    position: relative;
+    z-index: 998;
+    background-color: black;
+
+}
+
+.projects {
+    width: 100%;
+    position: relative;
+    z-index: 998;
+    background-color: white;
+	text-align: left;
+    padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+/* project card alignment settings */
+.card {
+    transition: all 0.2s;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;
+}
+
+.card:hover {
+    background: #E9E9E9;
+}
+
+/* left project card alignment settings */
+.card-left {
+    transition: all 0.2s;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;
+}
+
+.card-left:hover {
+    background: #E9E9E9;
+}
+
+/* project card content alignment settings */
+.card-body {
+    padding: 1.2rem;
+}
+
+
+/* project card image */
+.card-image {
+    transition: all 0.2s;
+    width: 100%;
+    height: 25rem;
+    border-width: 3rem;
+    border: 0.2rem solid black;
+    border-radius: 0.6rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    box-shadow: 0px 0px 10px #B7B7B7;
+
+}
+
+.card-image:hover {
+    background-size: 108% auto;
+}
+
+/* project card title */
+.card-title {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* project card description */
+.card-description {
+    padding-bottom: 0.5rem;
+}
+
+/* VIEW CASE button */
+.btn-card {
+    display: inline-block;
+    text-align: center;
+    width: 11rem;
+	padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+	border: 0.125rem solid black;
+	border-radius: 2rem;
+	background-color: white;
+	color: black;
+    font: 0.775rem/0 "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+	transition: all 0.2s;
+    box-shadow: 0px 0px 10px #B7B7B7;
+}
+
+.btn-card:hover {
+	border: 0.125rem solid black;
+	background-color: black;
+	color: white;
+    box-shadow: 0px 0px 0px #B7B7B7;
+    text-decoration: none;
+}
+
+    
+/* footer black wave */	
+.footer-frame {
+    height: 5rem;
+    width: 100%;
+}
+
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: left;
+}
+
+/* social icons alignment settings */
+.footer .fa-stack {
+	margin-right: 1rem;
+	font-size: 1.3rem;
+}
+
+/* social icons inside */
+.footer .fa-stack .fa-stack-1x {
+    color: black;
+	transition: all 0.2s ease;
+}
+
+/* social icons circles */
+.footer .fa-stack .fa-stack-2x {
+	color: #7864F6;
+	transition: all 0.2s ease;
+}
+
+.footer .fa-stack:hover .fa-stack-1x {
+	color: black;
+}
+
+.footer .fa-stack:hover .fa-stack-2x {
+    color: white;
+}
+
+/* back-to-top button */
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 0.75rem;
+	bottom: 0.75rem;
+	display: none;
+	width: 2.625rem;
+	height: 2.625rem;
+	border-radius: 10.875rem;
+	background: #7864F6 url("../images/up-arrow-white.svg") no-repeat center 47%;
+	background-size: 1.125rem 1.125rem;
+	text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+    background: #F2F2F2 url("../images/up-arrow-black.svg") no-repeat center 47%;
+    background-size: 1.125rem 1.125rem;
+}
+
+/* media queries (screen sizes) */
+
+/********************************/
+/*     min screen width 68px    */
+/********************************/
+
+@media (min-width: 68px) {
+    
+/* portfolio upper section */
+.portfolio-upper {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-upper:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+/* portfolio middle section */
+.portfolio-middle {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-middle:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+/* portfolio bottom section */
+.portfolio-bottom {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-bottom:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+.resume-btn {
+    display: none;
+}
+    
+/* title page header */
+/*
+.header .h0 {
+	font: 3rem/3.2rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+} */
+    
+       
+/* title page header */
+.name {
+	font: 3.8rem/3rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+}
+     
+/* whole header alignment settings */
+.header .header-content {
+    padding-top: 11rem;
+    padding-bottom: 0rem;
+	text-align: center;  
+}
+
+/* name title EKATERINA ABRAMOVICH alignment settings */
+.header .text-container {
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+}
+    
+/* image of me alignment */
+.header .image-container {
+    position: relative;
+    margin-top: -30rem;
+}
+
+/* image of me */
+.header .img-wrapper {
+    width: 300px; 
+    display: inline-block;
+}
+    
+/* VIEW PROJECTS button */
+/* .btn-view-projects {
+	display: inline-block;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 9rem;
+	border: 0.125rem solid white;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #fff;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	text-decoration: none;
+	transition: all 0.2s;
+} */
+    
+/* VIEW PROJECTS button */
+.btn-view-portfolio {
+	display: none;
+}
+    
+/* about top wave */
+.about-top-wave {
+    height: 2rem;
+}
+    
+/* footer black wave */	
+.footer-frame {
+    height: 2rem;
+}
+    
+/* title of page section */
+h1 {
+    font: 1.5rem/2rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
+
+
+/* about bottom wave */
+.about-bottom-wave {
+    height: 3rem;
+    stroke-width: 1.5rem;
+    margin-top: 0rem; /* to hide white line between about section and wave */
+
+}
+
+
+
+/* project card alignment settings */
+.card {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+    
+/* left project card alignment settings */
+.card-left {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+    
+/* project card image */
+.card-image {
+    width: 100%;
+    height: 27rem;
+}
+
+/* footer section alignment settings */
+.footer {
+	text-align: center;
+    padding-top: 4rem;
+	padding-bottom: 8rem;
+}
+    
+/* title of footer section */
+h1-footer {
+    font: 1.5rem/2rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+    
+/* body text in CONTACT section */
+.body-text-footer {
+    text-align: center;
+}
+
+ 
+    
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: center;
+}
+    
+}
+
+
+/********************************/
+/*    min screen width 768px    */
+/********************************/
+    
+@media (min-width: 768px) {
+    
+.resume-btn {
+    display: none;
+}
+    
+/* title page header */
+/*.header .h0 {
+	font: 6rem/4.7rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+} */
+    
+/* title page header */
+.name {
+	font: 5.95rem/5rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+}
+    
+/* whole header alignment settings */
+.header .header-content {
+    text-align: center;  
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+/* name title EKATERINA ABRAMOVICH alignment settings */
+.header .text-container {
+    width: 100%;
+    margin-top: 25rem;
+    text-align: center;
+}
+    
+/* image of me alignment */
+.header .image-container {
+    position: relative;
+    margin-top: -38rem;
+}
+
+/* image of me */
+.header .img-wrapper {
+    width: 460px; 
+}
+    
+/* VIEW PROJECTS button */
+/*
+.btn-view-projects {
+	display: inline-block;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 9rem;
+	border: 0.125rem solid white;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #fff;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	text-decoration: none;
+	transition: all 0.2s;
+} */
+    
+/* VIEW PROJECTS button */
+.btn-view-portfolio {
+	display: none;
+}
+    
+/* about top wave */
+.about-top-wave {
+    height: 3rem;
+}
+    
+/* footer black wave */	
+.footer-frame {
+    height: 3rem;
+}
+    
+/* title of page section */
+h1 {
+    font: 2rem/2.4rem "indivisible", sans-serif;
+    font-weight: 900;
+        text-align: center;
+
+    }
+
+.about {
+    text-align: center;
+}
+    
+ 
+/* about bottom wave */
+.about-bottom-wave {
+    height: 6rem;
+    stroke-width: 1.2rem;
+    margin-top: -0.2rem; /* to hide white line between about section and wave */
+
+}
+
+    
+/* project card alignment settings */
+.card {
+    margin-bottom: 2rem;
+    width: 47%;
+    height: auto;
+}
+    
+/* left project card alignment settings */
+.card-left {
+    margin-bottom: 2rem;
+    width: 47%;
+    height: auto;
+}
+    
+/* project card image */
+.card-image {
+    width: 100%;
+    height: 17.8rem;
+}
+    
+/* footer section alignment settings */
+.footer {
+	text-align: center;
+    padding-top: 6rem;
+	padding-bottom: 10rem;
+}
+    
+/* title of footer section */
+h1-footer {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+    
+/* body text in CONTACT section */
+.body-text-footer {
+    text-align: center;
+}
+    
+/* portfolio upper section */
+.portfolio-upper {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-upper:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+    
+/* portfolio middle section */
+.portfolio-middle {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-middle:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+/* portfolio bottom section */
+.portfolio-bottom {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-bottom:hover {
+    text-align: center;
+    background-position: center;
+}    
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: center;
+}
+    
+}
+
+/********************************/
+/*    min screen width 992px    */
+/********************************/
+
+@media (min-width: 992px) {
+    
+/* portfolio upper section */
+.portfolio-upper {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+.portfolio-upper:hover {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+/* portfolio middle section */
+.portfolio-middle {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+.portfolio-middle:hover {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+/* portfolio bottom section */
+.portfolio-bottom {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+.portfolio-bottom:hover {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+.resume-btn {
+    display: inline-block;
+}
+    
+/* title page header */
+/* .header .h0 {
+	font: 8rem/6.3rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+} */
+
+/* title page header */
+.name {
+	font: 8rem/6.3rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+}
+    
+/* whole header alignment settings */
+.header .header-content {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+/* name title EKATERINA ABRAMOVICH alignment settings */
+.header .text-container {
+    width: 70rem;
+    margin-top: 13rem;
+    text-align: left;
+}
+   
+/* image of me alignment */
+.header .image-container {
+    position: absolute;
+    margin-top: 3rem;
+}
+    
+/* image of me */
+.header .image-container .img-wrapper {
+    width: 450px;    
+}
+    
+/* VIEW PROJECTS button */
+.btn-view-portfolio {
+	display: inline-block;
+}
+    
+/* about top wave */
+.about-top-wave {
+    height: 4rem;
+}
+    
+/* footer black wave */	
+.footer-frame {
+    height: 4rem;
+}
+    
+/* title of page section */
+h1 {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+        text-align: left;
+
+
+    
+    }
+
+/* about section alignment settings */    
+.about {
+    text-align: left;
+}
+
+    
+/* about bottom wave */
+.about-bottom-wave {
+    height: 8rem;
+    stroke-width: 1rem;
+    margin-top: -0.2rem; /* to hide white line between about section and wave */
+}
+    
+
+/* project card alignment settings */
+.card {
+    margin-bottom: 2rem;
+    width: 48%;
+    height: auto;
+}
+
+/* left project card alignment settings */
+.card-left {
+    margin-bottom: 2rem;
+    width: 48%;
+    height: auto;
+}
+    
+/* project card image */
+.card-image {
+    width: 100%;
+    height: 25.4rem;
+}
+    
+/* footer section alignment settings */
+.footer {
+	text-align: left;
+    padding-top: 8rem;
+	padding-bottom: 12rem;
+}
+    
+/* title of footer section */
+h1-footer {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: left;
+}
+    
+/* body text in CONTACT section */
+.body-text-footer {
+    text-align: left;
+}
+
+    
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: left;
+}
+    
+}
+
+/********************************/
+/*    min screen width 1200px   */
+/********************************/
+
+@media (min-width: 1200px) {
+    
+.resume-btn {
+    display: inline-block;
+}
+    
+/* whole header alignment settings */
+.header .header-content {
+    text-align: left;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+}
+
+/* name title EKATERINA ABRAMOVICH alignment settings */
+.header .text-container {
+    margin-top: 14rem;
+    text-align: left;
+}
+    
+/* title page header */
+/* .header .h0 {
+	font: 9.6rem/7.5rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+} */
+    
+/* title page header */
+.name {
+	font: 9.6rem/7.5rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+}
+
+/* image of me alignment */
+.header .image-container {
+    position: absolute;
+    margin-top: 0rem;
+}
+
+/* image of me */
+.header .image-container .img-wrapper {
+    width: 560px; 
+}
+    
+/* VIEW PROJECTS button */
+.btn-view-portfolio {
+	display: inline-block;
+}
+    
+/* about top wave */
+.about-top-wave {
+    height: 5rem;
+}
+    
+/* footer black wave */	
+.footer-frame {
+    height: 5rem;
+}
+    
+/* title of page section */
+h1 {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+        text-align: left;
+
+
+}
+
+/* about section alignment settings */    
+.about {
+    text-align: left;
+
+}
+ 
+/* about bottom wave */
+.about-bottom-wave {
+    height: 9rem;
+    stroke-width: 0.7rem;
+    margin-top: -0.2rem; /* to hide white line between about section and wave */
+
+}
+    
+
+    
+/* project card alignment settings */
+.card {
+    margin-bottom: 2rem;
+    width: 48%;
+    height: auto;
+}
+    
+/* left project card alignment settings */
+.card-left {
+    margin-bottom: 2rem;
+    width: 48%;
+    height: auto;
+}
+    
+/* project card image */
+.card-image {
+    width: 100%;
+    height: 30.8rem;
+}
+  
+/* footer section alignment settings */
+.footer {
+	text-align: left;
+    padding-top: 8rem;
+	padding-bottom: 12rem;
+}
+    
+/* title of footer section */
+h1-footer {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: left;
+}
+    
+/* body text in CONTACT section */
+.body-text-footer {
+    text-align: left;
+}
+
+
+
+    
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: left;
+}
+    
+    
+
+    
+}
