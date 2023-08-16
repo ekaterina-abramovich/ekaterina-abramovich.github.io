@@ -530,9 +530,9 @@ h2 {
 /* whole header background settings */
 .header {
     background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);
-}
+
     
-    /*
+
     background-size: 160% 160%; 
     animation: gradient 7s ease infinite;
 }
@@ -560,7 +560,7 @@ h2 {
 	100% {
 		background-position: 100% 100%;
 	}
-} */
+}
 
 
 
