@@ -1,207 +1,285 @@
 body,
+
 html {
     background: white;
     width: 100%;
 	height: 100%;
 }
 
+
+
+
+/* about section alignment settings */
+.about {
+    position: relative;
+    z-index: 998;
+	text-align: center;
+    background-color: white;
+    transition: all 0.2s;
+    padding-bottom: 8%;
+	padding-top: 8%;
+}
+
 .content {
-  display: none;
-  overflow: hidden;
+    display: none;
+    overflow: hidden;
 }
 
-
-
-
-.wave {
-    
-    z-index: 2;
-    position: absolute;
-    
-    margin-top: -2rem;
-
-    background-image: url('images/wave.svg'); 
-    background-repeat: no-repeat;
-}
-
-
-    .p-large2 {
+/* body text in ABOUT section and others */
+.body-text {
     color: black;
-
     font: 1rem/1.5rem "indivisible", sans-serif;
     font-weight: 400;
     font-style: normal;
-        
-    padding-top: 5rem;
-    }
-
-
-.games-description {
-    padding-top: 2rem;
 }
 
-hr.solid {
-  border-top: 3px solid #7864F6;
+/* body text in CONTACT section */
+.body-text-footer {
+    color: white;
+    font: 1rem/1.5rem "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
-
-hr.dotted {
-  border-top: 2px dotted #bbb;
-}
-
-
-p {
- margin-top: -15px;
-
-}
-
-.p2 {
-	color: black;
-     margin-top: 50px;
-
-}
-
-.header .h0 {
+/* title page header */
+.name {
+    width: 4rem;
     color: rgba(255, 255, 255, 0.1);
-    
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    
 	font: 9.6rem/7.5rem "indivisible";
     font-weight: 900;
     font-style: normal;
-    
-	letter-spacing: -0.2px;
+	letter-spacing: -4px;
     position: relative;
     z-index: 2;
 }
 
+.name:hover {
+    color: white;
+}
 
-
-
-
-
-h1-1 {
-	color: black;
-    
-    font: 3.3rem/4.25rem "indivisible", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    letter-spacing: 0px;
-
-    
-    
+/* name title EKATERINA ABRAMOVICH alignment settings */
+.header .text-container {
+    width: 70rem;
+    height: 21rem;
+    margin-top: 14rem;
+    margin-bottom: 0rem;
+    position: relative;
+    text-align: left;
 }
 
 
-project-name {
-    
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    z-index: 2;
-    padding-left: 16px;
-    
-    padding-top: 17rem;
-
-    
-    
-    color: black;
-    font: 3.3rem/3rem "indivisible", sans-serif;
+/* title of footer section */
+h1-footer {
+	color: white;
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
     font-weight: 900;
     font-style: normal;
-    letter-spacing: 0px;
+    letter-spacing: 0px; 
 }
 
-
+/* title of project card */
 h2 {
-	color: #333;
-	font: 3.3rem/3rem "indivisible", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    letter-spacing: 0px;
-}
-
-h4 {
     text-align: center;
 	color: #333;
-
-    
-    
 	font: 1.375rem/1.75rem "indivisible", sans-serif;
-    font-weight: 900;
+    font-weight: 600;
     font-style: normal;
 	letter-spacing: -0.1px;
 }
 
-h6 {
-	color: #545454;
-	font: 1rem/1.375rem "indivisible", sans-serif;
-        font-weight: 900;
-    font-style: normal;
-}
-
-h7 {
-	color: white;
-	font: 1rem/1.375rem "indivisible", sans-serif;
-            font-weight: 400;
-        font-style: normal;
-
-
-}
-
-
-
-.btn-solid-red {
+/* VIEW PORTFOLIO button */
+.btn-view-portfolio {
 	display: inline-block;
-	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #FF2727;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 3rem;
+	border: 0.125rem solid white;
 	border-radius: 2rem;
-	background-color: #FF2727;
+	background-color: transparent;
 	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
-
-
-.btn-solid-green:hover {
-	background-color: transparent;
-	color: #319244;
+.btn-view-portfolio:hover {
+	background-color: white;
+	color: black;
 	text-decoration: none;
 }
 
+/* image of me alignment */
+.header .image-container {
+    z-index: 1;
+    margin-top: 1rem;
+    position: absolute;
+    margin-left: 1.5rem;
+}
+
+/* about top wave */
+.about-top-wave {
+    background-color: black;
+    height: 5rem;
+    width: 100%;
+}
+
+/* about bottom wave */
+.about-bottom-wave {
+    stroke: black;
+    stroke-dasharray: 2070,10000,20,200;
+    stroke-width: 0.7rem;
+    background-color: transparent;
+    height: 11rem;
+    width: 100%;
+}
+
+.cls-1 {
+    fill: white;
+    transition: all 0.2s;
+}
+
+.cls-3 {
+    fill: white;
+    transition: all 0.2s;
+}
+
+/*******************************/
+/*       skills buttons        */
+/*******************************/
 
 
 
-/* games page buttons */
-
-.btn-foxy-adventures {
-    display: inline-block;
-	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #0074FF;
-	border-radius: 2rem;
-	background-color: #0074FF;
-	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
+/* general styles for all buttons */
+.btn-skills {
+	display: inline-block;
+	padding: 0.6rem 0rem 0.6rem 2rem;
+    margin-top: 1rem;
+    margin-right: 0.7rem;
+	border-radius: 200rem;
+    background: rgba(0,0,0,0.05);
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	text-decoration: none;
 	transition: all 0.2s;
 }
 
-.btn-foxy-adventures:hover {
-	background-color: transparent;
-	color: #0074FF;
+.btn-skills:hover {
+    background: rgba(0,0,0,0.1);
 	text-decoration: none;
 }
 
-/* link to GitHub button */
+/* UX design */
+.btn-skills .ux-design {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/ux-design.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
 
+.btn-skills .ux-design:disabled {
+    color: black;
+}
+
+
+
+
+/* graphic design */
+.btn-skills .ui-design {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/ui-design.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .ui-design:disabled {
+    color: black;
+}
+
+/* user research */
+.btn-skills .research {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/research.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .research:disabled {
+    color: black;
+}
+
+/* game design */
+.btn-skills .game {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/game-design.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .game:disabled {
+    color: black;
+}
+
+/* animation */
+.btn-skills .animation {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/animation.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .animation:disabled {
+    color: black;
+}
+
+/* 3d modeling */
+.btn-skills .modeling {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/3d.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .modeling:disabled {
+    color: black;
+}
+
+
+
+/* web design */
+.btn-skills .web {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/web.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .web:disabled {
+    color: black;
+}
+
+
+
+/* CHANGE link to GitHub button */
 .btn-code-foxy-adv {
     border: 0.125rem solid #0074FF;
     border-radius: 2rem;
@@ -220,559 +298,32 @@ h7 {
     background-size: 1.5rem;
 }
 
-
-
-
-
-.btn-become {
-    display: inline-block;
-	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #FF9100;
-	border-radius: 2rem;
-	background-color: #FF9100;
-	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-become:hover {
-	background-color: transparent;
-	color: #FF9100;
-	text-decoration: none;
-}
-
-/* link to GitHub button */
-
-.btn-code-become {
-    border: 0.125rem solid #FF9100;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    margin-left: 8px;
-    background: #FF9100 url("../images/code.svg") no-repeat center 50%;
-    background-size: 1.5rem;
-}
-
-.btn-code-become:hover {
-    border: 0.125rem solid #FF9100;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    margin-left: 8px;
-    background: transparent url("../images/code_become.svg") no-repeat center 50%;
-    background-size: 1.5rem;
-}
-
-
-
-.btn-feed-your-gran {
-    display: inline-block;
-	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #FF0000;
-	border-radius: 2rem;
-	background-color: #FF0000;
-	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-feed-your-gran:hover {
-	background-color: transparent;
-	color: #FF0000;
-	text-decoration: none;
-}
-
-/* link to GitHub button */
-
-.btn-code-gran {
-    border: 0.125rem solid #FF0000;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    margin-left: 8px;
-    background: #FF0000 url("../images/code.svg") no-repeat center 50%;
-    background-size: 1.5rem;
-}
-
-.btn-code-gran:hover {
-    border: 0.125rem solid #FF0000;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    margin-left: 8px;
-    background: transparent url("../images/code_gran.svg") no-repeat center 50%;
-    background-size: 1.5rem;
-}
-
-
-
-
-
-.btn-upside-down {
-    display: inline-block;
-	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #8200FF;
-	border-radius: 2rem;
-	background-color: #8200FF;
-	color: #fff;
-    font: 0.875rem/0 "indivisible", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-upside-down:hover {
-	background-color: transparent;
-	color: #8200FF;
-	text-decoration: none;
-}
-
-
-/* link to GitHub button */
-
-.btn-code-upside {
-    border: 0.125rem solid #8200FF;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    margin-left: 8px;
-    background: #8200FF url("../images/code.svg") no-repeat center 50%;
-    background-size: 1.5rem;
-}
-
-.btn-code-upside:hover {
-    border: 0.125rem solid #8200FF;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    margin-left: 8px;
-    background: transparent url("../images/code_upside.svg") no-repeat center 50%;
-    background-size: 1.5rem;
-}
-
-
-
-
-.btn-solid-green {
-	display: inline-block;
-	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #319244;
-	border-radius: 2rem;
-	background-color: #319244;
-	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-
-
-.btn-solid-red:hover {
-	background-color: transparent;
-	color: #FF2727;
-	text-decoration: none;
-}
-
-.btn-collapsible {
-	display: inline-block;
-	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #01CE87;
-	border-radius: 2rem;
-	background-color: #01CE87;
-	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-collapsible:hover {
-	background-color: transparent;
-	color: #01CE87;
-	text-decoration: none;
-}
-
-
-.btn-gd {
-    text-decoration: none !important;
-    border: none !important;
-    background-image: url('../images/gd_bw.jpg'); 
-    background-size: cover; 
-    background-position: bottom; 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
-    padding-left: 2rem;
-    text-align: left;    
-    width: 100%;
-    height: 100%;
-	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
-    /* background: url("images/card-back.jpg") no-repeat center left; */
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    transition: all 0.2s; 
-}
-
-.btn-gd:hover {
-    text-decoration: none !important;
-    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    background-image: url('../images/gd_colored.jpg'); 
-    background-size: cover; 
-    background-position: bottom; 
-}
-
-
-.btn-games {
-    border: none !important;
-
-    background-image: url('../images/games_bw.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-    
-    
-            z-index: 1;
-    position:relative;
-    
-    display: grid;
-    
-    
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
-    
-    padding-left: 2rem;
-
-    
-    text-align: left;    
-    width: 100%;
-    height: 100%;
-
-	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
-
-    /* background: url("images/card-back.jpg") no-repeat center left; */
-
-	color: black;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-    
-}
-
-.btn-games:hover {
-      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-    
-    
-            background-image: url('../images/games_colored.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-    
-    
-	text-decoration: none;
-    
-}
-
-
-.btn-ux {
-    border: none !important;
-
-    
-            background-image: url('../images/ux_bw.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-    
-    
-            z-index: 1;
-    position:relative;
-    
-    display: grid;
-    
-    
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
-    
-    padding-left: 2rem;
-
-    
-    text-align: left;    
-    width: 100%;
-    height: 100%;
-
-	/* padding: 1.375rem 2.625rem 1.375rem 2.625rem; */
-
-    /* background: url("images/card-back.jpg") no-repeat center left; */
-
-	color: black;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-    
-}
-
-.btn-ux:hover {
-      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-    
-    
-            background-image: url('../images/ux_colored.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-    
-    
-
-	text-decoration: none;
-    
-}
-
-
-
-
-
-
-
-
-
-.img-gd {
-    
-    padding-top: 10rem;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    z-index: 0;
-    width: 250%;
-    height: auto;
-}
-
-
-.img-games {
-    
-    padding-top: 18rem;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    z-index: 0;
-    width: 250%;
-    height: auto;
-}
-
-
-.img-ux {
-
-
-    padding-top: 14rem;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    z-index: 0;
-    width: 250%;
-    height: auto;
-}
-
-
-
-
-
-.btn-collapsible-y {
-	display: inline-block;
-	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #D91A15;
-	border-radius: 2rem;
-	background-color: #D91A15;
-	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-collapsible-y:hover {
-	background-color: transparent;
-	color: #D91A15;
-	text-decoration: none;
-}
-
-
-
-.btn-collapsible-chemistry {
-	display: inline-block;
-	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #3C73DC;
-	border-radius: 2rem;
-	background-color: #3C73DC;
-	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-collapsible-chemistry:hover {
-	background-color: transparent;
-	color: #3C73DC;
-	text-decoration: none;
-}
-
-
-
-.btn-collapsible-inclinico {
-	display: inline-block;
-	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #5E35AE;
-	border-radius: 2rem;
-	background-color: #5E35AE;
-	color: #fff;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-collapsible-inclinico:hover {
-	background-color: transparent;
-	color: #5E35AE;
-	text-decoration: none;
-}
-
-.btn-livesite {
-	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #01CE87;
-	border-radius: 2rem;
-	background-color: transparent;
-	color: #01CE87;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-livesite:hover {
-	background-color: #01CE87;
-	color: white;
-	text-decoration: none;
-}
-
-.btn-livesite-div {
-    text-align: center;
-}
-
-.btn-livesite-y {
-	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #D91A15;
-	border-radius: 2rem;
-	background-color: transparent;
-	color: #D91A15;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-livesite-y:hover {
-	background-color: #D91A15;
-	color: white;
-	text-decoration: none;
-}
-
-.btn-livesite-y {
-    text-align: center;
-}
-
-
-.btn-livesite-inclinico {
-	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #5E35AE;
-	border-radius: 2rem;
-	background-color: transparent;
-	color: #5E35AE;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-livesite-inclinico:hover {
-	background-color: #5E35AE;
-	color: white;
-	text-decoration: none;
-}
-
-.btn-livesite-inclinico {
-    text-align: center;
-}
-
-
-.btn-livesite-chemistry {
-	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #3C73DC;
-	border-radius: 2rem;
-	background-color: transparent;
-	color: #3C73DC;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-livesite-chemistry:hover {
-	background-color: #3C73DC;
-	color: white;
-	text-decoration: none;
-}
-
-.btn-livesite-chemistry {
-    text-align: center;
-}
-
-
-
-
-.btn-outline-sm {
+/* bordered button in the header RESUME */
+.btn-outline {
 	display: inline-block;
 	padding: 0.875rem 1.5rem 0.875rem 1.5rem;
-	border: 0.125rem solid #7864F6;
+	border: 0.125rem solid white;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #7864F6;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    text-decoration: none;
+	color: white;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
 	transition: all 0.2s;
 }
 
-.btn-outline-sm:hover {
-	background-color: #7864F6;
-	color: #fff;
+.btn-outline:hover {
+	background-color: white;
+    border: 0.125rem solid white;
+	color: black;
 	text-decoration: none;
 }
 
+/*******************************/
+/* 3 purple dots while loading */
+/*******************************/
 
-
-/*************************/
-/*     Preloader     */
-/*************************/
 .spinner-wrapper {
 	position: fixed;
 	z-index: 999999;
@@ -830,24 +381,25 @@ h7 {
 	}
 }
 
-
 /**************************/
-/*     Navigation     */
+/*       header menu      */
 /**************************/
 .navbar-custom {
-	background-color: rgba(0, 0, 0, .4);
+    z-index: 999;
+	background-color: transparent;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: white;
-	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     transition: all 0.2s;
+    position: absolute;
+    width: 100%;
 }
 
 .navbar-custom .container {
-	max-width: 87.5rem;
+	max-width: 100%;
 }
 
 .navbar-custom .navbar-brand.logo-image img {
@@ -856,33 +408,30 @@ h7 {
 	height: auto;
 }
 
-.navbar-custom .navbar-brand.logo-text {
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    color: #fff;;
-	text-decoration: none;
-}
-
 .navbar-custom .navbar-nav {
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
 }
 
+/* sections + dropdown menu humburger */
 .navbar-custom .nav-item .nav-link {
-	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
-	color: #f7f5f5;
-	text-decoration: none;
-	transition: all 0.2s ease;
+	padding: 1.125rem 1.5rem 1.125rem 0rem;
+    text-align: center;
+    width: auto;
+    color: #f7f5f5;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
 }
 
-.navbar-custom .nav-item .nav-link:hover,
-.navbar-custom .nav-item .nav-link.active {
-	color: #FFC700;
-	opacity: 1;
+.navbar-custom .nav-item .nav-link:hover {
+  	color: #7565EE;
 }
 
-/* Dropdown Menu */
+,
+.navbar-custom .nav-item .nav-link:active {
+	color: white;
+}
+
 .navbar-custom .dropdown:hover > .dropdown-menu {
 	display: block; /* this makes the dropdown menu stay open while hovering it */
 	min-width: auto;
@@ -913,9 +462,9 @@ h7 {
 .navbar-custom .dropdown-item {
 	color: #f7f5f5;
 	opacity: 0.8;
-	   font: 0.875rem/0 "indivisible", sans-serif;
-        font-weight: 900;
-        font-style: normal;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     text-decoration: none;
 }
 
@@ -933,7 +482,6 @@ h7 {
 	background-color: #c4d8dc;
 	opacity: 0.2;
 }
-/* end of dropdown menu */
 
 .navbar-custom .nav-item .btn-outline-sm {
 	margin-top: 0.25rem;
@@ -947,7 +495,6 @@ h7 {
 	background-color: #FFC700;
 	color: black;
 	border: 0.125rem solid black;
-
 }
 
 .navbar-custom .navbar-toggler {
@@ -973,437 +520,313 @@ h7 {
 	display: inline-block;
 	margin-right: 0.125rem;
 }
+/* end of menu */
 
 
 /*********************/
-/*    Header     */
+/*       header      */
 /*********************/
+
+/* whole header background settings */
 .header {
-background: rgb(120,100,246);
-background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);}
-
-
-/*    HEADER BLOCK     */
-.header .header-content {
-    padding-top: 13rem;
-    padding-bottom: 18rem;
-	text-align: center;
+    background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);
 }
-
-/*    EKATERINA ABRAMOVICH     */
-.header .text-container {
-    margin-top: 16.5rem;
-    margin-bottom: 0rem;
-}
-
-.portfolio-1 .ux-container {
-    text-align: left;
-    display: inline-block;
-    width: 42rem;
-    max-width: 100%;
-    margin-right: 1rem;
-    vertical-align: top;
-}
-
-.portfolio-1 .ux-container2 {
-    text-align: left;
-    display: inline-block;
-    width: 15rem;
-    max-width: 100%;
-    margin-right: 1rem;
-    margin-left: 4rem;
-    vertical-align: top;
+    
+    /*
+    background-size: 160% 160%; 
+    animation: gradient 7s ease infinite;
 }
 
 
-
-
-
-
-.projects {
-    border: none !important;
-
-    background-color: black;
-    z-index: 0; /*allows overlapping with wave*/
-    margin-bottom: -5rem;
-
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    height: 55rem;
-    vertical-align: middle;
+@keyframes gradient {
+	0% {
+		background-position: 100% 100%;
+	}
+	50% {
+		background-position: 0% 48%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
 }
 
-
-
-
-
-
-.projects-container {
-    display: inline-block;
-    padding: 1px;
-    margin: none;
-    background-color: none;
-    text-align: left;
-    width: 33.1%;
-    height: 100%;
-    vertical-align: middle;
-
-}
-
-
-
-
-
-
-
-/*
-.ux-game-container {
-    background-color: gray;
-    padding-right: 0;
-    text-align: left;
-    display: inline-block;
-    width: 49.8%;
-    height: 45rem;
-    vertical-align: top;
-}
-
-.game-container {
-    background-color: aqua;
-    text-align: left;
-    display: inline-block;
-    width: 100%;
-    height: 50%;
-    vertical-align: top;
-}
-
-.ux-container {
-    background-color: gray;
-    text-align: left;
-    display: inline-block;
-    width: 100%;
-    height: 50%;
-    vertical-align: top;
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 100% 100%;
+	}
+	50% {
+		background-position: 0% 48%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
 } */
 
 
 
 
-
-
-
-
-
-
-
-.header h1 {
-	margin-bottom: 1rem;
-	color: #fff;
-	font-size: 2.5rem;
-	line-height: 3rem;
-}
-
-.header .p-large {   
-    color: #FFC700;
-    font: 3.3rem/4.25rem "indivisible", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    letter-spacing: 0px;
-    
-	margin-bottom: 2rem;
-    margin-top: 2rem;
-
-}
-
-
-.header .btn-outline-lg {
-	border-color: #f3f7fd;
-	color: #f3f7fd;
-}
-
-.header .btn-outline-lg:hover {
-	background-color: #f3f7fd;
-	color: #7864F6;
-}
-
-.header-frame {
-    
-    
-    
-    z-index: 2;
-    position: absolute;
-
-	margin-top: -3px; /* To remove white margin in FF */
-
-
-
     
 
-    
-	width: 100%;
-	height: 6.25rem;
-    
-
-}
 
 
-/***************************/
-/*     06. Description     */
-/***************************/
-
-
-
-/*     About section */
-
-.cards-1 {
-      
-    /* 
-border-left: 7px solid black;
-    border-right: 7px solid black;
-    */
-    
-    position: relative;
-    z-index: 998;
-    /* background-color: #FFC700; */
-     background-color: #FFC700;
-	padding-top: 5rem;
-	padding-bottom: 15rem;
-	text-align: center;
-	text-align: center;
-    }
-
-.cards-1 .h2-heading {
-	margin-bottom: 3.5rem;
-    
-}
-
-.cards-1 .card {
-    
-	max-width: 21rem;
-	margin-right: auto;
-	margin-bottom: 1rem;
-	margin-left: auto;
-	padding: 0;
-	border: none;
-    background: transparent;
-
-}
-
-.cards-1 .card-image {
-	max-width: 16rem;
-	margin-right: auto;
-	margin-bottom: 2rem;
-	margin-left: auto;
-}
-
-.cards-1 .card-title {
-	margin-bottom: 0.5rem;
-}
-
-.cards-1 .card-body {
-    
-	padding: 0;
-}
-
-
-
-
-
-	.portfolio-1 .card {
-        text-align: center;
-		margin-right: 1rem;
-        margin-bottom: 5rem;
-	   margin-left: 1rem;
-        display: inline-block;
-		vertical-align: top; 
-        max-width: 30rem;
-    	height: auto;
-	   padding: 10;
-	   border: none;
-        background: transparent;
-	}
-
-	.portfolio-1 .card-image {
-    max-width: 30rem;
-	margin-right: auto;
-	margin-bottom: 1rem;
-	margin-left: auto;
-        box-shadow: 1px 1px 50px #B7B7B7;
-	}
-
-
-.portfolio-1 .screens {
-    text-align: left;
-    display: inline-block;
-    max-width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    
-    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    vertical-align: top;
-}
-
-.portfolio-1 .screen-title {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-
-
-.portfolio-1 .img-screen {
-    text-align: center;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: 1px 1px 25px #ECECEC;
-}
-
-
-
-.portfolio-1 {
-	padding-top: 5rem;
-
-	padding-bottom: 1rem;
-	text-align: left;
-    background: white;
-
-}
-
-.portfolio-1 .text-container {
-	margin-bottom: 3.5rem;
-}
-
-
-.portfolio-1 .card-title {
-	margin-bottom: 0.5rem;
-}
-
-.portfolio-1 .card-body {
-	padding: 10;
-
-}
-
-
-
-/**************************/
-/*     Social Media     */
-/**************************/
-
-/*     Footer (one part)    */
-.form {
-    background-color: black;
-	padding-top: 5rem;
-	padding-bottom: 2rem;
-            z-index: 998;
-    position:relative;
-    
-}
-
-.form .text-container {
-	margin-bottom: 3.5rem;
-	padding: 3.5rem 1rem 2.5rem 1rem;
-	border-radius: 0.5rem;
-	background-color: #f3f7fd;
-}
-
-.form h2 {
-	margin-bottom: 2.75rem;
-	text-align: center;
-}
-
-.form .icon-container {
-	text-align: center;
-}
-
-.form .fa-stack {
-	width: 3em;
-	margin-bottom: 0.75rem;
-	margin-right: 0.375rem;
-	font-size: 1.5rem;
-}
-
-.form .fa-stack .fa-stack-1x {
-    color: #fff;
-	transition: all 0.2s ease;
-}
-
-.form .fa-stack .fa-stack-2x {
-	color: #7864F6;
-	transition: all 0.2s ease;
-}
-
-.form .fa-stack:hover .fa-stack-1x {
-	color: black;
-}
-
-.form .fa-stack:hover .fa-stack-2x {
-    color: #FFC700;
-}
-
-
-/**********************/
-/*     14. Footer     */
-/**********************/
-.footer-portfolio {
+/* portfolio graphic design section */
+.portfolio-upper {
+	transition: all 0.2s;
+    background: #cbcbcb;
+    background-image: url('images/gd_bw.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
     width: 100%;
-	height: 2.5rem;
-    background-color: black;
+    height: 33rem;
+    margin-top: -10rem;
+    padding-top: 14rem;
+    padding-bottom: 10rem;
 }
 
-.footer-frame {
-        z-index: 998;
-    position:relative;
+
+.portfolio-upper:hover {
+    background: #f8c582;
+    background-image: url('images/gd_colored.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+}
+
+
+
+/* portfolio middle section */
+.portfolio-middle {
+    text-align: left;
+    position: relative;
+	transition: all 0.2s;
+    background: #dbdbdb;
+    background-image: url('images/ux_bw.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    width: 100%;
+    height: 30rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+
+.portfolio-middle:hover {
+    background: #b8a0e2;
+    background-image: url('images/ux_colored.png'); 
+    background-repeat: no-repeat;
+/* background-size: 45rem auto; */
+    background-position: 75% 50%;
+}
+
+
+/* portfolio bottom section */
+.portfolio-bottom {
+    text-align: left;
+	transition: all 0.2s;
+    background: #e7e7e7;
+    background-image: url('images/games_bw.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    width: 100%;
+    height: 33rem;
     
-	width: 100%;
-	height: 1.5rem;
-}
-
-.footer {
-    
-	padding-top: 3rem;
-	padding-bottom: 0.5rem;
-	background-color: #000000;
-}
-
-.footer .footer-col {
-	width: 50rem;
-    text-align: center;
-	margin-bottom: 2.25rem;
+    margin-bottom: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 14rem;    
 }
 
 
-/*************************/
-/*     15. Copyright     */
-/*************************/
-
-/*     Footer (part 2)     */
-
-.copyright {
-    z-index: 998;
-    position:relative;
-    
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	background-color: #000000;
-	text-align: center;
+.portfolio-bottom:hover {
+    background: #87baf9;
+    background-image: url('images/games_colored.png'); 
+    background-repeat: no-repeat;
+/* background-size: 45rem auto; */
+    background-position: 75% 50%;
 }
 
-.copyright .p-small {
-	padding-top: 1.375rem;
-	color: #f3f7fd;
+
+
+/* VIEW PROJECTS button */
+.btn-line-view-projects {
+	display: inline-block;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 2rem;
+	border: 0.125rem solid black;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: black;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	transition: all 0.2s;
 }
 
-.copyright a {
-	color: #f3f7fd;
+.btn-line-view-projects:hover {
+	background-color: black;
+	color: white;
 	text-decoration: none;
 }
 
 
-/**********************************/
-/*     16. Back To Top Button     */
-/**********************************/
+
+
+/* footer section alignment settings */
+.footer {
+    position: relative;
+    z-index: 998;
+    background-color: black;
+
+}
+
+.projects {
+    width: 100%;
+    position: relative;
+    z-index: 998;
+    background-color: white;
+	text-align: left;
+    padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+/* project card alignment settings */
+.card {
+    transition: all 0.2s;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;
+}
+
+.card:hover {
+    background: #E9E9E9;
+}
+
+/* left project card alignment settings */
+.card-left {
+    transition: all 0.2s;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;
+}
+
+.card-left:hover {
+    background: #E9E9E9;
+}
+
+/* project card content alignment settings */
+.card-body {
+    padding: 1.2rem;
+}
+
+
+/* project card image */
+.card-image {
+    transition: all 0.2s;
+    width: 100%;
+    height: 25rem;
+    border-width: 3rem;
+    border: 0.2rem solid black;
+    border-radius: 0.6rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    box-shadow: 0px 0px 10px #B7B7B7;
+
+}
+
+.card-image:hover {
+    background-size: 108% auto;
+}
+
+/* project card title */
+.card-title {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* project card description */
+.card-description {
+    padding-bottom: 0.5rem;
+}
+
+/* VIEW CASE button */
+.btn-card {
+    display: inline-block;
+    text-align: center;
+    width: 11rem;
+	padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+	border: 0.125rem solid black;
+	border-radius: 2rem;
+	background-color: white;
+	color: black;
+    font: 0.775rem/0 "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+	transition: all 0.2s;
+    box-shadow: 0px 0px 10px #B7B7B7;
+}
+
+.btn-card:hover {
+	border: 0.125rem solid black;
+	background-color: black;
+	color: white;
+    box-shadow: 0px 0px 0px #B7B7B7;
+    text-decoration: none;
+}
+
+    
+/* footer black wave */	
+.footer-frame {
+    height: 5rem;
+    width: 100%;
+}
+
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: left;
+}
+
+/* social icons alignment settings */
+.footer .fa-stack {
+	margin-right: 1rem;
+	font-size: 1.3rem;
+}
+
+/* social icons inside */
+.footer .fa-stack .fa-stack-1x {
+    color: black;
+	transition: all 0.2s ease;
+}
+
+/* social icons circles */
+.footer .fa-stack .fa-stack-2x {
+	color: #7864F6;
+	transition: all 0.2s ease;
+}
+
+.footer .fa-stack:hover .fa-stack-1x {
+	color: black;
+}
+
+.footer .fa-stack:hover .fa-stack-2x {
+    color: white;
+}
+
+/* back-to-top button */
 a.back-to-top {
 	position: fixed;
 	z-index: 999;
@@ -1412,856 +835,694 @@ a.back-to-top {
 	display: none;
 	width: 2.625rem;
 	height: 2.625rem;
-	border-radius: 1.875rem;
+	border-radius: 10.875rem;
 	background: #7864F6 url("../images/up-arrow-white.svg") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-    	background: #FFC700 url("../images/up-arrow-black.svg") no-repeat center 47%;
-    	background-size: 1.125rem 1.125rem;
-
-
+    background: #F2F2F2 url("../images/up-arrow-black.svg") no-repeat center 47%;
+    background-size: 1.125rem 1.125rem;
 }
 
+/* media queries (screen sizes) */
 
+/********************************/
+/*     min screen width 68px    */
+/********************************/
 
-/*****************************/
-/* Media Queries (screen sizes) */
-/*****************************/	
-
-/* Min-width width 68px */
 @media (min-width: 68px) {
     
-        /*    EKATERINA ABRAMOVICH FONT  */
+/* portfolio upper section */
+.portfolio-upper {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-upper:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+/* portfolio middle section */
+.portfolio-middle {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-middle:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+/* portfolio bottom section */
+.portfolio-bottom {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-bottom:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+.resume-btn {
+    display: none;
+}
+    
+/* title page header */
+/*
 .header .h0 {
 	font: 3rem/3.2rem "indivisible";
     font-weight: 900;
     font-style: normal;
     text-align: center;
-
-    }
+} */
     
-
-/*    !!!! HEADER BLOCK     */
+       
+/* title page header */
+.name {
+	font: 3.8rem/3rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+}
+     
+/* whole header alignment settings */
 .header .header-content {
     padding-top: 11rem;
-    padding-bottom: 8rem;
-	text-align: center;
-    
+    padding-bottom: 0rem;
+	text-align: center;  
 }
 
-/*    EKATERINA ABRAMOVICH     */
+/* name title EKATERINA ABRAMOVICH alignment settings */
 .header .text-container {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+}
+    
+/* image of me alignment */
+.header .image-container {
     position: relative;
-    text-align: center;
-
+    margin-top: -30rem;
 }
-    
-    /*    IMAGE OF ME     */
-	
-	.header .image-container .img-wrapper {
-		display: inline-block;
-		width: 350px; 
-	}
-    
-    
-    
-    
-            .portfolio-1 .screens {
-    text-align: left;
+
+/* image of me */
+.header .img-wrapper {
+    width: 300px; 
     display: inline-block;
-    max-width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    
-    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    vertical-align: top;
 }
     
-    
-    
-    
-    .wave {
-    
-    z-index: 2;
-    position: absolute;
-    
-    margin-top: -1rem;
-
-    background-image: url('images/wave.svg'); 
-    background-repeat: no-repeat;
-}
-    
-    
-    	/* Footer */
-	.footer-frame {
-		height: 3rem;
-        margin-top: 6rem;
-	}
-    
-    
- .projects-container {
-    display: inline-block;
-    padding: 1px;
-    margin: none;
-    background-color: none;
-    text-align: left;
-    width: 100%;
-    height: 35%;
-    vertical-align: middle;
-}
-    
-    
-    
-  .projects {
-    border: none !important;
-
-    background-color: black;
-    z-index: 0; /*allows overlapping with wave*/
-    margin-bottom: -5rem;
-
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    height: 100rem;
-    vertical-align: middle;
-    }
-                
-    
-    
-    .portfolio-1 .container {
-        text-align: center;
-    }
-    
-        .portfolio-1 .ux-container2 {
-    display: none;
-
-}
-    
-        .portfolio-1 .ux-container {
-    text-align: center;
-
-}
-    
-   .p-large {
-       /* GRADIENT
-	font: 4000 1.125rem/1.75rem "Arial";
-    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6); 
-    background-size: 15rem;
-    background-position: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-       */
-       
-    
-    font: 1.125rem/1.75rem "indivisible", sans-serif;
-       
-    font-weight: 900;
+/* VIEW PROJECTS button */
+/* .btn-view-projects {
+	display: inline-block;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 9rem;
+	border: 0.125rem solid white;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #fff;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: 0px;
-       
-       
-    }
+	text-decoration: none;
+	transition: all 0.2s;
+} */
     
-    .p-large2 {
-    color: black;
-    }
-
+/* VIEW PROJECTS button */
+.btn-view-portfolio {
+	display: none;
+}
     
+/* about top wave */
+.about-top-wave {
+    height: 2rem;
+}
+    
+/* footer black wave */	
+.footer-frame {
+    height: 2rem;
+}
+    
+/* title of page section */
+h1 {
+    font: 1.5rem/2rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
 
 
 
-/* Min-width width 768px */
+/* about bottom wave */
+.about-bottom-wave {
+    height: 3rem;
+    stroke-width: 1.5rem;
+    margin-top: 0rem; /* to hide white line between about section and wave */
+
+}
+
+
+
+/* project card alignment settings */
+.card {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+    
+/* left project card alignment settings */
+.card-left {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+    
+/* project card image */
+.card-image {
+    width: 100%;
+    height: 27rem;
+}
+
+/* footer section alignment settings */
+.footer {
+	text-align: center;
+    padding-top: 4rem;
+	padding-bottom: 8rem;
+}
+    
+/* title of footer section */
+h1-footer {
+    font: 1.5rem/2rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+    
+/* body text in CONTACT section */
+.body-text-footer {
+    text-align: center;
+}
+
+ 
+    
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: center;
+}
+    
+}
+
+
+/********************************/
+/*    min screen width 768px    */
+/********************************/
+    
 @media (min-width: 768px) {
     
+.resume-btn {
+    display: none;
+}
     
-    /*    EKATERINA ABRAMOVICH FONT  */
-.header .h0 {
+/* title page header */
+/*.header .h0 {
 	font: 6rem/4.7rem "indivisible";
     font-weight: 900;
     font-style: normal;
     text-align: center;
-
-    }
-    
-
-/*    !!!! HEADER BLOCK     */
-.header .header-content {
-    padding-top: 11rem;
-    padding-bottom: 11rem;
-	text-align: center;
-    
-}
-
-/*    EKATERINA ABRAMOVICH     */
-.header .text-container {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    position: relative;
-    text-align: center;
-
-}
-    
-    /*    IMAGE OF ME     */
-	
-	.header .image-container .img-wrapper {
-		display: inline-block;
-		width: 600px; 
-	}
-    
-    
-    
-    
-        .portfolio-1 .screens {
-    text-align: left;
-    display: inline-block;
-    max-width: 100%;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    
-    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    vertical-align: top;
-}
-    
-    
-    
-        	/* Footer */
-	.footer-frame {
-		height: 3rem;
-        margin-top: 0;
-	}
-    
-    
-    
-    .wave {
-    
-    z-index: 2;
-    position: absolute;
-    
-    margin-top: -2rem;
-
-    background-image: url('images/wave.svg'); 
-    background-repeat: no-repeat;
-}
-    
-    
-    
-    
-    .projects-container {
-    display: inline-block;
-    padding: 1px;
-    margin: none;
-    background-color: none;
-    text-align: left;
-    width: 32.8%;
-    height: 100%;
-    vertical-align: middle;
-}
-    
-    
-    
-        .projects {
-    border: none !important;
-
-    background-color: black;
-    z-index: 0; /*allows overlapping with wave*/
-    margin-bottom: -5rem;
-
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    height: 45rem;
-    vertical-align: middle;
-}
-    
-    
-    .portfolio-1 .ux-container {
-    text-align: center;
-}
-    
-    .portfolio-1 .ux-container2 {
-    display: none;
-
-}
-    
-        .portfolio-1 .container {
-        text-align: center;
-    }
-    
-   .p-large {
-       
-           font: 1.125rem/1.75rem "indivisible", sans-serif;
-       
-    font-weight: 900;
-    font-style: normal;
-    letter-spacing: 0px;
-       
-       
-    }
-    
-
-
-
-
-
-
-	.header h1 {
-		font-size: 3.5rem;
-		line-height: 4.125rem;
-	}
-
-
-	.header-frame {
-		height: 5.5rem;
-	}
-	/* end of header */
-
-
-	/* Social media */
-	.form .text-container {
-		padding: 4rem 2.5rem 3rem 2.5rem;
-	}
-
-	.form form {
-		margin-right: 4rem;
-		margin-left: 4rem;
-	}
-	/* end of Social media */
-
-
-	/* Footer */
-	.footer-frame {
-		height: 5rem;
-	}
-    
-    .footer-portfolio {
-        	background-color: black;
-
-        		height: 5rem;
-    }
-	/* end of footer */
-
-}
-}
-/* end of min-width width 768px */
-
-
-
-
-
-/* Min-width width 992px */
-@media (min-width: 992px) {
-   /* 
-    .header .p-large-ux {
-    color: white;
-	font: 100 4.8rem/4.25rem "Arial Black";
-	letter-spacing: -0.2px;
-    
-    background-image: -webkit-linear-gradient(right, #FFC700, #7864F6); 
-    background-size: 28rem;
-    background-position: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 } */
     
-    
-    
-    .portfolio-1 .screens {
-    text-align: left;
-    display: inline-block;
-    max-width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    
-    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    vertical-align: top;
-}
-    
-    
-    
-    .wave {
-    
-    z-index: 2;
-    position: absolute;
-    
-    margin-top: -2rem;
-
-    background-image: url('images/wave.svg'); 
-    background-repeat: no-repeat;
-}
-    
-    
-    .projects-container {
-    display: inline-block;
-    padding: 1px;
-    margin: none;
-    background-color: none;
-    text-align: left;
-    width: 33%;
-    height: 100%;
-    vertical-align: middle;
-
-}
-    
-    .projects {
-    border: none !important;
-
-    background-color: black;
-    z-index: 0; /*allows overlapping with wave*/
-    margin-bottom: -5rem;
-
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    height: 50rem;
-    vertical-align: middle;
-}
-    
-    
-        .portfolio-1 .container {
-        text-align: left;
-    }
-    
-.portfolio-1 .ux-container {
-    text-align: left;
-    display: inline-block;
-    width: 25rem;
-    max-width: 100%;
-    margin-right: 1rem;
-    vertical-align: top;
-}
-
-.portfolio-1 .ux-container2 {
-    text-align: left;
-    display: inline-block;
-    width: 15rem;
-    max-width: 100%;
-    margin-right: 1rem;
-    margin-left: 4rem;
-    margin-top: 6rem;
-
-    vertical-align: top;
-}
-    
-    
-    .p-large {
-
-        
-            font: 1.125rem/1.75rem "indivisible", sans-serif;
-       
+/* title page header */
+.name {
+	font: 5.95rem/5rem "indivisible";
     font-weight: 900;
+	letter-spacing: -4px;
+}
+    
+/* whole header alignment settings */
+.header .header-content {
+    text-align: center;  
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+/* name title EKATERINA ABRAMOVICH alignment settings */
+.header .text-container {
+    width: 100%;
+    margin-top: 25rem;
+    text-align: center;
+}
+    
+/* image of me alignment */
+.header .image-container {
+    position: relative;
+    margin-top: -38rem;
+}
+
+/* image of me */
+.header .img-wrapper {
+    width: 460px; 
+}
+    
+/* VIEW PROJECTS button */
+/*
+.btn-view-projects {
+	display: inline-block;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 9rem;
+	border: 0.125rem solid white;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #fff;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: 0px;
-    }
+	text-decoration: none;
+	transition: all 0.2s;
+} */
     
+/* VIEW PROJECTS button */
+.btn-view-portfolio {
+	display: none;
+}
+    
+/* about top wave */
+.about-top-wave {
+    height: 3rem;
+}
+    
+/* footer black wave */	
+.footer-frame {
+    height: 3rem;
+}
+    
+/* title of page section */
+h1 {
+    font: 2rem/2.4rem "indivisible", sans-serif;
+    font-weight: 900;
+        text-align: center;
 
+    }
+
+.about {
+    text-align: center;
+}
+    
  
-    
-    .portfolio-1 .card {
-        max-width: 46%;
-	}
+/* about bottom wave */
+.about-bottom-wave {
+    height: 6rem;
+    stroke-width: 1.2rem;
+    margin-top: -0.2rem; /* to hide white line between about section and wave */
 
-	.portfolio-1 .card-image {
-    max-width: 100%;
-	}
-    
-    
-    .portfolio-1 .text-container {
-        text-align: left;
-    }
-    
-	
-	/* Navigation */
-	.navbar-custom {
-		padding: 2.125rem 1.5rem 2.125rem 2rem;
-        background: transparent;
-		box-shadow: none;
-            border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
-	}
-
-	.navbar-custom .navbar-nav {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-	.navbar-custom .nav-item .nav-link {
-		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-	}
-	
-	.navbar-custom .nav-item .nav-link:hover,
-	.navbar-custom .nav-item .nav-link.active {
-		opacity: 1;
-	}
-
-	.navbar-custom.top-nav-collapse {
-        padding: 0.5rem 1.5rem 0.5rem 2rem;
-	background-color: rgba(0, 0, 0, .4);
-		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-	}
-
-	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
-	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-		color: #FFC700;
-	}
-
-	.navbar-custom .dropdown-menu {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		border-top: 0.25rem solid rgba(0, 0, 0, 0);
-		border-radius: 0.25rem;
-	}
-
-	.navbar-custom.top-nav-collapse .dropdown-menu {
-		border-top: 0.25rem solid rgba(0, 0, 0, 0);
-		box-shadow: 0 0.375rem 0.375rem 0 rgba(0, 0, 0, 0.02);
-	}
-
-	.navbar-custom .dropdown-item {
-		padding-top: 0.25rem;
-		padding-bottom: 0.25rem;
-	}
-
-	.navbar-custom .dropdown-items-divide-hr {
-		width: 84%;
-	}
-
-	.navbar-custom .nav-item .btn-outline-sm {
-		margin-top: 0;
-		margin-bottom: 0;
-		margin-left: 1rem;
-	}
-	/* end of navigation */
-
+}
 
     
-/*    EKATERINA ABRAMOVICH FONT  */
-.header .h0 {
+/* project card alignment settings */
+.card {
+    margin-bottom: 2rem;
+    width: 47%;
+    height: auto;
+}
+    
+/* left project card alignment settings */
+.card-left {
+    margin-bottom: 2rem;
+    width: 47%;
+    height: auto;
+}
+    
+/* project card image */
+.card-image {
+    width: 100%;
+    height: 17.8rem;
+}
+    
+/* footer section alignment settings */
+.footer {
+	text-align: center;
+    padding-top: 6rem;
+	padding-bottom: 10rem;
+}
+    
+/* title of footer section */
+h1-footer {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+    
+/* body text in CONTACT section */
+.body-text-footer {
+    text-align: center;
+}
+    
+/* portfolio upper section */
+.portfolio-upper {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-upper:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+    
+/* portfolio middle section */
+.portfolio-middle {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-middle:hover {
+    text-align: center;
+    background-position: center;
+}
+    
+/* portfolio bottom section */
+.portfolio-bottom {
+    text-align: center;
+    background-position: center;
+}
+    
+.portfolio-bottom:hover {
+    text-align: center;
+    background-position: center;
+}    
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: center;
+}
+    
+}
+
+/********************************/
+/*    min screen width 992px    */
+/********************************/
+
+@media (min-width: 992px) {
+    
+/* portfolio upper section */
+.portfolio-upper {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+.portfolio-upper:hover {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+/* portfolio middle section */
+.portfolio-middle {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+.portfolio-middle:hover {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+/* portfolio bottom section */
+.portfolio-bottom {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+.portfolio-bottom:hover {
+    text-align: left;
+    background-position: 75% 50%;
+}
+    
+.resume-btn {
+    display: inline-block;
+}
+    
+/* title page header */
+/* .header .h0 {
 	font: 8rem/6.3rem "indivisible";
     font-weight: 900;
     font-style: normal;
-    }
-    
+} */
 
-/*    !!!! HEADER BLOCK     */
+/* title page header */
+.name {
+	font: 8rem/6.3rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+}
+    
+/* whole header alignment settings */
 .header .header-content {
     padding-top: 10rem;
-    padding-bottom: 14rem;
-	text-align: center;
+    padding-bottom: 10rem;
 }
 
-/*    EKATERINA ABRAMOVICH     */
+/* name title EKATERINA ABRAMOVICH alignment settings */
 .header .text-container {
-            position: relative;
-
-    
-    margin-top: 15rem;
-    margin-bottom: 0rem;
+    width: 70rem;
+    margin-top: 13rem;
+    text-align: left;
+}
+   
+/* image of me alignment */
+.header .image-container {
+    position: absolute;
+    margin-top: 3rem;
 }
     
-    
-
-	.header .image-container {
-		position: absolute;
-		margin-top: 3rem;
-        
-	}
-	
-	.header .image-container .img-wrapper {
-		display: block;
-		width: 450px;    
-	}
-
-	.header-frame {
-		height: 8rem;
-        
-	}
-	/* end of header */
-
-
-	/* Description */
-    
-    	.cards-1 {
-		text-align: left;
-	}
-    
-    
-	.cards-1 .card {
-		display: inline-block;
-		width: 17rem;
-		max-width: 100%;
-		margin-right: 1rem;
-		margin-left: 1rem;
-		vertical-align: top;
-	}
-
-	.cards-1 .card-image {
-		width: 9rem;
-	}
-	/* end of description */
-
-
-
-
-	/* Newsletter */
-	.form .text-container {
-		width: 55rem;
-		margin-right: 0;
-		margin-left: 0;
-		padding-top: 5rem;
-		padding-bottom: 4.5rem;
-	}
-
-	.form h2 {
-		margin-right: 7rem;
-		margin-left: 7rem;
-	}
-
-	.form form {
-		margin-right: 9rem;
-		margin-left: 9rem;
-	}
-	/* end of newsletter */
-
-
+/* image of me */
+.header .image-container .img-wrapper {
+    width: 450px;    
 }
-/* end of min-width width 992px */
+    
+/* VIEW PROJECTS button */
+.btn-view-portfolio {
+	display: inline-block;
+}
+    
+/* about top wave */
+.about-top-wave {
+    height: 4rem;
+}
+    
+/* footer black wave */	
+.footer-frame {
+    height: 4rem;
+}
+    
+/* title of page section */
+h1 {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+        text-align: left;
 
 
-/* Min-width width 1200px */
+    
+    }
+
+/* about section alignment settings */    
+.about {
+    text-align: left;
+}
+
+    
+/* about bottom wave */
+.about-bottom-wave {
+    height: 8rem;
+    stroke-width: 1rem;
+    margin-top: -0.2rem; /* to hide white line between about section and wave */
+}
+    
+
+/* project card alignment settings */
+.card {
+    margin-bottom: 2rem;
+    width: 48%;
+    height: auto;
+}
+
+/* left project card alignment settings */
+.card-left {
+    margin-bottom: 2rem;
+    width: 48%;
+    height: auto;
+}
+    
+/* project card image */
+.card-image {
+    width: 100%;
+    height: 25.4rem;
+}
+    
+/* footer section alignment settings */
+.footer {
+	text-align: left;
+    padding-top: 8rem;
+	padding-bottom: 12rem;
+}
+    
+/* title of footer section */
+h1-footer {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: left;
+}
+    
+/* body text in CONTACT section */
+.body-text-footer {
+    text-align: left;
+}
+
+    
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: left;
+}
+    
+}
+
+/********************************/
+/*    min screen width 1200px   */
+/********************************/
+
 @media (min-width: 1200px) {
     
-    /*    HEADER BLOCK     */
+.resume-btn {
+    display: inline-block;
+}
+    
+/* whole header alignment settings */
 .header .header-content {
-    padding-top: 13rem;
-    padding-bottom: 18rem;
-	text-align: center;
+    text-align: left;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
 }
 
-/*    EKATERINA ABRAMOVICH     */
+/* name title EKATERINA ABRAMOVICH alignment settings */
 .header .text-container {
-        position: relative;
-
-    margin-top: 16.5rem;
-    margin-bottom: 0rem;
-}
-    
-    
-    
-
-    
-    
-    
-    .portfolio-1 .screens {
+    margin-top: 14rem;
     text-align: left;
-    display: inline-block;
-    max-width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    
-    /* collapsible div will cut all content including shadows. Margins are needed in order to leave shadows uncut*/
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    vertical-align: top;
 }
     
-    
-    
-    .wave {
-    
-    z-index: 2;
-    position: absolute;
-    
-    margin-top: -2rem;
-
-    background-image: url('images/wave.svg'); 
-    background-repeat: no-repeat;
-}
-    
-    
-    
-    .projects-container {
-    display: inline-block;
-    padding: 1px;
-    margin: none;
-    background-color: none;
-    text-align: left;
-    width: 33.1%;
-    height: 100%;
-    vertical-align: middle;
-
-}
-    
-    .projects {
-    border: none !important;
-
-    background-color: black;
-    z-index: 0; /*allows overlapping with wave*/
-    margin-bottom: -5rem;
-
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    height: 55rem;
-    vertical-align: middle;
-}
-    
-    
-        .portfolio-1 .container {
-        text-align: left;
-    }
-    
-    .portfolio-1 .ux-container {
-    text-align: left;
-    display: inline-block;
-    width: 42rem;
-    max-width: 100%;
-    margin-right: 1rem;
-    vertical-align: top;
-}
-
-.portfolio-1 .ux-container2 {
-    text-align: left;
-    display: inline-block;
-    width: 15rem;
-    max-width: 100%;
-    margin-right: 1rem;
-    margin-left: 4rem;
-    margin-top: 0rem;
-
-    vertical-align: top;
-}
-
-.portfolio-1 .screen-title {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-    
-    
-    .p-large {
-        
-            font: 1.125rem/1.75rem "indivisible", sans-serif;
-       
-    font-weight: 900;
-    font-style: normal;
-    letter-spacing: 0px;
-        
-    }
-    
-    .p-large2 {
-    color: black;
-    }
-    
-
-    
-    	
-
-    
-
-    
-
-	/* end of general styles */
-
-
-	/* Header */
-	.header .header-content {
-	
-	}
-
-	.header .text-container {
-	
-        
-        
-	}
-    
-    .header .h0 {
+/* title page header */
+/* .header .h0 {
 	font: 9.6rem/7.5rem "indivisible";
     font-weight: 900;
     font-style: normal;
-    }
+} */
+    
+/* title page header */
+.name {
+	font: 9.6rem/7.5rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+}
 
-	.header .image-container {
-		margin-top: 1rem;
-		margin-left: 1.5rem;
-	}
+/* image of me alignment */
+.header .image-container {
+    position: absolute;
+    margin-top: 0rem;
+}
 
-    	/* image of me */
-	.header .image-container .img-wrapper {
-		width: 560px;
-  
-        
-	}
-
-	.header-frame {
-		height: 9.375rem;
-	}
-	/* end of header */
-	
-
-	/* Description */
-	.cards-1 .card {
-		width: 18.875rem;
-		margin-right: 2rem;
-		margin-left: 2rem;
-	}
-
-	.cards-1 .card-image {
-		width: 12.5rem;
-	}
-	/* end of description */
-
-
-
-
-	/* Newsletter */
-	.form .text-container {
-		width: 64.75rem;
-		padding-top: 6rem;
-		padding-bottom: 5.5rem;
-	}
-
-	.form h2 {
-		margin-right: 12rem;
-		margin-left: 12rem;
-	}
-
-	.form form {
-		margin-right: 15rem;
-		margin-left: 15rem;
-	}
-	/* end of newsletter */
-
-
-	/* Footer */
-    .footer {
-        text-align: center;
-    }
-	.footer .footer-col.first {
-		margin-right: 1.5rem;
-	}
-
-	.footer .footer-col.middle {
-		margin-right: 0.75rem;
-		margin-left: 0.75rem;
-	}
-
-	.footer .footer-col.last {
-		margin-left: 1.5rem;
-	}
-	/* end of footer */
+/* image of me */
+.header .image-container .img-wrapper {
+    width: 560px; 
 }
     
+/* VIEW PROJECTS button */
+.btn-view-portfolio {
+	display: inline-block;
 }
-/* end of min-width width 1200px */
+    
+/* about top wave */
+.about-top-wave {
+    height: 5rem;
+}
+    
+/* footer black wave */	
+.footer-frame {
+    height: 5rem;
+}
+    
+/* title of page section */
+h1 {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+        text-align: left;
+
+
+}
+
+/* about section alignment settings */    
+.about {
+    text-align: left;
+
+}
+ 
+/* about bottom wave */
+.about-bottom-wave {
+    height: 9rem;
+    stroke-width: 0.7rem;
+    margin-top: -0.2rem; /* to hide white line between about section and wave */
+
+}
+    
+
+    
+/* project card alignment settings */
+.card {
+    margin-bottom: 2rem;
+    width: 48%;
+    height: auto;
+}
+    
+/* left project card alignment settings */
+.card-left {
+    margin-bottom: 2rem;
+    width: 48%;
+    height: auto;
+}
+    
+/* project card image */
+.card-image {
+    width: 100%;
+    height: 30.8rem;
+}
+  
+/* footer section alignment settings */
+.footer {
+	text-align: left;
+    padding-top: 8rem;
+	padding-bottom: 12rem;
+}
+    
+/* title of footer section */
+h1-footer {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: left;
+}
+    
+/* body text in CONTACT section */
+.body-text-footer {
+    text-align: left;
+}
+
+
+
+    
+/* social block alignment settings */
+.footer .icon-container {
+	text-align: left;
+}
+    
+    
+
+    
+}

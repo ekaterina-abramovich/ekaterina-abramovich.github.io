@@ -5,9 +5,77 @@
 */
 
 
+
+
+/* changing color on scroll in ABOUT section */
+
+$(function() {
+    
+    const about = document.querySelector('.about')
+    const wavetop = document.querySelector('.cls-3')
+    const wavebottom = document.querySelector('.cls-1')
+
+    
+   $(window).scroll(function () {
+       
+        about.style.backgroundColor = "white";
+        wavetop.style.fill = "white";
+        wavebottom.style.fill = "white";
+       
+       
+      if ($(this).scrollTop() > 300) {
+        about.style.backgroundColor = "#E5E1FF";
+        wavetop.style.fill = "#E5E1FF";
+        wavebottom.style.fill = "#E5E1FF";
+      }
+       
+        if ($(this).scrollTop() > 1250) {
+        about.style.backgroundColor = "white";
+        wavetop.style.fill = "white";
+        wavebottom.style.fill = "white";
+      }
+       
+   });
+});
+
+
+
+
 (function($) {
     "use strict"; 
-	
+    
+/* making the line in overview of the same height as text part  */
+var divHeight = $('.overview-text-part').height(); 
+$('.overview-line').css('min-height', divHeight+'px');
+    
+    
+    
+    
+    
+/* changing color on scroll in ABOUT section 
+
+const [red, green, blue] = [255, 255, 255]
+
+const about = document.querySelector('.about')
+const wavetop = document.querySelector('.cls-3')
+const wavebottom = document.querySelector('.cls-1')
+
+
+window.addEventListener('scroll', () => {
+  const y = 1 + (window.scrollY || window.pageYOffset) / 550
+  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+  
+  about.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+  wavetop.style.fill = `rgb(${r}, ${g}, ${b})`
+  wavebottom.style.fill = `rgb(${r}, ${g}, ${b})`
+  
+}) */
+    
+    
+
+
+    
+    
 	/* Preloader */
 	$(window).on('load', function() {
 		var preloaderFadeOutTime = 500;
@@ -23,13 +91,13 @@
 	
 	/* Navbar Scripts */
 	// jQuery to collapse the navbar on scroll
-    $(window).on('scroll load', function() {
+ /*    $(window).on('scroll load', function() {
 		if ($(".navbar").offset().top > 60) {
 			$(".fixed-top").addClass("top-nav-collapse");
 		} else {
 			$(".fixed-top").removeClass("top-nav-collapse");
 		}
-    });
+    }); */
 
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
@@ -98,51 +166,6 @@
     });
 
 
-    /* Video Lightbox - Magnific Popup */
-    $('.popup-youtube, .popup-vimeo').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false,
-        iframe: {
-            patterns: {
-                youtube: {
-                    index: 'youtube.com/', 
-                    id: function(url) {        
-                        var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-                        if ( !m || !m[1] ) return null;
-                        return m[1];
-                    },
-                    src: 'https://www.youtube.com/embed/%id%?autoplay=1'
-                },
-                vimeo: {
-                    index: 'vimeo.com/', 
-                    id: function(url) {        
-                        var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
-                        if ( !m || !m[5] ) return null;
-                        return m[5];
-                    },
-                    src: 'https://player.vimeo.com/video/%id%?autoplay=1'
-                }
-            }
-        }
-    });
-
-
-    /* Details Lightbox - Magnific Popup */
-	$('.popup-with-move-anim').magnificPopup({
-		type: 'inline',
-		fixedContentPos: false, /* keep it false to avoid html tag shift with margin-right: 17px */
-		fixedBgPos: true,
-		overflowY: 'auto',
-		closeBtnInside: true,
-		preloader: false,
-		midClick: true,
-		removalDelay: 300,
-		mainClass: 'my-mfp-slide-bottom'
-	});
     
     
     /* Move Form Fields Label When User Types */
