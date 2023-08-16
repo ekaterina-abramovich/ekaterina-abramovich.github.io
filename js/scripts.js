@@ -7,6 +7,19 @@
 
 
 
+
+
+
+
+(function($) {
+    "use strict"; 
+    
+/* making the line in overview of the same height as text part  */
+var divHeight = $('.overview-text-part').height(); 
+$('.overview-line').css('min-height', divHeight+'px');
+    
+    
+    
 /* changing color on scroll in ABOUT section */
 
 $(function() {
@@ -37,19 +50,6 @@ $(function() {
        
    });
 });
-
-
-
-
-(function($) {
-    "use strict"; 
-    
-/* making the line in overview of the same height as text part  */
-var divHeight = $('.overview-text-part').height(); 
-$('.overview-line').css('min-height', divHeight+'px');
-    
-    
-    
     
     
 /* changing color on scroll in ABOUT section 
