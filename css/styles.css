@@ -599,7 +599,7 @@ h2 {
     position: relative;
 	transition: all 0.2s;
     background: #dbdbdb;
-    background-image: url('images/ux_bw.png'); 
+    background-image: url('images/test1.svg'); 
     background-repeat: no-repeat;
     background-position: 75% 50%;
     width: 100%;
@@ -611,7 +611,7 @@ h2 {
 
 .portfolio-middle:hover {
     background: #b8a0e2;
-    background-image: url('images/ux_colored.png'); 
+    background-image: url('images/test2.svg'); 
     background-repeat: no-repeat;
 /* background-size: 45rem auto; */
     background-position: 75% 50%;
