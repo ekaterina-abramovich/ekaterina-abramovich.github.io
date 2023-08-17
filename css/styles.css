@@ -1,4 +1,9 @@
-body,
+
+
+body:after {
+ display: none;
+ content: url('images/ux_bw.png') url('images/ux_colored.png');
+}
 
 html {
     background: white;
