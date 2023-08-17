@@ -13,6 +13,10 @@ function preload_image(im_url) {
 }
 
 preload_image("css/images/ux_colored.png");
+preload_image("css/images/gd_colored.png");
+preload_image("css/images/games_colored.png");
+
+
 
 
 (function($) {

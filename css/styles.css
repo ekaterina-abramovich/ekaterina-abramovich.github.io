@@ -194,7 +194,7 @@ h2 {
     padding: 1rem 2rem 1rem 2.4rem;
     border: 0rem;
     background-color: transparent;
-    background-image: url(images/ui-design.svg);
+    background-image: url(images/graphic-design.svg);
     background-repeat: no-repeat;
     background-position: left;    
 }
@@ -1018,6 +1018,7 @@ h1-footer {
     font: 1.5rem/2rem "indivisible", sans-serif;
     font-weight: 900;
     text-align: center;
+    text-transform: capitalize;
 }
     
 /* body text in CONTACT section */
