@@ -203,6 +203,39 @@ h2 {
     color: black;
 }
 
+
+/* marketing */
+.btn-skills .marketing {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/marketing.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .marketing:disabled {
+    color: black;
+}
+
+
+/* social media */
+.btn-skills .social {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/social.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .social:disabled {
+    color: black;
+}
+
+
+
+
 /* user research */
 .btn-skills .research {
     padding: 1rem 2rem 1rem 2.4rem;
