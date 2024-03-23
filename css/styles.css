@@ -649,11 +649,36 @@ h2 {
 }
 
 
+/* portfolio middle section */
+.portfolio-3d {
+    text-align: left;
+    position: relative;
+	transition: all 0.2s;
+    background: #cbcbcb;
+    background-image: url('images/3d_bw.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    width: 100%;
+    height: 30rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+
+.portfolio-3d:hover {
+    background: #999caa;
+    background-image: url('images/3d_colored.png'); 
+    background-repeat: no-repeat;
+/* background-size: 45rem auto; */
+    background-position: 75% 50%;
+}
+
+
 /* portfolio bottom section */
 .portfolio-bottom {
     text-align: left;
 	transition: all 0.2s;
-    background: #e7e7e7;
+    background: #dbdbdb;
     background-image: url('images/games_bw.png'); 
     background-repeat: no-repeat;
     background-position: 75% 50%;
