@@ -1,10 +1,30 @@
-/* Template: Tivo - SaaS App HTML Landing Page Template
-   Author: Inovatik
-   Created: Sep 2019
-   Description: Custom JS file
-*/
 
 
+                    
+/* Zooming in feature while hovering over project squares */
+
+                        $(document).ready(function(){
+                            
+                        const elements = document.querySelectorAll('.card-image');
+
+                            
+                         for (let i = 0; i < elements.length; i++) {
+                            elements[i].addEventListener("mousemove", (e) => {
+                            elements[i].style.backgroundPositionX = -e.offsetX + "px";
+                            elements[i].style.backgroundPositionY = -e.offsetY + "px";
+                                
+                            elements[i].addEventListener("mouseleave", (e) => {
+                            elements[i].style.backgroundPosition = "center";
+                    });
+                                
+                            });
+                         }
+ 
+                        })
+
+
+
+/* Preload image is used to prevent images from blinking after the page is opened for the 1st time*/
 
 
 function preload_image(im_url) {

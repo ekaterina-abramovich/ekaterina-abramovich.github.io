@@ -919,9 +919,8 @@ h2 {
 }
 
 
-/* project card image */
-.card-image {
-    transition: all 0.5s;
+/* project card image and display image that is not zooming in*/
+.card-image, .card-image-display {
     width: 100%;
     height: 25rem;
     border-width: 3rem;
@@ -935,8 +934,20 @@ h2 {
 }
 
 .card-image:hover {
-    background-size: 115% auto;
+    background-size: 200% auto;
 }
+
+/* display image on hover */
+
+.card-image-display:hover {
+    background-size: 115% auto;
+    	transition: all 0.2s ease;
+    }
+
+.card-image-display:not(:hover) {
+    	transition: all 0.2s ease;
+} 
+
 
 /* project card title */
 .card-title {
@@ -1191,7 +1202,7 @@ h1 {
 }
     
 /* project card image */
-.card-image {
+.card-image, .card-image-display {
     width: 100%;
     height: 27rem;
 }
@@ -1345,7 +1356,7 @@ h1 {
 }
     
 /* project card image */
-.card-image {
+.card-image, .card-image-display {
     width: 100%;
     height: 17.8rem;
 }
@@ -1544,7 +1555,7 @@ h1 {
 }
     
 /* project card image */
-.card-image {
+.card-image, .card-image-display {
     width: 100%;
     height: 25.4rem;
 }
@@ -1679,7 +1690,7 @@ h1 {
 }
     
 /* project card image */
-.card-image {
+.card-image, .card-image-display {
     width: 100%;
     height: 30.8rem;
 }
