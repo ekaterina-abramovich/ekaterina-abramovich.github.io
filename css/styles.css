@@ -271,6 +271,12 @@ h2 {
     background-position: left;    
 }
 
+.btn-skills .ux-design:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
 .btn-skills .ux-design:disabled {
     color: black;
 }
@@ -286,6 +292,11 @@ h2 {
     background-image: url(images/graphic-design.svg);
     background-repeat: no-repeat;
     background-position: left;    
+}
+
+.btn-skills .ui-design:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .btn-skills .ui-design:disabled {
@@ -349,6 +360,11 @@ h2 {
     background-position: left;    
 }
 
+.btn-skills .game:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .btn-skills .game:disabled {
     color: black;
 }
@@ -376,6 +392,12 @@ h2 {
     background-repeat: no-repeat;
     background-position: left;    
 }
+
+.btn-skills .modeling:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 
 .btn-skills .modeling:disabled {
     color: black;
