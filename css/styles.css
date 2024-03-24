@@ -6,6 +6,95 @@ html {
 
 
 
+/* portfolio dropdown button */
+.dropbtn {
+    
+    background-color: transparent;
+    color: white;
+	padding: 1.125rem 1.5rem 1.125rem 0rem;
+    border: none;
+    text-align: center;
+    width: auto;
+    color: #f7f5f5;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.dropbtn:hover {
+  color: #7565EE;   
+}
+
+.dropbtn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown {
+
+  position: relative;
+  display: inline-block;
+    
+    background-image: url(images/dropdown.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+
+.dropdown:hover {
+  position: relative;
+  display: inline-block;
+    background-image: url(images/dropdown_hover.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;  
+
+}
+
+.dropdown-content {
+    
+    
+  display: none;
+  position: absolute;
+  background-color: white;
+    
+border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    
+}
+
+.dropdown-content a {
+    
+    transition: all 0.2s ease;
+    color: black;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #7565EE;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    
+
+}
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    
+    background-color: transparent;
+}
+
+
+
+
+
 
 /* about section alignment settings */
 .about {
@@ -292,6 +381,20 @@ h2 {
     color: black;
 }
 
+/* data management */
+.btn-skills .data {
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-color: transparent;
+    background-image: url(images/data_management.svg);
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .data:disabled {
+    color: black;
+}
+
 
 
 /* web design */
@@ -427,10 +530,12 @@ h2 {
     transition: all 0.2s;
     position: absolute;
     width: 100%;
+    
 }
 
 .navbar-custom .container {
 	max-width: 100%;
+    
 }
 
 .navbar-custom .navbar-brand.logo-image img {
@@ -442,11 +547,12 @@ h2 {
 .navbar-custom .navbar-nav {
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
+
 }
 
 /* sections + dropdown menu humburger */
 .navbar-custom .nav-item .nav-link {
-	padding: 1.125rem 1.5rem 1.125rem 0rem;
+	padding: 1.125rem 1.5rem 1.125rem 1.8rem;
     text-align: center;
     width: auto;
     color: #f7f5f5;
@@ -462,6 +568,10 @@ h2 {
 .navbar-custom .nav-item .nav-link:active {
 	color: white;
 }
+
+
+
+
 
 .navbar-custom .dropdown:hover > .dropdown-menu {
 	display: block; /* this makes the dropdown menu stay open while hovering it */
