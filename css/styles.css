@@ -8,7 +8,6 @@ html {
 
 /* portfolio dropdown button */
 .dropbtn {
-    
     background-color: transparent;
     color: white;
 	padding: 1.125rem 1.5rem 1.125rem 0rem;
@@ -29,11 +28,10 @@ html {
   box-shadow: none;
 }
 
+/* portfolio dropdown icon */
 .dropdown {
-
   position: relative;
   display: inline-block;
-    
     background-image: url(images/dropdown.svg);
     background-size: 20px;
     background-repeat: no-repeat;
@@ -50,13 +48,11 @@ html {
 
 }
 
+/* portfolio dropdown menu window */
 .dropdown-content {
-    
-    
   display: none;
   position: absolute;
   background-color: white;
-    
 border-radius: 5px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -64,8 +60,8 @@ border-radius: 5px;
     
 }
 
+/* portfolio dropdown menu content */
 .dropdown-content a {
-    
     transition: all 0.2s ease;
     color: black;
     padding: 20px 20px;
@@ -77,20 +73,15 @@ border-radius: 5px;
     color: #7565EE;
     background-color: transparent;
     transition: all 0.2s ease;
-    
-
 }
 
 .dropdown:hover .dropdown-content {
-
     display: block;
 }
 
 .dropdown:hover .dropbtn {
-    
     background-color: transparent;
 }
-
 
 
 
@@ -148,7 +139,7 @@ border-radius: 5px;
     color: white;
 }
 
-/* name title EKATERINA ABRAMOVICH alignment settings */
+/* name title alignment settings */
 .header .text-container {
     width: 100%;
     height: 21rem;
@@ -183,7 +174,6 @@ h2 {
 
 /* image of me alignment */
 .image-container {
-    
     z-index: 0;
     width: 100%;
     position: relative;
@@ -207,6 +197,8 @@ h2 {
     width: 100%;
 }
 
+
+/* wave path class */
 .cls-1 {
     fill: white;
     transition: all 0.2s;
@@ -217,11 +209,11 @@ h2 {
     transition: all 0.2s;
 }
 
+
+
 /*******************************/
 /*       skills buttons        */
 /*******************************/
-
-
 
 /* general styles for all buttons */
 .btn-skills {
@@ -243,7 +235,7 @@ h2 {
 	text-decoration: none;
 }
 
-/* UX design */
+/* UX/UI design */
 .btn-skills .ux-design {
     padding: 1rem 2rem 1rem 2.4rem;
     border: 0rem;
@@ -415,27 +407,6 @@ h2 {
     color: black;
 }
 
-
-
-/* CHANGE link to GitHub button */
-.btn-code-foxy-adv {
-    border: 0.125rem solid #0074FF;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    margin-left: 8px;
-    background: #0074FF url("../images/code.svg") no-repeat center 50%;
-    background-size: 1.5rem;
-}
-
-.btn-code-foxy-adv:hover {
-    border: 0.125rem solid #0074FF;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    margin-left: 8px;
-    background: transparent url("../images/code_foxy_adv.svg") no-repeat center 50%;
-    background-size: 1.5rem;
-}
-
 /* bordered button in the header RESUME */
 .btn-outline {
 	display: inline-block;
@@ -573,10 +544,6 @@ h2 {
 	color: white;
 }
 
-
-
-
-
 .navbar-custom .dropdown:hover > .dropdown-menu {
 	display: block; /* this makes the dropdown menu stay open while hovering it */
 	min-width: auto;
@@ -677,9 +644,6 @@ h2 {
     background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);
     margin-bottom: -230px;
     height: 1000px;
-
-    
-
     background-size: 160% 160%; 
   /*  animation: gradient 7s ease infinite; */
 }
@@ -740,7 +704,7 @@ h2 {
 
 
 
-/* portfolio middle section */
+/* portfolio product design section */
 .product-design {
     text-align: left;
     position: relative;
@@ -760,12 +724,11 @@ h2 {
     background: #b8a0e2;
     background-image: url('images/ux_colored.png'); 
     background-repeat: no-repeat;
-/* background-size: 45rem auto; */
     background-position: 75% 50%;
 }
 
 
-/* portfolio middle section */
+/* portfolio 3d modeling section */
 .portfolio-3d {
     text-align: left;
     position: relative;
@@ -785,12 +748,11 @@ h2 {
     background: #999caa;
     background-image: url('images/3d_colored.png'); 
     background-repeat: no-repeat;
-/* background-size: 45rem auto; */
     background-position: 75% 50%;
 }
 
 
-/* portfolio bottom section */
+/* portfolio game design section */
 .game-design {
     text-align: left;
 	transition: all 0.2s;
@@ -800,7 +762,6 @@ h2 {
     background-position: 75% 50%;
     width: 100%;
     height: 33rem;
-    
     margin-bottom: -6rem;
     padding-top: 10rem;
     padding-bottom: 14rem;    
@@ -811,7 +772,6 @@ h2 {
     background: #87baf9;
     background-image: url('images/games_colored.png'); 
     background-repeat: no-repeat;
-/* background-size: 45rem auto; */
     background-position: 75% 50%;
 }
 
@@ -846,9 +806,9 @@ h2 {
     position: relative;
     z-index: 998;
     background-color: black;
-
 }
 
+/* projects squares section */
 .projects {
     width: 100%;
     position: relative;
@@ -903,7 +863,7 @@ h2 {
 }
 
 
-/* project card image and display image that is not zooming in*/
+/* project card image and display image that is not zooming in */
 .card-image, .card-image-display {
     width: 100%;
     height: 25rem;
@@ -922,7 +882,6 @@ h2 {
 }
 
 /* display image on hover */
-
 .card-image-display:hover {
     background-size: 110% auto;
     	transition: all 0.2s ease;
@@ -945,7 +904,7 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-/* VIEW CASE button */
+/* SEE PROJECTS button */
 .btn-card {
     display: inline-block;
     text-align: center;
@@ -1009,7 +968,7 @@ h2 {
     color: white;
 }
 
-/* back-to-top button */
+/* back-to-top purple button */
 a.back-to-top {
 	position: fixed;
 	z-index: 999;
