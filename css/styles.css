@@ -132,16 +132,16 @@ border-radius: 5px;
 
 /* title page header */
 .name {
-    width: 4rem;
+    width: 40rem;
     color: rgba(255, 255, 255, 0.1);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-	font: 9.6rem/7.5rem "indivisible";
+	font: 17rem/13rem "indivisible";
     font-weight: 900;
     font-style: normal;
 	letter-spacing: -4px;
     position: relative;
-    z-index: 2;
+    z-index: 999;
 }
 
 .name:hover {
@@ -150,12 +150,13 @@ border-radius: 5px;
 
 /* name title EKATERINA ABRAMOVICH alignment settings */
 .header .text-container {
-    width: 70rem;
+    width: 100%;
     height: 21rem;
     margin-top: 14rem;
-    margin-bottom: 0rem;
+    margin-bottom: -10rem;
     position: relative;
-    text-align: left;
+    text-align: center;
+    z-index: 1;
 }
 
 
@@ -178,41 +179,22 @@ h2 {
 	letter-spacing: -0.1px;
 }
 
-/* VIEW PORTFOLIO button */
-.btn-view-portfolio {
-	display: inline-block;
-	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
-    margin-top: 3rem;
-	border: 0.125rem solid white;
-	border-radius: 2rem;
-	background-color: transparent;
-	color: #fff;
-    font: 1rem/0rem "indivisible", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-	text-decoration: none;
-	transition: all 0.2s;
-}
 
-.btn-view-portfolio:hover {
-	background-color: white;
-	color: black;
-	text-decoration: none;
-}
 
 /* image of me alignment */
-.header .image-container {
-    z-index: 1;
-    margin-top: 1rem;
-    position: absolute;
-    margin-left: 1.5rem;
+.image-container {
+    
+    z-index: 0;
+    width: 100%;
+    position: relative;
 }
 
 /* about top wave */
 .about-top-wave {
-    background-color: black;
+    z-index: 200;
     height: 5rem;
     width: 100%;
+    position: relative;
 }
 
 /* about bottom wave */
@@ -693,11 +675,13 @@ h2 {
 /* whole header background settings */
 .header {
     background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);
+    margin-bottom: -230px;
+    height: 1000px;
 
     
 
     background-size: 160% 160%; 
-    animation: gradient 7s ease infinite;
+  /*  animation: gradient 7s ease infinite; */
 }
 
 
@@ -940,7 +924,7 @@ h2 {
 /* display image on hover */
 
 .card-image-display:hover {
-    background-size: 115% auto;
+    background-size: 110% auto;
     	transition: all 0.2s ease;
     }
 
@@ -1100,12 +1084,12 @@ a:hover.back-to-top {
 } */
     
        
-/* title page header */
+/* title page header 
 .name {
 	font: 3.8rem/3rem "indivisible";
     font-weight: 900;
 	letter-spacing: -4px;
-}
+}  */
      
 /* whole header alignment settings */
 .header .header-content {
@@ -1114,24 +1098,24 @@ a:hover.back-to-top {
 	text-align: center;  
 }
 
-/* name title EKATERINA ABRAMOVICH alignment settings */
+/* name title EKATERINA ABRAMOVICH alignment settings 
 .header .text-container {
     width: 100%;
     margin-top: 5rem;
     text-align: center;
-}
+} */
     
-/* image of me alignment */
+/* image of me alignment 
 .header .image-container {
     position: relative;
     margin-top: -30rem;
-}
+} */
 
-/* image of me */
+/* image of me 
 .header .img-wrapper {
     width: 300px; 
     display: inline-block;
-}
+} */
     
 /* VIEW PROJECTS button */
 /* .btn-view-projects {
@@ -1255,12 +1239,12 @@ h1-footer {
     text-align: center;
 } */
     
-/* title page header */
+/* title page header 
 .name {
 	font: 5.95rem/5rem "indivisible";
     font-weight: 900;
 	letter-spacing: -4px;
-}
+} */
     
 /* whole header alignment settings */
 .header .header-content {
@@ -1269,23 +1253,23 @@ h1-footer {
     padding-bottom: 0rem;
 }
 
-/* name title EKATERINA ABRAMOVICH alignment settings */
+/* name title EKATERINA ABRAMOVICH alignment settings 
 .header .text-container {
     width: 100%;
     margin-top: 25rem;
     text-align: center;
-}
+} */
     
-/* image of me alignment */
+/* image of me alignment 
 .header .image-container {
     position: relative;
     margin-top: -38rem;
-}
+} /*
 
-/* image of me */
+/* image of me 
 .header .img-wrapper {
     width: 460px; 
-}
+} */
     
 /* VIEW PROJECTS button */
 /*
@@ -1470,12 +1454,12 @@ h1-footer {
     font-style: normal;
 } */
 
-/* title page header */
+/* title page header 
 .name {
 	font: 8rem/6.3rem "indivisible";
     font-weight: 900;
 	letter-spacing: -4px;
-}
+} */
     
 /* whole header alignment settings */
 .header .header-content {
@@ -1483,23 +1467,23 @@ h1-footer {
     padding-bottom: 10rem;
 }
 
-/* name title EKATERINA ABRAMOVICH alignment settings */
+/* name title EKATERINA ABRAMOVICH alignment settings 
 .header .text-container {
     width: 70rem;
     margin-top: 13rem;
     text-align: left;
-}
+} */
    
-/* image of me alignment */
+/* image of me alignment
 .header .image-container {
     position: absolute;
     margin-top: 3rem;
-}
+} */
     
-/* image of me */
+/* image of me 
 .header .image-container .img-wrapper {
     width: 450px;    
-}
+} */
     
 /* VIEW PROJECTS button */
 .btn-view-portfolio {
@@ -1604,11 +1588,11 @@ h1-footer {
     padding-bottom: 12rem;
 }
 
-/* name title EKATERINA ABRAMOVICH alignment settings */
+/* name title EKATERINA ABRAMOVICH alignment settings  */
 .header .text-container {
-    margin-top: 14rem;
-    text-align: left;
-}
+    margin-top: 16rem;
+    text-align: center;
+} 
     
 /* title page header */
 /* .header .h0 {
@@ -1617,23 +1601,29 @@ h1-footer {
     font-style: normal;
 } */
     
-/* title page header */
+/* title page header 
 .name {
 	font: 9.6rem/7.5rem "indivisible";
     font-weight: 900;
 	letter-spacing: -4px;
-}
+} */
 
 /* image of me alignment */
-.header .image-container {
+.image-container {
+    text-align: center;
     position: absolute;
-    margin-top: 0rem;
+    margin-top: -44rem;
+    
 }
 
-/* image of me */
-.header .image-container .img-wrapper {
-    width: 560px; 
-}
+/* image of me */ 
+.img-wrapper {
+    z-index: 1;
+    width:1000px; 
+    display: inline-block;
+    opacity: .6;
+
+} 
     
 /* VIEW PROJECTS button */
 .btn-view-portfolio {
@@ -1642,7 +1632,7 @@ h1-footer {
     
 /* about top wave */
 .about-top-wave {
-    height: 5rem;
+    height: 4rem;
 }
     
 /* footer black wave */	

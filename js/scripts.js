@@ -82,26 +82,7 @@ $(function() {
        
    });
 });
-    
-    
-/* changing color on scroll in ABOUT section 
 
-const [red, green, blue] = [255, 255, 255]
-
-const about = document.querySelector('.about')
-const wavetop = document.querySelector('.cls-3')
-const wavebottom = document.querySelector('.cls-1')
-
-
-window.addEventListener('scroll', () => {
-  const y = 1 + (window.scrollY || window.pageYOffset) / 550
-  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
-  
-  about.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-  wavetop.style.fill = `rgb(${r}, ${g}, ${b})`
-  wavebottom.style.fill = `rgb(${r}, ${g}, ${b})`
-  
-}) */
     
     
 
