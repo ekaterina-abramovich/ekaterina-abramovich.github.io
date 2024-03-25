@@ -717,7 +717,7 @@ h2 {
 
 
 /* portfolio graphic design section */
-.portfolio-upper {
+.graphic-design {
 	transition: all 0.2s;
     background: #cbcbcb;
     background-image: url('images/gd_bw.png'); 
@@ -731,7 +731,7 @@ h2 {
 }
 
 
-.portfolio-upper:hover {
+.graphic-design:hover {
     background: #f8c582;
     background-image: url('images/gd_colored.png'); 
     background-repeat: no-repeat;
@@ -741,7 +741,7 @@ h2 {
 
 
 /* portfolio middle section */
-.portfolio-middle {
+.product-design {
     text-align: left;
     position: relative;
 	transition: all 0.2s;
@@ -756,7 +756,7 @@ h2 {
 }
 
 
-.portfolio-middle:hover {
+.product-design:hover {
     background: #b8a0e2;
     background-image: url('images/ux_colored.png'); 
     background-repeat: no-repeat;
@@ -791,7 +791,7 @@ h2 {
 
 
 /* portfolio bottom section */
-.portfolio-bottom {
+.game-design {
     text-align: left;
 	transition: all 0.2s;
     background: #dbdbdb;
@@ -807,7 +807,7 @@ h2 {
 }
 
 
-.portfolio-bottom:hover {
+.game-design:hover {
     background: #87baf9;
     background-image: url('images/games_colored.png'); 
     background-repeat: no-repeat;
@@ -1038,34 +1038,34 @@ a:hover.back-to-top {
 @media (min-width: 68px) {
     
 /* portfolio upper section */
-.portfolio-upper {
+.graphic-design {
     text-align: center;
     background-position: center;
 }
     
-.portfolio-upper:hover {
+.graphic-design:hover {
     text-align: center;
     background-position: center;
 }
     
 /* portfolio middle section */
-.portfolio-middle {
+.product-design {
     text-align: center;
     background-position: center;
 }
     
-.portfolio-middle:hover {
+.product-design:hover {
     text-align: center;
     background-position: center;
 }
     
 /* portfolio bottom section */
-.portfolio-bottom {
+.game-design {
     text-align: center;
     background-position: center;
 }
     
-.portfolio-bottom:hover {
+.game-design:hover {
     text-align: center;
     background-position: center;
 }
@@ -1365,35 +1365,35 @@ h1-footer {
 }
     
 /* portfolio upper section */
-.portfolio-upper {
+.graphic-design {
     text-align: center;
     background-position: center;
 }
     
-.portfolio-upper:hover {
+.graphic-design:hover {
     text-align: center;
     background-position: center;
 }
     
     
 /* portfolio middle section */
-.portfolio-middle {
+.product-design {
     text-align: center;
     background-position: center;
 }
     
-.portfolio-middle:hover {
+.product-design:hover {
     text-align: center;
     background-position: center;
 }
     
 /* portfolio bottom section */
-.portfolio-bottom {
+.game-design {
     text-align: center;
     background-position: center;
 }
     
-.portfolio-bottom:hover {
+.game-design:hover {
     text-align: center;
     background-position: center;
 }    
@@ -1411,34 +1411,34 @@ h1-footer {
 @media (min-width: 992px) {
     
 /* portfolio upper section */
-.portfolio-upper {
+.graphic-design {
     text-align: left;
     background-position: 75% 50%;
 }
     
-.portfolio-upper:hover {
+.graphic-design:hover {
     text-align: left;
     background-position: 75% 50%;
 }
     
 /* portfolio middle section */
-.portfolio-middle {
+.product-design {
     text-align: left;
     background-position: 75% 50%;
 }
     
-.portfolio-middle:hover {
+.product-design:hover {
     text-align: left;
     background-position: 75% 50%;
 }
     
 /* portfolio bottom section */
-.portfolio-bottom {
+.game-design {
     text-align: left;
     background-position: 75% 50%;
 }
     
-.portfolio-bottom:hover {
+.game-design:hover {
     text-align: left;
     background-position: 75% 50%;
 }
