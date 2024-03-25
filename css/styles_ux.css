@@ -1,3 +1,25 @@
+/* VIEW OTHER CASE STUDIES button */
+
+.btn-view-other-cases {
+  	display: inline-block;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 6%;
+	border: 0.125rem solid black;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: black;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	transition: all 0.2s;  
+}
+
+.btn-view-other-cases:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+
 /* whole header background settings */
 .ux_header {
     background-color: #7D8BD8;
