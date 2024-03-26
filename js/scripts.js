@@ -32,15 +32,15 @@ function preload_image(im_url) {
   img.src = im_url;
 }
 
-preload_image("css/images/ux_colored.png");
-preload_image("css/images/gd_colored.png");
-preload_image("css/images/games_colored.png");
-preload_image("css/images/3d_colored.png");
+preload_image("images/projects_displays/ux_colored.png");
+preload_image("images/projects_displays/gd_colored.png");
+preload_image("images/projects_displays/games_colored.png");
+preload_image("images/projects_displays/3d_colored.png");
 
-preload_image("css/images/ux_bw.png");
-preload_image("css/images/gd_bw.png");
-preload_image("css/images/games_bw.png");
-preload_image("css/images/3d_bw.png");
+preload_image("images/projects_displays/ux_bw.png");
+preload_image("images/projects_displays/gd_bw.png");
+preload_image("images/projects_displays/games_bw.png");
+preload_image("images/projects_displays/3d_bw.png");
 
 
 (function($) {

@@ -23,7 +23,7 @@
 /* whole header background settings */
 .ux_header {
     background-color: #7D8BD8;
-    background-image: url('images/bridge_background.png'); 
+    background-image: url('../images/product_design_directory/bridge/bridge_background.png'); 
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -32,7 +32,7 @@
 
 .inclinico_header {
     background-color: #9D91E9;
-    background-image: url('images/inclinico_background.png'); 
+    background-image: url('../images/product_design_directory/inclinico/inclinico_background.png'); 
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -109,7 +109,7 @@
 .horizontal-img {
     transition: all 0.2s;
     opacity: 0.8;
-    background-image: url('images/students.png'); 
+    background-image: url('../images/product_design_directory/bridge/students.png'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -122,7 +122,7 @@
 .horizontal-img-inclinico {
     transition: all 0.2s;
     opacity: 0.8;
-    background-image: url('images/scientist.png'); 
+    background-image: url('../images/product_design_directory/inclinico/scientist.png'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
