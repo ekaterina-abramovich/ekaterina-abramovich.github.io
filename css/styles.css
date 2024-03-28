@@ -123,7 +123,6 @@ border-radius: 5px;
 
 /* title page header */
 .name {
-    width: 40rem;
     color: rgba(255, 255, 255, 0.1);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
@@ -1016,7 +1015,46 @@ a:hover.back-to-top {
 
 @media (min-width: 68px) {
     
-        .dropdown {
+   
+/* image of me alignment */
+.image-container {
+    text-align: center;
+    position: absolute;
+    margin-top: -30rem;
+    
+} 
+    
+/* image of me */ 
+.img-wrapper {
+    z-index: 1;
+    width: 310px; 
+    display: inline-block;
+    opacity: .8;
+
+} 
+    
+.header {
+        margin-bottom: -496px;
+}
+    
+/* whole header alignment settings */
+.header .header-content {
+    text-align: center;
+    padding-top: 12rem;
+}
+    
+
+    
+    
+/* title page header */
+.name {
+	font: 5.5rem/4rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -7px;
+} 
+    
+    
+.dropdown {
         display: none;
     }
     
@@ -1056,65 +1094,13 @@ a:hover.back-to-top {
 .resume-btn {
     display: none;
 }
-    
-/* title page header */
-/*
-.header .h0 {
-	font: 3rem/3.2rem "indivisible";
-    font-weight: 900;
-    font-style: normal;
-    text-align: center;
-} */
-    
-       
-/* title page header 
-.name {
-	font: 3.8rem/3rem "indivisible";
-    font-weight: 900;
-	letter-spacing: -4px;
-}  */
-     
+ 
 /* whole header alignment settings */
 .header .header-content {
     padding-top: 11rem;
     padding-bottom: 0rem;
 	text-align: center;  
 }
-
-/* name title EKATERINA ABRAMOVICH alignment settings 
-.header .text-container {
-    width: 100%;
-    margin-top: 5rem;
-    text-align: center;
-} */
-    
-/* image of me alignment 
-.header .image-container {
-    position: relative;
-    margin-top: -30rem;
-} */
-
-/* image of me 
-.header .img-wrapper {
-    width: 300px; 
-    display: inline-block;
-} */
-    
-/* VIEW PROJECTS button */
-/* .btn-view-projects {
-	display: inline-block;
-	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
-    margin-top: 9rem;
-	border: 0.125rem solid white;
-	border-radius: 2rem;
-	background-color: transparent;
-	color: #fff;
-    font: 1rem/0rem "indivisible", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-	text-decoration: none;
-	transition: all 0.2s;
-} */
 
     
 /* about top wave */
@@ -1206,71 +1192,57 @@ h1-footer {
     
 @media (min-width: 768px) {
     
-        .dropdown {
+/* image of me alignment */
+.image-container {
+    text-align: center;
+    position: absolute;
+    margin-top: -35rem;
+    
+} 
+    
+/* image of me */ 
+.img-wrapper {
+    z-index: 1;
+    width: 410px; 
+    display: inline-block;
+    opacity: .8;
+
+} 
+    
+.header {
+        margin-bottom: -420px;
+}
+    
+/* whole header alignment settings */
+.header .header-content {
+    text-align: center;
+    padding-top: 12rem;
+}
+    
+
+    
+    
+/* title page header */
+.name {
+	font: 9rem/6.5rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -7px;
+} 
+    
+    
+    
+    
+    
+.dropdown {
         display: none;
-    }
+}
 
     
 .resume-btn {
     display: none;
 }
-    
-/* title page header */
-/*.header .h0 {
-	font: 6rem/4.7rem "indivisible";
-    font-weight: 900;
-    font-style: normal;
-    text-align: center;
-} */
-    
-/* title page header 
-.name {
-	font: 5.95rem/5rem "indivisible";
-    font-weight: 900;
-	letter-spacing: -4px;
-} */
-    
-/* whole header alignment settings */
-.header .header-content {
-    text-align: center;  
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-}
 
-/* name title EKATERINA ABRAMOVICH alignment settings 
-.header .text-container {
-    width: 100%;
-    margin-top: 25rem;
-    text-align: center;
-} */
     
-/* image of me alignment 
-.header .image-container {
-    position: relative;
-    margin-top: -38rem;
-} /*
-
-/* image of me 
-.header .img-wrapper {
-    width: 460px; 
-} */
-    
-/* VIEW PROJECTS button */
-/*
-.btn-view-projects {
-	display: inline-block;
-	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
-    margin-top: 9rem;
-	border: 0.125rem solid white;
-	border-radius: 2rem;
-	background-color: transparent;
-	color: #fff;
-    font: 1rem/0rem "indivisible", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-	text-decoration: none;
-	transition: all 0.2s;
-} */
     
 /* VIEW PROJECTS button */
 .btn-view-portfolio {
@@ -1394,8 +1366,43 @@ h1-footer {
 
 @media (min-width: 992px) {
     
+/* image of me alignment */
+.image-container {
+    text-align: center;
+    position: absolute;
+    margin-top: -32rem;
+    
+} 
+    
+/* image of me */ 
+.img-wrapper {
+    z-index: 1;
+    width: 410px; 
+    display: inline-block;
+    opacity: .8;
+
+} 
+    
+.header {
+        margin-bottom: -370px;
+}
+    
+/* whole header alignment settings */
+.header .header-content {
+    text-align: center;
+    padding-top: 12rem;
+}
+    
+    /* title page header */
+.name {
+	font: 11.5rem/8.5rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -7px;
+} 
+    
+    
         
-    .dropdown {
+.dropdown {
         display: inline-block;
     }
     
@@ -1447,18 +1454,7 @@ h1-footer {
     font-style: normal;
 } */
 
-/* title page header 
-.name {
-	font: 8rem/6.3rem "indivisible";
-    font-weight: 900;
-	letter-spacing: -4px;
-} */
-    
-/* whole header alignment settings */
-.header .header-content {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
+
 
 /* name title EKATERINA ABRAMOVICH alignment settings 
 .header .text-container {
@@ -1570,7 +1566,36 @@ h1-footer {
 
 @media (min-width: 1200px) {
     
-        .dropdown {
+/* image of me */ 
+.img-wrapper {
+    margin-top: 40px;
+    z-index: 1;
+    width: 480px; 
+    display: inline-block;
+    opacity: .8;
+
+} 
+    
+ .header { 
+        margin-bottom: -345px;
+} 
+    
+/* whole header alignment settings */
+.header .header-content {
+    text-align: left;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+} 
+    
+/* title page header */
+.name {
+	font: 14rem/10.5rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+} 
+    
+    
+.dropdown {
         display: inline-block;
     }
     
@@ -1578,32 +1603,6 @@ h1-footer {
     display: inline-block;
 }
     
-/* whole header alignment settings */
-.header .header-content {
-    text-align: left;
-    padding-top: 10rem;
-    padding-bottom: 12rem;
-}
-
-/* name title EKATERINA ABRAMOVICH alignment settings  */
-.header .text-container {
-    margin-top: 16rem;
-    text-align: center;
-} 
-    
-/* title page header */
-/* .header .h0 {
-	font: 9.6rem/7.5rem "indivisible";
-    font-weight: 900;
-    font-style: normal;
-} */
-    
-/* title page header 
-.name {
-	font: 9.6rem/7.5rem "indivisible";
-    font-weight: 900;
-	letter-spacing: -4px;
-} */
 
 /* image of me alignment */
 .image-container {
@@ -1613,14 +1612,7 @@ h1-footer {
     
 } 
 
-/* image of me */ 
-.img-wrapper {
-    z-index: 1;
-    width: 580px; 
-    display: inline-block;
-    opacity: .8;
 
-} 
     
 /* VIEW PROJECTS button */
 .btn-view-portfolio {
@@ -1707,9 +1699,38 @@ h1-footer {
 /* social block alignment settings */
 .footer .icon-container {
 	text-align: left;
+    }  
 }
+
+
+
+/*********************************************/
+/* all screens of 1700px width and larger    */
+/*********************************************/
+
+@media (min-width: 1700px) { 
     
+/* image of me */ 
+.img-wrapper {
+    margin-top: 40px;
+    z-index: 1;
+    width: 580px; 
+    display: inline-block;
+    opacity: .8;
+
+} 
+    
+.header {
+        margin-bottom: -230px;
+    }
     
 
+    
+/* title page header */
+.name {
+	font: 19rem/14rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+    } 
     
 }
