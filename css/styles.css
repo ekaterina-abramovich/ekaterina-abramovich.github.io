@@ -1016,6 +1016,10 @@ a:hover.back-to-top {
 
 @media (min-width: 68px) {
     
+        .dropdown {
+        display: none;
+    }
+    
 /* portfolio upper section */
 .graphic-design {
     text-align: center;
@@ -1202,6 +1206,9 @@ h1-footer {
     
 @media (min-width: 768px) {
     
+        .dropdown {
+        display: none;
+    }
 
     
 .resume-btn {
@@ -1387,6 +1394,11 @@ h1-footer {
 
 @media (min-width: 992px) {
     
+        
+    .dropdown {
+        display: inline-block;
+    }
+    
     .nav-item-mobile {
         display: none;
     }
@@ -1558,6 +1570,10 @@ h1-footer {
 
 @media (min-width: 1200px) {
     
+        .dropdown {
+        display: inline-block;
+    }
+    
 .resume-btn {
     display: inline-block;
 }
@@ -1593,16 +1609,16 @@ h1-footer {
 .image-container {
     text-align: center;
     position: absolute;
-    margin-top: -44rem;
+    margin-top: -35rem;
     
-}
+} 
 
 /* image of me */ 
 .img-wrapper {
     z-index: 1;
-    width:1000px; 
+    width: 580px; 
     display: inline-block;
-    opacity: .6;
+    opacity: .8;
 
 } 
     
