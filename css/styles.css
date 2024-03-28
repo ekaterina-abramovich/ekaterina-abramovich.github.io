@@ -1015,6 +1015,11 @@ a:hover.back-to-top {
 
 @media (min-width: 68px) {
     
+/* menu */
+.navbar-custom {
+    background-color: rgba(255,255,255,0.2);
+}
+    
    
 /* image of me alignment */
 .image-container {
@@ -1365,6 +1370,10 @@ h1-footer {
 /********************************************/
 
 @media (min-width: 992px) {
+    
+    .navbar-custom {
+        background-color: transparent;
+    }
     
 /* image of me alignment */
 .image-container {
