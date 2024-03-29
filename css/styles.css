@@ -645,13 +645,13 @@ h2 {
 
 
 /*********************/
-/*       header      */
+/* header - home page */
 /*********************/
 
 /* whole header background settings */
 .header {
     background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);
-    margin-bottom: -230px;
+ /*   margin-bottom: -30px; */
     height: 1000px;
     background-size: 160% 160%; 
   /*  animation: gradient 7s ease infinite; */
@@ -684,7 +684,43 @@ h2 {
 
 
 
+/*********************/
+/*  header - general  */
+/*********************/
 
+/* whole header background settings */
+.header-general {
+    background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);
+ /*   margin-bottom: -30px; */
+    height: 900px;
+    background-size: 160% 160%; 
+  /*  animation: gradient 7s ease infinite; */
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 100% 100%;
+	}
+	50% {
+		background-position: 0% 48%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 100% 100%;
+	}
+	50% {
+		background-position: 0% 48%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
 
 
 
@@ -804,10 +840,10 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-/* SEE PROJECTS button */
+/* under card button */
 .btn-card {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     width: 11rem;
 	padding: 1.2rem 1.5rem 1.2rem 1.5rem;
 	border: 0.125rem solid black;
@@ -895,6 +931,27 @@ a:hover.back-to-top {
 /*******************************************/
 
 @media (min-width: 68px) {
+    
+/* whole header */
+.header-general {
+    margin-bottom: -691px;
+    }
+    
+/* header content */
+.header-general .header-content {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+} 
+    
+/* page title */
+.header-general .text-container {
+    width: 100%;
+    height: 21rem;
+    margin-top: -2rem;
+    position: relative;
+    z-index: 1;
+} 
     
 /* portfolio 3d modeling section */
 .portfolio-3d {
@@ -1008,6 +1065,7 @@ a:hover.back-to-top {
     z-index: 1;
 }
     
+    
 /* about section */
 .about, .footer {
     padding-bottom: 4rem;
@@ -1049,7 +1107,6 @@ a:hover.back-to-top {
     padding-top: 11rem;
     padding-bottom: 0rem;
 }
-    
 
     
     
@@ -1159,6 +1216,29 @@ h1-footer {
     
 @media (min-width: 768px) {
     
+/* whole header */
+.header-general {
+    margin-bottom: -601px;
+    }
+    
+/* header content */
+.header-general .header-content {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+} 
+    
+/* page title */
+.header-general .text-container {
+    width: 100%;
+    height: 21rem;
+    margin-top: -2rem;
+    position: relative;
+    z-index: 1;
+} 
+    
+    
+    
 /* VIEW PROJECTS button */
 .btn-line-view-projects {
 	display: inline-block;
@@ -1212,7 +1292,7 @@ h1-footer {
     position: relative;
     z-index: 1;
 } 
-    
+      
 /* image of me alignment */
 .image-container {
     position: absolute;
@@ -1237,7 +1317,7 @@ h1-footer {
 .header .header-content {
     padding-top: 12rem;
 }
-    
+
 
     
     
@@ -1330,6 +1410,31 @@ h1-footer {
 /********************************************/
 
 @media (min-width: 992px) {
+    
+
+/* whole header */
+.header-general {
+    margin-bottom: -523px;
+    }
+    
+/* header content */
+.header-general .header-content {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+} 
+    
+/* page title */
+.header-general .text-container {
+    width: 100%;
+    height: 21rem;
+    margin-top: 0rem;
+    position: relative;
+    z-index: 1;
+} 
+   
+    
+    
     
     
 /* portfolio 3d modeling section */
@@ -1483,6 +1588,7 @@ h1-footer {
     text-align: center;
     padding-top: 12rem;
 }
+   
     
     /* title page header */
 .name {
@@ -1538,33 +1644,6 @@ h1-footer {
 .resume-btn {
     display: inline-block;
 }
-    
-/* title page header */
-/* .header .h0 {
-	font: 8rem/6.3rem "indivisible";
-    font-weight: 900;
-    font-style: normal;
-} */
-
-
-
-/* name title EKATERINA ABRAMOVICH alignment settings 
-.header .text-container {
-    width: 70rem;
-    margin-top: 13rem;
-    text-align: left;
-} */
-   
-/* image of me alignment
-.header .image-container {
-    position: absolute;
-    margin-top: 3rem;
-} */
-    
-/* image of me 
-.header .image-container .img-wrapper {
-    width: 450px;    
-} */
     
 /* VIEW PROJECTS button */
 .btn-view-portfolio {
@@ -1677,6 +1756,30 @@ h1-footer {
     padding-top: 10rem;
     padding-bottom: 12rem;
 } 
+    
+ 
+/* whole header */
+.header-general {
+    margin-bottom: -465px;
+    }
+    
+/* header content */
+.header-general .header-content {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+} 
+    
+/* page title */
+.header-general .text-container {
+    width: 100%;
+    height: 21rem;
+    margin-top: 0rem;
+    position: relative;
+    z-index: 1;
+} 
+    
+    
     
 /* title page header */
 .name {
@@ -1799,6 +1902,29 @@ h1-footer {
 
 @media (min-width: 1700px) { 
     
+/* whole header */
+.header-general {
+        margin-bottom: -350px;
+    }
+    
+/* header content */
+.header-general .header-content {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+} 
+    
+/* page title */
+.header-general .text-container {
+    width: 100%;
+    height: 21rem;
+    margin-top: 0rem;
+    position: relative;
+    z-index: 1;
+} 
+
+  
+    
 /* image of me */ 
 .img-wrapper {
     margin-top: 40px;
@@ -1812,6 +1938,9 @@ h1-footer {
 .header {
         margin-bottom: -230px;
     }
+    
+
+    
     
 
     
