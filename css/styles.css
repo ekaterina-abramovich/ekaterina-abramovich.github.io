@@ -260,10 +260,14 @@ h2 {
 .btn-skills .graphic:focus {
   outline: none;
   box-shadow: none;
+        text-decoration: none;
+
 }
 
 .btn-skills .graphic:disabled {
     color: black;
+        text-decoration: none;
+
 }
 
 
@@ -365,21 +369,6 @@ h2 {
 .btn-skills .modeling:disabled {
     color: black;
 }
-
-/* data management */
-.btn-skills .data-management {
-    padding: 1rem 2rem 1rem 2.4rem;
-    border: 0rem;
-    background-color: transparent;
-    background-image: url("../images/skills_icons/data%20management.svg");
-    background-repeat: no-repeat;
-    background-position: left;    
-}
-
-.btn-skills .data-management:disabled {
-    color: black;
-}
-
 
 
 /* web design */
