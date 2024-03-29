@@ -1031,8 +1031,8 @@ a:hover.back-to-top {
     
 /* about section */
 .about {
-    padding-bottom: 8rem;
-	padding-top: 8rem;        
+    padding-bottom: 4rem;
+	padding-top: 4rem;        
 }
   
     
@@ -1062,7 +1062,7 @@ a:hover.back-to-top {
 } 
     
 .header {
-        margin-bottom: -665px;
+        margin-bottom: -680px;
 }
     
 /* whole header alignment settings */
@@ -1076,7 +1076,7 @@ a:hover.back-to-top {
     
 /* title page header */
 .name {
-	font: 5rem/4rem "indivisible";
+	font: 4.5rem/3.2rem "indivisible";
     font-weight: 900;
 	letter-spacing: -7px;
 } 
@@ -1219,6 +1219,12 @@ h1-footer {
 /********************************************/
     
 @media (min-width: 768px) {
+    
+/* about section */
+.about {
+    padding-bottom: 8rem;
+	padding-top: 8rem;        
+}
     
     
 /* general styles for all buttons */
