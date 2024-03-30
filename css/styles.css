@@ -921,6 +921,33 @@ a:hover.back-to-top {
 
 @media (min-width: 68px) {
     
+/* project card image and display image that is not zooming in */
+.card-image, .card-image-display {
+    width: 100%;
+    border-width: 3rem;
+    border: 0.2rem solid black;
+    border-radius: 0.6rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    box-shadow: 0px 0px 10px #B7B7B7;
+
+}
+
+.card-image:hover {
+    background-size: 100% auto;
+}
+
+/* display image on hover */
+.card-image-display:hover {
+    background-size: 100% auto;
+    	transition: all 0.2s ease;
+    }
+
+.card-image-display:not(:hover) {
+    	transition: all 0.2s ease;
+} 
+    
 /* left project card alignment settings - to fix extra space on the right on mobile */
 .card-left {
     transition: all 0.2s;
@@ -1464,6 +1491,34 @@ h1-footer {
 /********************************************/
 
 @media (min-width: 992px) {
+    
+    
+/* project card image and display image that is not zooming in */
+.card-image, .card-image-display {
+    width: 100%;
+    border-width: 3rem;
+    border: 0.2rem solid black;
+    border-radius: 0.6rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    box-shadow: 0px 0px 10px #B7B7B7;
+
+}
+
+.card-image:hover {
+    background-size: 200% auto;
+}
+
+/* display image on hover */
+.card-image-display:hover {
+    background-size: 110% auto;
+    	transition: all 0.2s ease;
+    }
+
+.card-image-display:not(:hover) {
+    	transition: all 0.2s ease;
+} 
     
 /* title of project card */
 h2 {

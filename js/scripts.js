@@ -1,32 +1,33 @@
-
-
-                    
 /* Zooming in feature while hovering over project squares */
 
                         $(document).ready(function(){
                             
                         const elements = document.querySelectorAll('.card-image');
 
-                            
                          for (let i = 0; i < elements.length; i++) {
                             elements[i].addEventListener("mousemove", (e) => {
+                       
+                            /* Zooming in feature will only work for screen width of 992 px */
+                            if (window.innerWidth > 992) {
+
                             elements[i].style.backgroundPositionX = -e.offsetX + "px";
                             elements[i].style.backgroundPositionY = -e.offsetY + "px";
                                 
                             elements[i].addEventListener("mouseleave", (e) => {
                             elements[i].style.backgroundPosition = "center";
                     });
+                                                         }
                                 
                             });
+                         
                          }
+                             
  
                         })
 
 
 
 /* Preload image is used to prevent images from blinking after the page is opened for the 1st time*/
-
-
 function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
@@ -53,7 +54,6 @@ $('.overview-line').css('min-height', divHeight+'px');
     
     
 /* changing color on scroll in ABOUT section */
-
 $(function() {
     
     const about = document.querySelector('.about')
@@ -89,7 +89,7 @@ $(function() {
 
     
     
-	/* Preloader */
+/* 3 preloading dots */
 	$(window).on('load', function() {
 		var preloaderFadeOutTime = 500;
 		function hidePreloader() {
@@ -101,18 +101,8 @@ $(function() {
 		hidePreloader();
 	});
 
-	
-	/* Navbar Scripts */
-	// jQuery to collapse the navbar on scroll
- /*    $(window).on('scroll load', function() {
-		if ($(".navbar").offset().top > 60) {
-			$(".fixed-top").addClass("top-nav-collapse");
-		} else {
-			$(".fixed-top").removeClass("top-nav-collapse");
-		}
-    }); */
 
-	// jQuery for page scrolling feature - requires jQuery Easing plugin
+// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
 		$(document).on('click', 'a.page-scroll', function(event) {
 			var $anchor = $(this);
