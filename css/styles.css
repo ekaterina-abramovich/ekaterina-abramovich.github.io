@@ -989,13 +989,13 @@ h2 {
     
 /* whole header */
 .header-general {
-    margin-bottom: -691px;
+    margin-bottom: -650px;
     }
     
 /* header content */
 .header-general .header-content {
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 11rem;
     padding-bottom: 12rem;
 } 
     
@@ -1003,7 +1003,7 @@ h2 {
 .header-general .text-container {
     width: 100%;
     height: 21rem;
-    margin-top: -2rem;
+    margin-top: 0rem;
     position: relative;
     z-index: 1;
 } 
@@ -1130,7 +1130,7 @@ h2 {
   
 /* menu */
 .navbar-custom {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.3);
 }
     
    
