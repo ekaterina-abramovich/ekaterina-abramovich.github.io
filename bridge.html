@@ -44,11 +44,11 @@
 
 
     <!-- menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-ux">
         <div class="container">
 
             <!-- signature -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/signature.svg"></a>
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/product_design_directory/signature_ux.svg" alt="alternative"></a>
 
             <!-- mobile menu hamburger -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,9 +62,11 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="index.html#about">about</a>
                     </li>
-                                    <li class="nav-item">                    
+ 
+            <!-- portfolio dropdown -->
+                <li class="nav-item">                    
                  <div class="dropdown">
-                             <a class="nav-link page-scroll" href="#portfolio">portfolio</a>
+                        <a class="nav-link page-scroll" href="index.html#portfolio">portfolio</a>
                               <div class="dropdown-content">
                                 <a href="graphic_design.html">Graphic Design</a>
                                 <a href="product_design.html">Product Design</a>
@@ -73,18 +75,33 @@
                               </div>
                         </div>
                     </li>
-                
+                    
+            <!-- visible on mobile only -->
+                    <li class="nav-item-mobile">
+                        <a class="nav-link page-scroll" href="index.html#portfolio">portfolio</a>
+                    </li>
+   
+                    
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#contact">contact</a>
                     </li>
+                    
+            <!-- visible on mobile only -->
+                      <li class="nav-item-mobile">
+                        <a class="nav-link page-scroll" href="docs/Ekaterina%20Abramovich_Resume.pdf">resume</a>
+                    </li>
+                    
                 </ul>
 
-                <a class="resume-btn" href="docs/Ekaterina%20Abramovich_Resume.pdf" download="Resume"><button type="button" class="btn-outline">RESUME</button></a>
+                <a class="resume-btn" href="docs/Ekaterina%20Abramovich_Resume.pdf" download="Resume"><button type="button" class="btn-outline">resume</button></a>
+                
+                
 
             </div>
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+    <!-- end of menu -->
+    
 
     <!-- header -->
     <header class="ux_header">
@@ -101,23 +118,28 @@
                             <h class=case_name>D</h>
                             <h class=case_name>G</h>
                             <h class=case_name>E</h>
+    
  
-              <!--       <div class="skills" style="margin-top: 2rem; width: 100%">
+                     <div class="skills" style="margin-top: 2rem; width: 100%">
                         
                         <!-- tags -->
                         
-               <!--          <a class="btn-skills" style="    background: rgba(255,255,255,0.1);"><button class="tag" disabled>UX/UI</button></a>   
+                         <a class="btn-skills"><button class="tag" disabled>UI Design</button></a>   
           
                         
-                          <a class="btn-skills" style="    background: rgba(255,255,255,0.1);"><button class="tag" disabled>Research</button></a> 
+                          <a class="btn-skills"><button class="tag" disabled>User Research</button></a> 
                         
-                          <a class="btn-skills" style="    background: rgba(255,255,255,0.1);"><button class="tag" disabled>Prototyping</button></a>  
+                          <a class="btn-skills"><button class="tag" disabled>Prototyping</button></a>  
+                        <br>
+                          <a class="btn-skills"><button class="tag" disabled>Mobile Design</button></a> 
                         
-                          <a class="btn-skills" style="    background: rgba(255,255,255,0.1);"><button class="tag" disabled>Mobile Design</button></a> 
-                        
-                          <a class="btn-skills" style="    background: rgba(255,255,255,0.1);"><button class="tag" disabled>Testing</button></a> 
+                          <a class="btn-skills"><button class="tag" disabled>User Testing</button></a> 
+                         
+                         <a class="btn-skills"><button class="tag" disabled>Academic Project</button></a> 
+                         
+                        <a class="btn-skills"><button class="tag" disabled>International Students</button></a> 
 
-               <!--      </div>      -->                 
+                     </div>                       
                             
 
                         </div> <!-- end of text-container -->
@@ -128,11 +150,12 @@
     </header> <!-- end of header -->
     <!-- end of header -->
 
+    
     <!-- top white wave -->
     <svg class="about-bottom-wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 410">
             <style>
                 .cls-1 {
-                    fill: #7D8BD8;
+                    fill: #E2ECFF;
                 }
             </style>
         <title>header-frame</title>
@@ -384,28 +407,10 @@
 
                     </div>
                 
+                     <div class="ux-section-container" style="text-align: center">
+                    <img class="img-fluid" src="images/product_design_directory/bridge/wireframes.png" style="width: 60rem">
+                    </div>
                 
-                    <div class="ux-section-container">
-         
-                    <!-- wireframes -->
-                    <div class="wireframe">
-                            <img class="img-fluid" src="images/product_design_directory/bridge/wireframe_1.png">
-                    </div>
-                        
-                    <div class="wireframe">
-                            <img class="img-fluid" src="images/product_design_directory/bridge/wireframe_2.png">
-                    </div> 
-                        
-                    <div class="wireframe">
-                            <img class="img-fluid" src="images/product_design_directory/bridge/wireframe_3.png">
-                    </div>
-                        
-                    <div class="wireframe" style="margin-right: 0%">
-                            <img class="img-fluid" src="images/product_design_directory/bridge/wireframe_4.png">
-                    </div>  
-           
-
-                    </div>
 
                 
             </div>
@@ -436,7 +441,8 @@
                         
                     <div class="styleguide-section">
                     <h3 class="subsection">type</h3>
-                    <img class="img-fluid" src="images/product_design_directory/bridge/type.png">
+                    <img class="img-fluid"
+                         src="images/product_design_directory/bridge/type.png">
                     </div>
 
                     <div class="styleguide-section">
@@ -548,18 +554,55 @@
                     </div>
                 
                     <div class="ux-section-container">
-                    <!-- screens -->
-                    <img class="img-fluid" src="images/product_design_directory/bridge/bridge_testing.png">
+                        
+                    
+                        
+                        
+                        
+                        
+                        
+                    <!-- body text in half of the screen -->
+                    <div class="half-body-text-left">
+                    <p class="body-text" style="font-weight: 700;">Before: No time estimate</p>
+                        
+                    <!-- before -->
+                    <img class="img-fluid" src="images/product_design_directory/bridge/before.png">                        
+                    </div> 
+                        
+                        
+                        
+                     <!-- body text in half of the screen -->
+                    <div class="half-body-text-right">
+                    <p class="body-text" style="font-weight: 700;">After: Status with time estimate</p>
+                        
+                    <!-- after -->
+                    <img class="img-fluid" src="images/product_design_directory/bridge/after.png">                        
+                    </div> 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+
                     </div>
                 
                 
                     <div class="ux-section-container">
                         
+                        
 
                         
                         
+                        
+                        
                     <!-- body text in half of the screen -->
-                        <div class="half-body-text-right" style="margin-right: ">
+                        <div class="half-body-text-left">
                     <p class="body-text">After each user completed their task, we asked a few additional questions about overall feeling while using the app as well as what features were useful and whether there is anything missing.
 
 
@@ -571,7 +614,7 @@ We gathered some valuable feedback regarding interface improvements. For example
                         </div>
                         
                     <!-- body text in half of the screen with margin -->
-                    <div class="half-body-text-left">
+                    <div class="half-body-text-right">
                         
                     <div class="line">
                     <svg width="4px" height="70px"> 
@@ -589,7 +632,7 @@ We gathered some valuable feedback regarding interface improvements. For example
                     </div>                
                 
                 
-                 <a class="btn-view-other-cases page-scroll" href="ux_design.html">VIEW OTHER CASE STUDIES</a>
+                 <a class="btn-view-other-cases page-scroll" href="product_design.html">VIEW OTHER CASE STUDIES</a>
                 
             </div>
         </div> <!-- end of container -->

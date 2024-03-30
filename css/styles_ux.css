@@ -1,3 +1,178 @@
+
+
+
+
+
+/**************************/
+/*       header menu      */
+/**************************/
+.navbar-ux {
+    z-index: 999;
+	background-color: transparent;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.2s;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.navbar-ux .container {
+	max-width: 100%;
+    
+}
+
+.navbar-ux .navbar-brand.logo-image img {
+    fill: aqua;
+    width: 100px;
+	height: auto;
+}
+
+.navbar-ux .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+
+}
+
+/* sections + dropdown menu humburger */
+.navbar-ux .nav-item .nav-link {
+	padding: 1.125rem 1.5rem 1.125rem 1.8rem;
+    text-align: left;
+    width: auto;
+    color: black;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.navbar-ux .nav-item .nav-link:hover {
+  	color: white;
+}
+
+.navbar-ux .nav-item .nav-link:active {
+	color: white;
+}
+
+
+/* sections + dropdown menu humburger */
+.navbar-ux .nav-item-mobile .nav-link {
+	padding: 1.125rem 1.5rem 1.125rem 1.8rem;
+    text-align: left;
+    width: auto;
+    color: black;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.navbar-ux .nav-item-mobile .nav-link:hover {
+  	color: white;
+}
+
+.navbar-ux .nav-item-mobile .nav-link:active {
+	color: white;
+}
+
+
+
+.navbar-ux .dropdown:hover > .dropdown-menu {
+	display: block; /* this makes the dropdown menu stay open while hovering it */
+	min-width: auto;
+	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-ux .dropdown-toggle:focus { /* removes dropdown outline on focus */
+	outline: 0;
+}
+
+.navbar-ux .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: black;
+}
+
+.navbar-ux .dropdown-item {
+	color: black;
+	opacity: 0.8;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.navbar-ux .dropdown-item:hover {
+	background-color: white;
+	color: white;
+	opacity: 1;
+}
+
+.navbar-ux .dropdown-items-divide-hr {
+	width: 100%;
+	height: 1px;
+	margin: 0.75rem auto 0.725rem auto;
+	border: none;
+	background-color: #c4d8dc;
+	opacity: 0.2;
+}
+
+.navbar-ux .nav-item .btn-outline-sm {
+	margin-top: 0.25rem;
+	margin-bottom: 1.375rem;
+	margin-left: 0.5rem;
+	border: 0.125rem solid black;
+	color: black;
+}
+
+.navbar-ux .nav-item .btn-outline-sm:hover {
+	background-color: black;
+	color: black;
+	border: 0.125rem solid black;
+}
+
+.navbar-ux .navbar-toggler {
+	padding: 0;
+	border: none;
+	color: white;
+	font-size: 2rem;
+}
+
+.navbar-ux button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+	display: none;
+}
+
+.navbar-ux button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+	display: inline-block;
+}
+
+.navbar-ux button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+	display: none;
+}
+
+.navbar-ux button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+	display: inline-block;
+	margin-right: 0.125rem;
+}
+/* end of menu */
+
+
+
+
+
+
+
 /* VIEW OTHER CASE STUDIES button */
 
 .btn-view-other-cases {
@@ -22,12 +197,14 @@
 
 /* whole header background settings */
 .ux_header {
-    background-color: #7D8BD8;
+    background-color: #E2ECFF;
     background-image: url('../images/product_design_directory/bridge/bridge_background.png'); 
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
     width: 100%;
+    height: 700px;
+
 }
 
 .inclinico_header {
@@ -42,8 +219,8 @@
 .ux_header .text-container {
     z-index: 999;
     width: 100%;
-    margin-top: 26%;
-    margin-bottom: 20%;
+    margin-top: 16rem;
+    margin-bottom: 16rem;
     position: relative;
     text-align: center;
 }
@@ -62,10 +239,10 @@
 /* case name */
 .case_name {
     width: 4rem;
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 0, 0, 0.1);
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-	font: 13rem/7.5rem "indivisible";
+    -webkit-text-stroke-color: black;
+	font: 10rem/7.5rem "indivisible";
     font-weight: 900;
     font-style: normal;
 	letter-spacing: -4px;
@@ -73,20 +250,20 @@
 }
 
 .case_name:hover {
-    color: white;
+    color: black;
 }
 
 /* overview section */
 .ux-section {
     text-align: center;
-    padding-bottom: 8%;
-    padding-top: 8%;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
 }
 
 .ux-section-container {
     
     text-align: left;
-    padding-top: 3%;
+    padding-top: 3rem;
 }
 
 .ux-section .h1 {
@@ -102,7 +279,7 @@
     font-weight: 700;
     font-style: normal;
 	letter-spacing: -0.1px;
-    padding-bottom: 3%;
+    padding-bottom: 1.5rem;
 }
 
 /* horizontal image section */
@@ -130,22 +307,22 @@
     height: 22rem;
 }
 
-/* body text in half of the screen with margin */
+/* quotations body text in half of the screen with margin */
 .half-body-text-left {
     display: inline-block;
     vertical-align: top;
-    width: 46.5%;
-    margin-right: 6%;
+    margin-right: 3%;
+    width: 48%;
 }
 
 /* body text in half of the screen */
 .half-body-text-right {
     display: inline-block;
     vertical-align: top;
-    width: 46.5%;
+    width: 48%;
 }
 
-/* quatation text */
+/* quatation text itself */
 .quote-text {
     vertical-align: top;
     width: 94%;
@@ -157,7 +334,7 @@
 	letter-spacing: -0.1px;
 }
 
-/* line container */
+/* line container in quatation text */
 .line {
     display: inline-block;
     vertical-align: top;
@@ -192,7 +369,6 @@
 }
 
 .icon-img {
-    
     width: 3.5rem;
     padding-bottom: 0.8rem;
 }
@@ -207,8 +383,9 @@
 .styleguide-section {
     vertical-align: top;
     display: inline-block;
-    width: 30%;
-    margin-right: 2%;
+    width: 20%;
+    height: auto;
+    margin-right: 8%;
 }
 
 
@@ -221,6 +398,30 @@
 }
 
 .btn-skills .tag:disabled {
-    color: white;
+    color: black;
 }
+
+
+
+/* media queries (screen sizes) */
+
+/*******************************************/
+/* all screens of 68px width and larger    */
+/*******************************************/
+
+@media (min-width: 68px) {
+    /* menu */
+.navbar-ux {
+    background-color: rgba(0,0,0,0.1);
+    }
+}
+
+
+@media (min-width: 992px) {
+    /* menu */
+.navbar-ux {
+    background-color: transparent;
+    }
+}
+
 
