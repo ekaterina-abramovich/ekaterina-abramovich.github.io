@@ -921,6 +921,25 @@ a:hover.back-to-top {
 
 @media (min-width: 68px) {
     
+/* left project card alignment settings - to fix extra space on the right on mobile */
+.card-left {
+    transition: all 0.2s;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;
+}
+
+.card-left:hover {
+    background: #E9E9E9;
+}
+    
 
 /* project card alignment settings */
 .card {
@@ -1192,7 +1211,7 @@ h1 {
 .about-bottom-wave {
     height: 3rem;
     stroke-width: 1.5rem;
-    margin-top: 0rem; /* to hide white line between about section and wave */
+    margin-top: -0.1rem; /* to hide white line between about section and wave */
 
 }
 
@@ -1232,6 +1251,25 @@ h1-footer {
 /********************************************/
     
 @media (min-width: 768px) {
+    
+/* left project card alignment settings */
+.card-left {
+    transition: all 0.2s;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;
+}
+
+.card-left:hover {
+    background: #E9E9E9;
+}
     
 /* whole header */
 .header-general {
@@ -1387,7 +1425,6 @@ h1 {
 .about-bottom-wave {
     height: 6rem;
     stroke-width: 1.2rem;
-    margin-top: -0.2rem; /* to hide white line between about section and wave */
 
 }
 
@@ -1721,7 +1758,6 @@ h1 {
 .about-bottom-wave {
     height: 8rem;
     stroke-width: 1rem;
-    margin-top: -0.2rem; /* to hide white line between about section and wave */
 }
     
 
@@ -1883,7 +1919,6 @@ h1 {
 .about-bottom-wave {
     height: 9rem;
     stroke-width: 0.7rem;
-    margin-top: -0.2rem; /* to hide white line between about section and wave */
 
 }
     
