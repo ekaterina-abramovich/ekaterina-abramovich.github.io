@@ -643,7 +643,7 @@ h2 {
  /*   margin-bottom: -30px; */
     height: 1000px;
     background-size: 160% 160%; 
-  /*  animation: gradient 7s ease infinite; */
+    animation: gradient 5s ease infinite;
 }
 
 
@@ -683,7 +683,7 @@ h2 {
  /*   margin-bottom: -30px; */
     height: 900px;
     background-size: 160% 160%; 
-  /*  animation: gradient 7s ease infinite; */
+    animation: gradient 5s ease infinite;
 }
 
 
