@@ -1,4 +1,69 @@
 
+
+
+
+
+/* bordered button in the header RESUME */
+.btn-outline-ux {
+	display: inline-block;
+	padding: 0.875rem 1.5rem 0.875rem 1.5rem;
+	border: 0.1rem solid black;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: black;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+	transition: all 0.2s;
+}
+
+.btn-outline-ux:hover {
+	background-color: black;
+    border: 0.1rem solid black;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+/* portfolio dropdown icon */
+.dropdown-ux {
+  position: relative;
+  display: inline-block;
+    background-image: url("../images/product_design_directory/dropdown.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+
+.dropdown-ux:hover {
+  position: relative;
+  display: inline-block;
+    background-image: url("../images/product_design_directory/dropdown_hover.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;  
+
+}
+
+.dropdown-ux:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-ux:hover .dropbtn {
+    background-color: transparent;
+}
+
+
+
+
+
+
 /* ux project tags */
 .skills {
     margin-top: 2rem;
@@ -124,14 +189,6 @@
 	opacity: 1;
 }
 
-.navbar-ux .dropdown-items-divide-hr {
-	width: 100%;
-	height: 1px;
-	margin: 0.75rem auto 0.725rem auto;
-	border: none;
-	background-color: #c4d8dc;
-	opacity: 0.2;
-}
 
 .navbar-ux .nav-item .btn-outline-sm {
 	margin-top: 0.25rem;
@@ -408,6 +465,26 @@
 /*******************************************/
 @media (min-width: 68px) {
     
+.dropdown-ux {
+  display: none;
+    }
+    
+/* horizontal image section */
+.horizontal-img {
+    height: 10rem;
+}
+    
+/* VIEW OTHER CASE STUDIES button */
+
+.btn-view-other-cases {
+	padding: 1.5rem 1.125rem 1.5rem 1.125rem;
+    font: 0.8rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+}
+    
+    
+    
+    
 /* quatation text itself */
 .quote-text {
 	font: 1rem/1.6rem "indivisible", sans-serif;
@@ -503,6 +580,20 @@
 /*******************************************/
 @media (min-width: 768px) {
     
+/* horizontal image section */
+.horizontal-img {
+    height: 22rem;
+}
+    
+/* VIEW OTHER CASE STUDIES button */
+
+.btn-view-other-cases {
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+}
+    
+    
 /* quatation text itself */
 .quote-text {
 	font: 1.8rem/2.4rem "indivisible", sans-serif;
@@ -588,6 +679,10 @@
 /* all screens of 992px width and larger    */
 /*******************************************/
 @media (min-width: 992px) {
+    
+.dropdown-ux {
+  display: inline-block;
+    }
     
 /* subsection name */
 .subsection {

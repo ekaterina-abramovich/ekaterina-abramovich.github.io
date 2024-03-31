@@ -389,7 +389,7 @@ h2 {
 .btn-outline {
 	display: inline-block;
 	padding: 0.875rem 1.5rem 0.875rem 1.5rem;
-	border: 0.125rem solid white;
+	border: 0.1rem solid white;
 	border-radius: 2rem;
 	background-color: transparent;
 	color: white;
@@ -402,7 +402,7 @@ h2 {
 
 .btn-outline:hover {
 	background-color: white;
-    border: 0.125rem solid white;
+    border: 0.1rem solid white;
 	color: black;
 	text-decoration: none;
 }
