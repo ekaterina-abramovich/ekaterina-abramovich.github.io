@@ -259,9 +259,6 @@
 
 /* whole header background settings */
 .ux_header {
-    background-color: #E2ECFF;
-    background-image: url('../images/product_design_directory/bridge/bridge_background.png'); 
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -269,31 +266,12 @@
 
 }
 
-.inclinico_header {
-    background-color: #9D91E9;
-    background-image: url('../images/product_design_directory/inclinico/inclinico_background.png'); 
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    width: 100%;}
-
 /* case name alignment settings */
 .ux_header .text-container {
     z-index: 999;
     width: 100%;
     margin-top: 16rem;
     margin-bottom: 16rem;
-    position: relative;
-    text-align: center;
-}
-
-
-/* case name alignment settings */
-.inclinico_header .text-container {
-    z-index: 999;
-    width: 100%;
-    margin-top: 26%;
-    margin-bottom: 20%;
     position: relative;
     text-align: center;
 }
@@ -347,20 +325,6 @@
 .horizontal-img {
     transition: all 0.2s;
     opacity: 0.8;
-    background-image: url('../images/product_design_directory/bridge/students.png'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 22rem;
-}
-
-
-/* horizontal image section */
-.horizontal-img-inclinico {
-    transition: all 0.2s;
-    opacity: 0.8;
-    background-image: url('../images/product_design_directory/inclinico/scientist.png'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

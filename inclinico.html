@@ -44,16 +44,16 @@
 
 
     <!-- menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-ux">
         <div class="container">
 
             <!-- signature -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/signature.svg"></a>
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/product_design_directory/signature_ux.svg" alt="alternative"></a>
 
             <!-- mobile menu hamburger -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-awesome fas fa-bars"></span>
-                <span class="navbar-toggler-awesome fas fa-times"></span>
+                <span class="navbar-toggler-awesome fas fa-bars" style="color: black"></span>
+                <span class="navbar-toggler-awesome fas fa-times" style="color: black"></span>
             </button>
             <!-- end of mobile menu hamburger -->
 
@@ -62,11 +62,11 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="index.html#about">about</a>
                     </li>
-
-                    
-                 <li class="nav-item">                    
-                 <div class="dropdown">
-                             <a class="nav-link page-scroll" href="#portfolio">portfolio</a>
+ 
+            <!-- portfolio dropdown -->
+                <li class="nav-item">                    
+                 <div class="dropdown-ux">
+                        <a class="nav-link page-scroll" href="index.html#portfolio">portfolio</a>
                               <div class="dropdown-content">
                                 <a href="graphic_design.html">Graphic Design</a>
                                 <a href="product_design.html">Product Design</a>
@@ -74,22 +74,36 @@
                                 <a href="game_design.html">Game Design</a>
                               </div>
                         </div>
-                    </li>                    
-                
+                    </li>
+                    
+            <!-- visible on mobile only -->
+                    <li class="nav-item-mobile">
+                        <a class="nav-link page-scroll" href="index.html#portfolio">portfolio</a>
+                    </li>
+   
+                    
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#contact">contact</a>
                     </li>
+                    
+            <!-- visible on mobile only -->
+                      <li class="nav-item-mobile">
+                        <a class="nav-link page-scroll" href="docs/Ekaterina%20Abramovich_Resume.pdf">resume</a>
+                    </li>
+                    
                 </ul>
 
-                <a class="resume-btn" href="docs/Ekaterina%20Abramovich_Resume.pdf" download="Resume"><button type="button" class="btn-outline">RESUME</button></a>
+                <a class="resume-btn" href="docs/Ekaterina%20Abramovich_Resume.pdf" download="Resume"><button type="button" class="btn-outline-ux">resume</button></a>
+                
+                
 
             </div>
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+    <!-- end of menu -->
 
     <!-- header -->
-    <header class="inclinico_header">
+    <header class="ux_header" style="background-color: #F0E9FF; background-image: url('../images/product_design_directory/inclinico/inclinico_background.png');">
         <div class="header-content">
             <div class="container">
                 <div class="row">
@@ -107,6 +121,29 @@
                             <h class=case_name>C</h>
                             <h class=case_name>O</h>
                             
+ 
+                     <div class="skills">
+                        
+                        <!-- tags -->
+                        
+                         <a class="btn-skills"><button class="tag" disabled>UI Design</button></a>   
+          
+                        
+                          <a class="btn-skills"><button class="tag" disabled>User Research</button></a> 
+                        
+                          <a class="btn-skills"><button class="tag" disabled>Prototyping</button></a>  
+                        <br>
+                          <a class="btn-skills"><button class="tag" disabled>Mobile Design</button></a> 
+                        
+                          <a class="btn-skills"><button class="tag" disabled>User Testing</button></a> 
+                         
+                         <a class="btn-skills"><button class="tag" disabled>Academic Project</button></a> 
+                         
+                        <a class="btn-skills"><button class="tag" disabled>International Students</button></a> 
+
+                     </div>                       
+                            
+
                         </div> <!-- end of text-container -->
 
                 </div> <!-- end of row -->
@@ -119,7 +156,7 @@
     <svg class="about-bottom-wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 410">
             <style>
                 .cls-1 {
-                    fill: #9D91E9;
+                    fill: #F0E9FF;
                 }
             </style>
         <title>header-frame</title>
@@ -147,7 +184,7 @@
 
                         
                         
-                    <svg class="overview-line" width="2px" height="90px"> 
+                    <svg class="overview-line" width="2px" height="auto"> 
                     <line y1="0" y2="2600" stroke="#ECECEC"  stroke-width="4"/> 
                     </svg> 
                         
@@ -213,7 +250,7 @@
     </div> <!-- end of overviewsection -->
 
     <!-- horizontal image section -->
-    <div class="horizontal-img-inclinico">
+    <div class="horizontal-img" style="background-image: url('../images/product_design_directory/inclinico/scientist.png');">
     </div>
 
     
