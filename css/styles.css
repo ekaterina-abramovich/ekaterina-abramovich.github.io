@@ -639,11 +639,11 @@ h2 {
 
 /* whole header background settings */
 .header {
-    background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);
+    background: radial-gradient(at top left, rgba(72,211,89) 0%, rgba(120,100,246,1) 75%);
  /*   margin-bottom: -30px; */
     height: 1000px;
     background-size: 160% 160%; 
-    animation: gradient 5s ease infinite;
+    animation: gradient 4s ease infinite;
 }
 
 
@@ -679,7 +679,7 @@ h2 {
 
 /* whole header background settings */
 .header-general {
-    background: radial-gradient(at top left, rgba(120,100,246,1) 0%, rgba(0,0,0,1) 60%);
+    background: radial-gradient(at top left, rgba(72,211,89) 0%, rgba(120,100,246,1) 75%);
  /*   margin-bottom: -30px; */
     height: 900px;
     background-size: 160% 160%; 
