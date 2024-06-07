@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "ekaterina-abramovich.com",
+  "Id": "dabe09df-9d45-4921-9501-afe2df513713"
+}
