@@ -1034,21 +1034,6 @@ h2 {
     position: relative;
     z-index: 1;
 } 
-    
-/* portfolio 3d modeling section */
-.portfolio-3d {
-    text-align: center;
-    position: relative;
-	transition: all 0.2s;
-    background: #a9cfaa;
-    background-image: url('../images/projects_displays/3d_mobile.png'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 20rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
 
 /* portfolio game design section */
 .game-design {
@@ -1568,30 +1553,6 @@ h2 {
    
     
     
-    
-    
-/* portfolio 3d modeling section */
-.portfolio-3d {
-    text-align: left;
-    position: relative;
-	transition: all 0.2s;
-    background: #cbcbcb;
-    background-image: url('../images/projects_displays/3d_bw.png'); 
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    width: 100%;
-    height: 30rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-
-
-.portfolio-3d:hover {
-    background: #999caa;
-    background-image: url('../images/projects_displays/3d_colored.png'); 
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-}
 
 
 /* portfolio game design section */
@@ -1739,18 +1700,6 @@ h2 {
     .nav-item-mobile {
         display: none;
     }
-    
-    
-/* portfolio middle section */
-.portfolio-3d {
-    text-align: left;
-    background-position: 75% 50%;
-}
-    
-.portfolio-3d:hover {
-    text-align: left;
-    background-position: 75% 50%;
-}
     
 /* portfolio middle section */
 .product-design {
