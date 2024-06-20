@@ -1599,7 +1599,7 @@ h2 {
     text-align: left;
 	transition: all 0.2s;
     background: #dbdbdb;
-    background-image: url('../images/projects_displays/games_bw.png'); 
+    background-image: url('../images/projects_displays/gd_bw.png'); 
     background-repeat: no-repeat;
     background-position: 75% 50%;
     width: 100%;
@@ -1611,8 +1611,8 @@ h2 {
 
 
 .game-design:hover {
-    background: #87baf9;
-    background-image: url('../images/projects_displays/games_colored.png'); 
+    background: #f8c582;
+    background-image: url('../images/projects_displays/gd_colored.png'); 
     background-repeat: no-repeat;
     background-position: 75% 50%;
 }
