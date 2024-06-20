@@ -1054,7 +1054,7 @@ h2 {
 .game-design {
     text-align: center;
 	transition: all 0.2s;
-    background: #b4d5fe;
+    background: #bbacd6;
     background-image: url('../images/projects_displays/ux_mobile.png'); 
     background-repeat: no-repeat;
     background-position: center;
@@ -1066,10 +1066,10 @@ h2 {
 }
     
     
-/* portfolio graphic design section */
+/* portfolio graphic design section HERE */
 .graphic-design {
 	transition: all 0.2s;
-    background: #bbacd6;
+    background: #f8d6aa;
     background-image: url('../images/projects_displays/gd_mobile.png'); 
     background-repeat: no-repeat;
     background-position: center;
