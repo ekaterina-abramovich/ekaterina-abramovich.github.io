@@ -4,60 +4,32 @@ html {
 	height: 100%;
 }
 
-
-
-/* portfolio dropdown button */
-.dropbtn {
-    background-color: transparent;
-    color: white;
-	padding: 1.125rem 1.5rem 1.125rem 0rem;
-    border: none;
-    text-align: center;
-    width: auto;
-    color: #f7f5f5;
-    text-transform: uppercase;
-    transition: all 0.2s ease;
-}
-
-.dropbtn:hover {
-  color: #7565EE;   
-}
-
-.dropbtn:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 /* portfolio dropdown icon */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
     background-image: url("../images/dropdown.svg");
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: right;  
 }
-
 .dropdown:hover {
-  position: relative;
-  display: inline-block;
-    background-image: url("../images/dropdown_hover.svg");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: right;  
-
+    background-image: url("../images/dropdown_hover.svg"); 
 }
 
-/* portfolio dropdown menu window */
+/* portfolio dropdown window */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-border-radius: 5px;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-    
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* to display portfolio dropdown window */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* portfolio dropdown menu content */
@@ -68,57 +40,39 @@ border-radius: 5px;
     text-decoration: none;
     display: block;
 }
-
 .dropdown-content a:hover {
     color: #7565EE;
     background-color: transparent;
-    transition: all 0.2s ease;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: transparent;
-}
-
-
-
-
-
-/* about section alignment settings */
+/* about section */
 .about {
     position: relative;
     z-index: 998;
     background-color: white;
-    transition: all 0.2s;
+    transition: all 0.2s; /* so that bg color change is smooth */
 }
 
-.content {
-    display: none;
-    overflow: hidden;
+/* body text in about section and others */
+.body-text,  .body-text-footer {
+    font: 1rem/1.5rem "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* body text in ABOUT section and others */
+/* body text */
 .body-text {
     color: black;
-    font: 1rem/1.5rem "indivisible", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
-/* body text in CONTACT section */
+/* body text in footer */
 .body-text-footer {
     color: white;
-    font: 1rem/1.5rem "indivisible", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
-/* title page header */
+/* page title header */
 .name {
     color: rgba(255, 255, 255, 0.1);
     -webkit-text-stroke-width: 1px;
@@ -130,15 +84,18 @@ border-radius: 5px;
     position: relative;
     z-index: 999;
 }
-
 .name:hover {
     color: white;
 }
 
+/* image of me alignment */
+.image-container {
+    z-index: 0;
+    width: 100%;
+    position: relative;
+}
 
-
-
-/* title of footer section */
+/* title of footer */
 h1-footer {
 	color: white;
     font: 2.2rem/2.8rem "indivisible", sans-serif;
@@ -157,16 +114,7 @@ h2 {
 	letter-spacing: -0.1px;
 }
 
-
-
-/* image of me alignment */
-.image-container {
-    z-index: 0;
-    width: 100%;
-    position: relative;
-}
-
-/* about top wave */
+/* about section top wave */
 .about-top-wave {
     z-index: 200;
     height: 5rem;
@@ -174,7 +122,7 @@ h2 {
     position: relative;
 }
 
-/* about bottom wave */
+/* about section bottom wave */
 .about-bottom-wave {
     stroke: black;
     stroke-dasharray: 2070,10000,20,200;
@@ -184,25 +132,17 @@ h2 {
     width: 100%;
 }
 
-
-/* wave path class */
-.cls-1 {
+/* top and bottom waves path class so that its color changes with bg color of about section */
+.cls-1, .cls-3 {
     fill: white;
     transition: all 0.2s;
 }
-
-.cls-3 {
-    fill: white;
-    transition: all 0.2s;
-}
-
-
 
 /*******************************/
 /*       skills buttons        */
 /*******************************/
 
-/* general styles for all buttons */
+/* styles for button shape */
 .btn-skills {
 	display: inline-block;
 	padding: 0.6rem 0rem 0.6rem 2rem;
@@ -216,195 +156,66 @@ h2 {
 	text-decoration: none;
 	transition: all 0.2s;
 }
-
 .btn-skills:hover {
     background: rgba(0,0,0,0.1);
 	text-decoration: none;
 }
 
-/* UX/UI design */
-.btn-skills .ux-design {
+/* styles for shape content */
+.ux-design, .graphic, .marketing, .social-media, .user-research, .game, .animation, .modeling, .web-design {
+    background-color: transparent;
     padding: 1rem 2rem 1rem 2.4rem;
     border: 0rem;
-    background-color: transparent;
-    background-image: url("../images/skills_icons/ux:ui%20design.svg");
-    background-repeat: no-repeat;
     background-position: left;    
+    background-repeat: no-repeat;
 }
-
-.btn-skills .ux-design:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-
-.btn-skills .ux-design:disabled {
+.ux-design, .graphic, .marketing, .social-media, .user-research, .game, .animation, .modeling, .web-design:disabled {
     color: black;
 }
 
-
-
+/* UX/UI design */
+.ux-design {
+    background-image: url("../images/skills_icons/ux:ui%20design.svg");
+}
 
 /* graphic design */
 .btn-skills .graphic {
-    padding: 1rem 2rem 1rem 2.4rem;
-    border: 0rem;
-    background-color: transparent;
     background-image: url("../images/skills_icons/graphic%20design.svg");
-    background-repeat: no-repeat;
-    background-position: left;    
-    text-decoration: none;
-
 }
-
-.btn-skills .graphic:focus {
-  outline: none;
-  box-shadow: none;
-        text-decoration: none;
-
-}
-
-.btn-skills .graphic:disabled {
-    color: black;
-        text-decoration: none;
-
-}
-
 
 /* marketing */
 .btn-skills .marketing {
-    padding: 1rem 2rem 1rem 2.4rem;
-    border: 0rem;
-    background-color: transparent;
-    background-image: url("../images/skills_icons/marketing.svg");
-    background-repeat: no-repeat;
-    background-position: left;    
+    background-image: url("../images/skills_icons/marketing.svg");   
 }
-
-.btn-skills .marketing:disabled {
-    color: black;
-}
-
 
 /* social media */
 .btn-skills .social-media {
-    padding: 1rem 2rem 1rem 2.4rem;
-    border: 0rem;
-    background-color: transparent;
-    background-image: url("../images/skills_icons/social%20media.svg");
-    background-repeat: no-repeat;
-    background-position: left;    
+    background-image: url("../images/skills_icons/social%20media.svg");   
 }
-
-.btn-skills .social-media:disabled {
-    color: black;
-}
-
-
-
 
 /* user research */
 .btn-skills .user-research {
-    padding: 1rem 2rem 1rem 2.4rem;
-    border: 0rem;
-    background-color: transparent;
-    background-image: url("../images/skills_icons/user%20research.svg");
-    background-repeat: no-repeat;
-    background-position: left;    
-}
-
-.btn-skills .user-research:disabled {
-    color: black;
+    background-image: url("../images/skills_icons/user%20research.svg");   
 }
 
 /* game design */
 .btn-skills .game {
-    padding: 1rem 2rem 1rem 2.4rem;
-    border: 0rem;
-    background-color: transparent;
-    background-image: url("../images/skills_icons/game%20design.svg");
-    background-repeat: no-repeat;
-    background-position: left;    
-}
-
-.btn-skills .game:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.btn-skills .game:disabled {
-    color: black;
+    background-image: url("../images/skills_icons/game%20design.svg");   
 }
 
 /* animation */
 .btn-skills .animation {
-    padding: 1rem 2rem 1rem 2.4rem;
-    border: 0rem;
-    background-color: transparent;
-    background-image: url("../images/skills_icons/animation.svg");
-    background-repeat: no-repeat;
-    background-position: left;    
-}
-
-.btn-skills .animation:disabled {
-    color: black;
+    background-image: url("../images/skills_icons/animation.svg");   
 }
 
 /* 3d modeling */
 .btn-skills .modeling {
-    padding: 1rem 2rem 1rem 2.4rem;
-    border: 0rem;
-    background-color: transparent;
-    background-image: url("../images/skills_icons/3d%20modeling.svg");
-    background-repeat: no-repeat;
-    background-position: left;    
+    background-image: url("../images/skills_icons/3d%20modeling.svg");    
 }
-
-.btn-skills .modeling:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-
-.btn-skills .modeling:disabled {
-    color: black;
-}
-
 
 /* web design */
 .btn-skills .web-design {
-    padding: 1rem 2rem 1rem 2.4rem;
-    border: 0rem;
-    background-color: transparent;
-    background-image: url("../images/skills_icons/web%20design.svg");
-    background-repeat: no-repeat;
-    background-position: left;    
-}
-
-.btn-skills .web-design:disabled {
-    color: black;
-}
-
-/* bordered button in the header RESUME */
-.btn-outline {
-	display: inline-block;
-	padding: 0.875rem 1.5rem 0.875rem 1.5rem;
-	border: 0.1rem solid white;
-	border-radius: 2rem;
-	background-color: transparent;
-	color: white;
-    font: 0.875rem/0 "indivisible", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-	transition: all 0.2s;
-}
-
-.btn-outline:hover {
-	background-color: white;
-    border: 0.1rem solid white;
-	color: black;
-	text-decoration: none;
+    background-image: url("../images/skills_icons/web%20design.svg");  
 }
 
 /*******************************/
@@ -471,6 +282,8 @@ h2 {
 /**************************/
 /*       header menu      */
 /**************************/
+
+/* thin line */
 .navbar-custom {
     z-index: 999;
 	background-color: transparent;
@@ -483,27 +296,27 @@ h2 {
     transition: all 0.2s;
     position: absolute;
     width: 100%;
-    
 }
 
+/* header content */
 .navbar-custom .container {
 	max-width: 100%;
-    
 }
 
+/* signature */
 .navbar-custom .navbar-brand.logo-image img {
-    fill: aqua;
     width: 160px;
 	height: auto;
 }
 
+/* actual menu */
 .navbar-custom .navbar-nav {
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
 
 }
 
-/* sections + dropdown menu humburger */
+/* sections + mobile dropdown menu humburger */
 .navbar-custom .nav-item .nav-link {
 	padding: 1.125rem 1.5rem 1.125rem 1.8rem;
     text-align: left;
@@ -512,17 +325,14 @@ h2 {
     text-transform: uppercase;
     transition: all 0.2s ease;
 }
-
 .navbar-custom .nav-item .nav-link:hover {
   	color: #7565EE;
 }
-
 .navbar-custom .nav-item .nav-link:active {
 	color: white;
 }
 
-
-/* sections + dropdown menu humburger */
+/* sections + dropdown menu humburger to set PORTFOLIO dropdown */
 .navbar-custom .nav-item-mobile .nav-link {
 	padding: 1.125rem 1.5rem 1.125rem 1.8rem;
     text-align: left;
@@ -531,16 +341,12 @@ h2 {
     text-transform: uppercase;
     transition: all 0.2s ease;
 }
-
 .navbar-custom .nav-item-mobile .nav-link:hover {
   	color: #7565EE;
 }
-
 .navbar-custom .nav-item-mobile .nav-link:active {
 	color: white;
 }
-
-
 
 .navbar-custom .dropdown:hover > .dropdown-menu {
 	display: block; /* this makes the dropdown menu stay open while hovering it */
@@ -577,7 +383,6 @@ h2 {
     font-style: normal;
     text-decoration: none;
 }
-
 .navbar-custom .dropdown-item:hover {
 	background-color: #7864F6;
 	color: #fff;
@@ -632,61 +437,28 @@ h2 {
 }
 /* end of menu */
 
+/**********/
+/* header */
+/**********/
 
-/*********************/
-/* header - home page */
-/*********************/
-
-/* whole header background settings */
-.header {
+/* all headers background settings */
+.header, .header-general {
     background: radial-gradient(at top left, rgba(72,211,89) 0%, rgba(120,100,246,1) 75%);
- /*   margin-bottom: -30px; */
-    height: 1000px;
     background-size: 160% 160%; 
     animation: gradient 4s ease infinite;
 }
 
-
-@keyframes gradient {
-	0% {
-		background-position: 100% 100%;
-	}
-	50% {
-		background-position: 0% 48%;
-	}
-	100% {
-		background-position: 100% 100%;
-	}
+/* homepage header only */
+.header {
+    height: 1000px;
 }
 
-@-webkit-keyframes gradient {
-	0% {
-		background-position: 100% 100%;
-	}
-	50% {
-		background-position: 0% 48%;
-	}
-	100% {
-		background-position: 100% 100%;
-	}
-}
-
-
-
-/*********************/
-/*  header - general  */
-/*********************/
-
-/* whole header background settings */
+/* other headers */
 .header-general {
-    background: radial-gradient(at top left, rgba(72,211,89) 0%, rgba(120,100,246,1) 75%);
- /*   margin-bottom: -30px; */
     height: 900px;
-    background-size: 160% 160%; 
-    animation: gradient 5s ease infinite;
 }
 
-
+/* gradient background gradient */
 @keyframes gradient {
 	0% {
 		background-position: 100% 100%;
@@ -711,29 +483,14 @@ h2 {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer section alignment settings */
+/* footer section */
 .footer {
     position: relative;
     z-index: 998;
     background-color: black;
 }
 
-/* projects squares section */
+/* entire space with project cards */
 .projects {
     width: 100%;
     position: relative;
@@ -744,50 +501,36 @@ h2 {
 	padding-bottom: 8%;
 }
 
-/* project card alignment settings */
-.card {
+/* project cards - right one has margin */
+.card, .card-left {
     transition: all 0.2s;
     vertical-align: top;
     text-align: center;
     margin-bottom: 2rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;
+}
+.card, .card-left:hover {
+    background: #E9E9E9;
+}
+
+.card {
     margin-right: 0rem;
-    display: inline-block;
-    width: 48%;
-    height: auto;
-    border-radius: 0.8rem;
-    border: none;
-    background: #F5F5F5;
 }
 
-.card:hover {
-    background: #E9E9E9;
-}
-
-/* left project card alignment settings */
 .card-left {
-    transition: all 0.2s;
-    vertical-align: top;
-    text-align: left;
-    margin-bottom: 2rem;
     margin-right: 2rem;
-    display: inline-block;
-    width: 48%;
-    height: auto;
-    border-radius: 0.8rem;
-    border: none;
-    background: #F5F5F5;
 }
 
-.card-left:hover {
-    background: #E9E9E9;
-}
-
-/* project card content alignment settings */
+/* project card content */
 .card-body {
     padding: 1.2rem;
     text-align: left;
 }
-
 
 /* project card image and display image that is not zooming in */
 .card-image, .card-image-display {
@@ -809,13 +552,12 @@ h2 {
 /* display image on hover */
 .card-image-display:hover {
     background-size: 110% auto;
-    	transition: all 0.2s ease;
-    }
+    transition: all 0.2s ease;
+}
 
 .card-image-display:not(:hover) {
-    	transition: all 0.2s ease;
+    transition: all 0.2s ease;
 } 
-
 
 /* project card title */
 .card-title {
@@ -829,7 +571,7 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-/* under card button */
+/* button under title */
 .btn-card {
     display: inline-block;
     text-align: center;
@@ -846,28 +588,25 @@ h2 {
 	transition: all 0.2s;
     box-shadow: 0px 0px 10px #B7B7B7;
 }
-
 .btn-card:hover {
-	border: 0.125rem solid black;
 	background-color: black;
 	color: white;
     box-shadow: 0px 0px 0px #B7B7B7;
     text-decoration: none;
 }
 
-    
 /* footer black wave */	
 .footer-frame {
     height: 5rem;
     width: 100%;
 }
 
-/* social block alignment settings */
+/* social block */
 .footer .icon-container {
 	text-align: left;
 }
 
-/* social icons alignment settings */
+/* social icons */
 .footer .fa-stack {
 	margin-right: 1rem;
 	font-size: 1.3rem;
@@ -879,16 +618,18 @@ h2 {
 	transition: all 0.2s ease;
 }
 
-/* social icons circles */
+/* social icon circles */
 .footer .fa-stack .fa-stack-2x {
 	color: #7864F6;
 	transition: all 0.2s ease;
 }
 
+/* social icons inside on hover */
 .footer .fa-stack:hover .fa-stack-1x {
 	color: black;
 }
 
+/* social icon circles on hover so their color is not interrupted */
 .footer .fa-stack:hover .fa-stack-2x {
     color: white;
 }
@@ -913,11 +654,14 @@ a:hover.back-to-top {
     background-size: 1.125rem 1.125rem;
 }
 
-/* media queries (screen sizes) */
+/* cleanup stopped here */
 
-/*******************************************/
-/* all screens of 68px width and larger    */
-/*******************************************/
+/* MEDIA QUARIES/SCREEN SIZES START HERE 
+    the order goes from smallest to largest and cannot be changed */
+
+/****************************************/
+/* all screens of 68px width and larger */
+/****************************************/
 
 @media (min-width: 68px) {
     
