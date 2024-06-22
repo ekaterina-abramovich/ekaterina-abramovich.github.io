@@ -82,7 +82,7 @@ html {
     font-style: normal;
 	letter-spacing: -4px;
     position: relative;
-    z-index: 999;
+    z-index: 1;
 }
 .name:hover {
     color: white;
@@ -283,7 +283,7 @@ h2 {
 /*       header menu      */
 /**************************/
 
-/* thin line */
+/* header menu */
 .navbar-custom {
     z-index: 999;
 	background-color: transparent;
@@ -501,8 +501,26 @@ h2 {
 	padding-bottom: 8%;
 }
 
-/* project cards - right one has margin */
-.card, .card-left {
+/* project card left */
+.card-left {
+    transition: all 0.2s;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;
+}
+.card-left:hover {
+    background: #E9E9E9;
+}
+
+/* project card right */
+.card {
     transition: all 0.2s;
     vertical-align: top;
     text-align: center;
@@ -512,18 +530,9 @@ h2 {
     height: auto;
     border-radius: 0.8rem;
     border: none;
-    background: #F5F5F5;
-}
-.card, .card-left:hover {
+    background: #F5F5F5;}
+.card:hover {
     background: #E9E9E9;
-}
-
-.card {
-    margin-right: 0rem;
-}
-
-.card-left {
-    margin-right: 2rem;
 }
 
 /* project card content */
@@ -542,7 +551,6 @@ h2 {
     background-size: 100% auto;
     background-position: center;
     box-shadow: 0px 0px 10px #B7B7B7;
-
 }
 
 .card-image:hover {
@@ -654,8 +662,6 @@ a:hover.back-to-top {
     background-size: 1.125rem 1.125rem;
 }
 
-/* cleanup stopped here */
-
 /* MEDIA QUARIES/SCREEN SIZES START HERE 
     the order goes from smallest to largest and cannot be changed */
 
@@ -665,121 +671,65 @@ a:hover.back-to-top {
 
 @media (min-width: 68px) {
     
-/* project card image and display image that is not zooming in */
-.card-image, .card-image-display {
-    width: 100%;
-    border-width: 3rem;
-    border: 0.2rem solid black;
-    border-radius: 0.6rem;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    box-shadow: 0px 0px 10px #B7B7B7;
-
-}
-
+/* project card image that IS zooming in to block zoom on mobile */
 .card-image:hover {
     background-size: 100% auto;
 }
-
-/* display image on hover */
+    
+/* display image that IS NOT zooming in to block zoom on mobile */
 .card-image-display:hover {
     background-size: 100% auto;
-    	transition: all 0.2s ease;
-    }
-
-.card-image-display:not(:hover) {
-    	transition: all 0.2s ease;
-} 
-    
+}
+   
 /* left project card alignment settings - to fix extra space on the right on mobile */
 .card-left {
-    transition: all 0.2s;
-    vertical-align: top;
-    text-align: left;
-    margin-bottom: 2rem;
     margin-right: 0rem;
-    display: inline-block;
-    width: 48%;
-    height: auto;
-    border-radius: 0.8rem;
-    border: none;
-    background: #F5F5F5;
 }
 
-.card-left:hover {
-    background: #E9E9E9;
-}
-    
-
-/* project card alignment settings */
-.card {
-    margin-bottom: 2rem;
+/* right project card */
+.card, card-left {
     width: 100%;
-    height: auto;
 }
-    
-/* left project card alignment settings */
+ 
+/* left project card */
 .card-left {
-    margin-bottom: 2rem;
     width: 100%;
-    height: auto;
 }
-    
+  
 /* project card image */
 .card-image, .card-image-display {
-    width: 100%;
     height: 18rem;
 }
-    
-
-
-    
+   
 /* title of project card */
 h2 {
-    text-align: left;
-	color: #333;
 	font: 1.175rem/1.75rem "indivisible", sans-serif;
     font-weight: 600;
-    font-style: normal;
-	letter-spacing: -0.1px;
 }
-    
-/* project card content alignment settings */
+  
+/* project card content */
 .card-body {
-    padding: z.2rem;
     text-align: center;
 }
-    
+
 /* project card title */
 .card-title {
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
     text-align: center;
 }
-    
-/* whole header */
+     
+/* other headers */
 .header-general {
     margin-bottom: -650px;
-    }
-    
-/* header content */
+}
+      
+/* other headers content */
 .header-general .header-content {
     text-align: center;
     padding-top: 11rem;
-    padding-bottom: 12rem;
-} 
-    
-/* page title */
-.header-general .text-container {
-    width: 100%;
-    height: 21rem;
-    margin-top: 0rem;
-    position: relative;
-    z-index: 1;
 } 
 
-/* portfolio game design section */
+/* product design section */
 .product-design {
     text-align: center;
 	transition: all 0.2s;
@@ -787,32 +737,24 @@ h2 {
     background-image: url('../images/projects_displays/ux_mobile.png'); 
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
     height: 25rem;
     margin-bottom: -6rem;
     padding-top: 5rem;
-    padding-bottom: 10rem;    
 }
-    
-    
-/* portfolio graphic design section HERE */
+     
+/* graphic design section */
 .graphic-design {
 	transition: all 0.2s;
     background: #f8d6aa;
     background-image: url('../images/projects_displays/gd_mobile.png'); 
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
     height: 25rem;
     margin-top: -7rem;
     padding-top: 10rem;
-    padding-bottom: 5rem;
     text-align: center;
 }
-    
-    
-
-    
+ 
 /* VIEW PROJECTS button */
 .btn-line-view-projects {
 	display: inline-block;
@@ -824,85 +766,63 @@ h2 {
 	color: white;
     font: 0.8rem/0rem "indivisible", sans-serif;
     font-weight: 600;
-    font-style: normal;
 	transition: all 0.2s;
 }
-    
+/* so it doesn't change on mobile */
 .btn-line-view-projects:hover {
     text-decoration: none;
 	color: white;
 }
     
-/* general styles for all buttons */
+/* styles for button shape */
 .btn-skills {
-	display: inline-block;
 	padding: 0.3rem 0rem 0.3rem 1rem;
     margin-top: 0.6rem;
     margin-right: 0.2rem;
-	border-radius: 200rem;
-    background: rgba(0,0,0,0.05);
     font: 0.8rem/0rem "indivisible", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-	text-decoration: none;
-	transition: all 0.2s;
 }
-    
-/* name title alignment settings */
+       
+/* name title */
 .header .text-container {
-    width: 100%;
     height: 21rem;
     margin-top: 8.4rem;
-    margin-bottom: 0rem;
-    position: relative;
-    text-align: center;
-    z-index: 1;
+    text-align: center; /* otherwise goes left on bigger screens */
 }
-    
-    
-/* about section */
+ 
+/* about and footer section */
 .about, .footer {
     padding-bottom: 4rem;
 	padding-top: 4rem;        
 }
-    
-  
-/* menu */
+   
+/* header menu */
 .navbar-custom {
     background-color: rgba(255,255,255,0.3);
 }
-    
-   
-/* image of me alignment */
+ 
+/* image of me container*/
 .image-container {
-    text-align: center;
-    position: absolute;
+    text-align: center; /* otherwise goes left on bigger screens */
+    position: absolute; /* otherwise goes down on bigger screens */
     margin-top: -35rem;
-    
 } 
-    
     
 /* image of me */ 
 .img-wrapper {
-    z-index: 1;
     width: 230px; 
     display: inline-block;
     opacity: .8;
-
 } 
-    
+  
+/* homepage header only */ 
 .header {
-        margin-bottom: -610px;
+    margin-bottom: -610px;
 }
-    
-/* whole header alignment settings */
+     
+/* homepage header only content */ 
 .header .header-content {
-    text-align: center;
     padding-top: 11rem;
-    padding-bottom: 0rem;
 }
-
-    
     
 /* title page header */
 .name {
@@ -911,79 +831,56 @@ h2 {
 	letter-spacing: -7px;
 } 
     
-    
+/* to hide web dropdown in header on mobile */
 .dropdown {
-        display: none;
-    }
-
-
-    
-.resume-btn {
     display: none;
 }
 
-    
 /* about top wave */
 .about-top-wave {
     height: 2rem;
 }
-    
+  
 /* footer black wave */	
 .footer-frame {
     height: 2rem;
 }
-    
+
 /* title of page section */
 h1 {
     font: 1.5rem/2rem "indivisible", sans-serif;
     font-weight: 900;
-    text-align: center;
 }
-
+  
+/* about section */
 .about {
     text-align: center;
 }
-
-
 
 /* about bottom wave */
 .about-bottom-wave {
     height: 3rem;
     stroke-width: 1.5rem;
     margin-top: -0.1rem; /* to hide white line between about section and wave */
-
 }
 
-
-
-
-/* footer section alignment settings */
+/* footer section */
 .footer {
 	text-align: center;
 }
-    
+ 
 /* title of footer section */
 h1-footer {
     font: 1.5rem/2rem "indivisible", sans-serif;
     font-weight: 900;
-    text-align: center;
     text-transform: capitalize;
 }
-    
-/* body text in CONTACT section */
-.body-text-footer {
-    text-align: center;
-}
-
- 
-    
-/* social block alignment settings */
+   
+/* social block */
 .footer .icon-container {
 	text-align: center;
+}  
 }
-    
-}
-
 
 /********************************************/
 /* all screens of 768px width and larger    */
@@ -991,157 +888,81 @@ h1-footer {
     
 @media (min-width: 768px) {
     
-/* left project card alignment settings */
+/* left project card */
 .card-left {
     transition: all 0.2s;
-    vertical-align: top;
-    text-align: left;
-    margin-bottom: 2rem;
     margin-right: 2rem;
-    display: inline-block;
-    width: 48%;
-    height: auto;
-    border-radius: 0.8rem;
-    border: none;
-    background: #F5F5F5;
 }
-
-.card-left:hover {
-    background: #E9E9E9;
-}
-    
-/* whole header */
+     
+/* other headers */
 .header-general {
     margin-bottom: -601px;
-    }
-    
-/* header content */
+}
+   
+/* other headers content */
 .header-general .header-content {
-    text-align: center;
     padding-top: 10rem;
-    padding-bottom: 12rem;
 } 
-    
+
 /* page title */
 .header-general .text-container {
-    width: 100%;
-    height: 21rem;
     margin-top: -2rem;
-    position: relative;
-    z-index: 1;
 } 
-    
-    
-    
+     
 /* VIEW PROJECTS button */
 .btn-line-view-projects {
-	display: inline-block;
 	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
-    margin-top: 2rem;
-	border: 0.125rem solid black;
-	border-radius: 2rem;
-	background-color: black;
-	color: white;
     font: 1rem/0rem "indivisible", sans-serif;
     font-weight: 600;
     font-style: normal;
-	transition: all 0.2s;
-}
-    
+} 
 .btn-line-view-projects:hover {
     text-decoration: none;
 	color: white;
 }
-  
-/* about section */
+    
+/* about anf footer section */
 .about, .footer {
     padding-bottom: 8rem;
 	padding-top: 8rem;        
 }
-    
-    
-/* general styles for all buttons */
+     
+/* styles for button shapes */
 .btn-skills {
-	display: inline-block;
 	padding: 0.6rem 0rem 0.6rem 2rem;
     margin-top: 1rem;
     margin-right: 0.7rem;
-	border-radius: 200rem;
-    background: rgba(0,0,0,0.05);
     font: 1rem/0rem "indivisible", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-	text-decoration: none;
 	transition: all 0.2s;
 }
-    
-    
-    
-/* name title alignment settings */
+ 
+/* header title and image block */
 .header .text-container {
-    width: 100%;
-    height: 21rem;
     margin-top: 14rem;
     margin-bottom: -10rem;
-    position: relative;
-    z-index: 1;
 } 
-      
-/* image of me alignment */
-.image-container {
-    position: absolute;
-    margin-top: -35rem;
-    
-} 
-    
+     
 /* image of me */ 
 .img-wrapper {
-    z-index: 1;
     width: 410px; 
-    display: inline-block;
-    opacity: .8;
-
 } 
     
+/* homepage header only */ 
 .header {
-        margin-bottom: -420px;
+    margin-bottom: -420px;
 }
-    
-/* whole header alignment settings */
+     
+/* homepage header only content */
 .header .header-content {
     padding-top: 12rem;
 }
 
-
-    
-    
 /* title page header */
 .name {
 	font: 9rem/6.5rem "indivisible";
     font-weight: 900;
-	letter-spacing: -7px;
 } 
-    
-    
-    
-    
-    
-.dropdown {
-        display: none;
-}
-
-    
-.resume-btn {
-    display: none;
-}
-
-    
-    
-/* VIEW PROJECTS button */
-.btn-view-portfolio {
-	display: none;
-}
-    
+  
 /* about top wave */
 .about-top-wave {
     height: 3rem;
@@ -1151,51 +972,40 @@ h1-footer {
 .footer-frame {
     height: 3rem;
 }
-    
+  
 /* title of page section */
 h1 {
     font: 2rem/2.4rem "indivisible", sans-serif;
     font-weight: 900;
-
-    }
-    
- 
+}
+  
 /* about bottom wave */
 .about-bottom-wave {
     height: 6rem;
     stroke-width: 1.2rem;
-
 }
-
     
-/* project card alignment settings */
+/* right project card */
 .card {
-    margin-bottom: 2rem;
     width: 47%;
-    height: auto;
 }
-    
-/* left project card alignment settings */
+  
+/* left project card */
 .card-left {
     margin-bottom: 2rem;
     width: 47%;
-    height: auto;
 }
-    
-/* project card image */
+     
+/* project card image and display image that is not zooming in */
 .card-image, .card-image-display {
-    width: 100%;
     height: 17.8rem;
 }
-    
-    
+  
 /* title of footer section */
 h1-footer {
     font: 2.2rem/2.8rem "indivisible", sans-serif;
     font-weight: 900;
-}
-
-    
+}    
 }
 
 /********************************************/
@@ -1203,304 +1013,186 @@ h1-footer {
 /********************************************/
 
 @media (min-width: 992px) {
-    
-    
-/* project card image and display image that is not zooming in */
-.card-image, .card-image-display {
-    width: 100%;
-    border-width: 3rem;
-    border: 0.2rem solid black;
-    border-radius: 0.6rem;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    box-shadow: 0px 0px 10px #B7B7B7;
 
-}
-
+/* project card image that IS zooming in */
 .card-image:hover {
     background-size: 200% auto;
 }
 
-/* display image on hover */
+/* project card image that IS NOT zooming in */
 .card-image-display:hover {
     background-size: 110% auto;
-    	transition: all 0.2s ease;
-    }
+    transition: all 0.2s ease;
+}
 
-.card-image-display:not(:hover) {
-    	transition: all 0.2s ease;
-} 
-    
 /* title of project card */
 h2 {
-    text-align: left;
-	color: #333;
 	font: 1.375rem/1.75rem "indivisible", sans-serif;
     font-weight: 600;
-    font-style: normal;
-	letter-spacing: -0.1px;
 }
-    
-/* project card content alignment settings */
+      
+/* project card content */
 .card-body {
     padding: 1.2rem;
     text-align: left;
 }
-    
+     
 /* project card title */
 .card-title {
     margin-top: 2rem;
-    margin-bottom: 0.5rem;
     text-align: left;
 }
     
-    
-
-/* whole header */
+/* other headers */
 .header-general {
     margin-bottom: -523px;
-    }
-    
-/* header content */
-.header-general .header-content {
-    text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 12rem;
-} 
+}
     
 /* page title */
 .header-general .text-container {
-    width: 100%;
-    height: 21rem;
     margin-top: 0rem;
-    position: relative;
-    z-index: 1;
 } 
    
-    
-    
-
-
-/* portfolio game design section */
+/* product design section */
 .product-design {
-    text-align: left;
-	transition: all 0.2s;
     background: #dbdbdb;
     background-image: url('../images/projects_displays/ux_bw.png'); 
     background-repeat: no-repeat;
-    background-position: 75% 50%;
-    width: 100%;
     height: 33rem;
-    margin-bottom: -6rem;
     padding-top: 10rem;
-    padding-bottom: 14rem;    
 }
-
-
 .product-design:hover {
     background: #b8a0e2;
     background-image: url('../images/projects_displays/ux_colored.png'); 
     background-repeat: no-repeat;
-    background-position: 75% 50%;
 }
     
-    
-
-
-
-/* portfolio graphic design section */
+/* graphic design section */
 .graphic-design {
-	transition: all 0.2s;
     background: #cbcbcb;
     background-image: url('../images/projects_displays/gd_bw.png'); 
     background-repeat: no-repeat;
     background-position: 75% 50%;
-    width: 100%;
     height: 33rem;
     margin-top: -9rem;
     padding-top: 14rem;
-    padding-bottom: 10rem;
     text-align: left;
 }
-
-
 .graphic-design:hover {
     background: #f8c582;
     background-image: url('../images/projects_displays/gd_colored.png'); 
     background-repeat: no-repeat;
     background-position: 75% 50%;
-    text-align: left;
 }
-    
     
 /* VIEW PROJECTS button */
 .btn-line-view-projects {
-	display: inline-block;
-	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
-    margin-top: 2rem;
-	border: 0.125rem solid black;
-	border-radius: 2rem;
 	background-color: transparent;
 	color: black;
-    font: 1rem/0rem "indivisible", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-	transition: all 0.2s;
 }
-
 .btn-line-view-projects:hover {
 	background-color: black;
 	color: white;
 	text-decoration: none;
 }
     
+/* header menu */
+.navbar-custom {
+    background-color: transparent;
+}
     
-    .navbar-custom {
-        background-color: transparent;
-    }
-    
-/* image of me alignment */
+/* image of me block */
 .image-container {
-    text-align: center;
-    position: absolute;
     margin-top: -32rem;
-    
-} 
-    
-/* image of me */ 
-.img-wrapper {
-    z-index: 1;
-    width: 410px; 
-    display: inline-block;
-    opacity: .8;
-
-} 
-    
+}
+  
+/* homepage header only */
 .header {
-        margin-bottom: -370px;
+    margin-bottom: -370px;
 }
-    
-/* whole header alignment settings */
-.header .header-content {
-    text-align: center;
-    padding-top: 12rem;
-}
-   
-    
-    /* title page header */
+
+/* page title header */
 .name {
 	font: 11.5rem/8.5rem "indivisible";
     font-weight: 900;
-	letter-spacing: -7px;
 } 
     
-    
-        
+/* portfolio dropdown */
 .dropdown {
-        display: inline-block;
-    }
+    display: inline-block;
+}
     
-    .nav-item-mobile {
-        display: none;
-    }
-    
-/* portfolio bottom section */
+/* portfolio dropdown on mobile */
+.nav-item-mobile {
+    display: none;
+}
+  
+/* product-design section */
 .product-design {
     text-align: left;
     background-position: 75% 50%;
 }
-    
 .product-design:hover {
-    text-align: left;
     background-position: 75% 50%;
 }
-    
-.resume-btn {
-    display: inline-block;
-}
-    
-/* VIEW PROJECTS button */
-.btn-view-portfolio {
-	display: inline-block;
-}
-    
+  
 /* about top wave */
 .about-top-wave {
     height: 4rem;
 }
-    
+   
 /* footer black wave */	
 .footer-frame {
     height: 4rem;
 }
-    
+
 /* title of page section */
 h1 {
     font: 2.2rem/2.8rem "indivisible", sans-serif;
     font-weight: 900;
-        text-align: left;
+    text-align: left;  
+}
 
-
-    
-    }
-
-/* about section alignment settings */    
+/* about section */    
 .about {
     text-align: left;
 }
 
-    
 /* about bottom wave */
 .about-bottom-wave {
     height: 8rem;
     stroke-width: 1rem;
 }
-    
-
-/* project card alignment settings */
-.card {
-    margin-bottom: 2rem;
+ 
+/* right and left project card */
+.card, .card-left {
     width: 48%;
-    height: auto;
 }
 
-/* left project card alignment settings */
-.card-left {
-    margin-bottom: 2rem;
-    width: 48%;
-    height: auto;
-}
-    
-/* project card image */
+/* project card image and display image that is not zooming in */
 .card-image, .card-image-display {
-    width: 100%;
     height: 25.4rem;
 }
-    
-/* footer section alignment settings */
+  
+/* footer section */
 .footer {
 	text-align: left;
 }
-    
+ 
 /* title of footer section */
 h1-footer {
-    font: 2.2rem/2.8rem "indivisible", sans-serif;
     font-weight: 900;
-    text-align: left;
 }
-    
-/* body text in CONTACT section */
+   
+/* body text in footer section */
 .body-text-footer {
     text-align: left;
 }
-
-    
-/* social block alignment settings */
+ 
+/* social block */
 .footer .icon-container {
 	text-align: left;
-}
-    
+}  
 }
 
 /*********************************************/
@@ -1509,7 +1201,6 @@ h1-footer {
 
 @media (min-width: 1200px) {
   
-    
 /* image of me */ 
 .img-wrapper {
     margin-top: 40px;
@@ -1517,204 +1208,83 @@ h1-footer {
     width: 480px; 
     display: inline-block;
     opacity: .8;
+} 
 
+/* homepage header only */
+.header { 
+    margin-bottom: -345px;
 } 
     
- .header { 
-        margin-bottom: -345px;
-} 
-    
-/* whole header alignment settings */
+/* whole home page header */
 .header .header-content {
     text-align: left;
     padding-top: 10rem;
     padding-bottom: 12rem;
 } 
     
- 
-/* whole header */
+/* other headers */
 .header-general {
     margin-bottom: -465px;
-    }
-    
-/* header content */
-.header-general .header-content {
-    text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 12rem;
-} 
-    
-/* page title */
-.header-general .text-container {
-    width: 100%;
-    height: 21rem;
-    margin-top: 0rem;
-    position: relative;
-    z-index: 1;
-} 
-    
-    
-    
-/* title page header */
+}
+      
+/* page title header */
 .name {
 	font: 14rem/10.5rem "indivisible";
     font-weight: 900;
 	letter-spacing: -4px;
 } 
     
-    
-.dropdown {
-        display: inline-block;
-    }
-    
-.resume-btn {
-    display: inline-block;
-}
-    
-
-/* image of me alignment */
+/* image of me block */
 .image-container {
-    text-align: center;
-    position: absolute;
     margin-top: -35rem;
-    
 } 
-
-
-    
-/* VIEW PROJECTS button */
-.btn-view-portfolio {
-	display: inline-block;
-}
-    
-/* about top wave */
+ 
+/* about section top wave */
 .about-top-wave {
     height: 4rem;
 }
-    
+     
 /* footer black wave */	
 .footer-frame {
     height: 5rem;
 }
-    
-/* title of page section */
-h1 {
-    font: 2.2rem/2.8rem "indivisible", sans-serif;
-    font-weight: 900;
-        text-align: left;
-
-
-}
-
-/* about section alignment settings */    
-.about {
-    text-align: left;
-
-}
  
-/* about bottom wave */
+/* about section bottom wave */
 .about-bottom-wave {
     height: 9rem;
     stroke-width: 0.7rem;
-
 }
-    
-
-    
-/* project card alignment settings */
-.card {
-    margin-bottom: 2rem;
-    width: 48%;
-    height: auto;
-}
-    
-/* project card image */
+ 
+/* project card image and display image that is not zooming in */
 .card-image, .card-image-display {
-    width: 100%;
     height: 30.8rem;
 }
+}
   
-/* footer section alignment settings */
-.footer {
-	text-align: left;
-}
-    
-/* title of footer section */
-h1-footer {
-    font: 2.2rem/2.8rem "indivisible", sans-serif;
-    font-weight: 900;
-    text-align: left;
-}
-    
-/* body text in CONTACT section */
-.body-text-footer {
-    text-align: left;
-}
-
-
-
-    
-/* social block alignment settings */
-.footer .icon-container {
-	text-align: left;
-    }  
-}
-
-
-
 /*********************************************/
 /* all screens of 1700px width and larger    */
 /*********************************************/
 
 @media (min-width: 1700px) { 
     
-/* whole header */
+/* other headers */
 .header-general {
-        margin-bottom: -350px;
-    }
-    
-/* header content */
-.header-general .header-content {
-    text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 12rem;
-} 
-    
-/* page title */
-.header-general .text-container {
-    width: 100%;
-    height: 21rem;
-    margin-top: 0rem;
-    position: relative;
-    z-index: 1;
-} 
-
-  
+    margin-bottom: -350px;
+}
     
 /* image of me */ 
 .img-wrapper {
-    margin-top: 40px;
-    z-index: 1;
     width: 580px; 
-    display: inline-block;
-    opacity: .8;
-
 } 
-    
+
+/* homepage header only */
 .header {
-        margin-bottom: -230px;
-    }
-    
-
-    
-    
-
-    
-/* title page header */
+    margin-bottom: -230px;
+}
+       
+/* page title header */
 .name {
 	font: 19rem/14rem "indivisible";
     font-weight: 900;
-	letter-spacing: -4px;
-    } 
-    
+} 
 }
